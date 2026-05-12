@@ -1,0 +1,48 @@
+body {
+    background: gray;
+}
+
+.navbar {
+    background-color: #657A55;
+    color: white;
+}
+
+.page-container {
+    margin-top: 75px;
+}
+
+.btn {
+    padding: 0;
+}
+
+#schedule {
+    background-color: white;
+}
+
+.hacky-padding {
+    overflow: hidden;
+    text-overflow: clip;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    height: 0px;
+}
+
+.schedule-heading {
+    color: white;
+}
+
+.hacky-padding {
+    overflow: hidden;
+    text-overflow: clip;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    height: 0px;
+}
+
+.schedule-heading {
+    color: white;
+}
