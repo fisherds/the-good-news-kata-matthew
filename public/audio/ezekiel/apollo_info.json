@@ -1,0 +1,408 @@
+{
+  "data": {
+    "classBySlug": {
+      "modules": {
+        "nodes": [
+          {
+            "sessions": {
+              "nodes": [
+                {
+                  "media": {
+                    "nodes": [
+                      {},
+                      {},
+                      {},
+                      {
+                        "url": "https://stream.mux.com/SzctKKtPiUw3S02xjbrTwSPamIuQ7JueDCtqEdulK00nE.m3u8"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "media": {
+                    "nodes": [
+                      {},
+                      {},
+                      {},
+                      {
+                        "url": "https://stream.mux.com/W8OI9FKL5401H101QZhJJceZbY6RqnKVCDXjAtSo8WknE.m3u8"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "media": {
+                    "nodes": [
+                      {},
+                      {},
+                      {},
+                      {
+                        "url": "https://stream.mux.com/kqJpYHZgWAA6o00JqcUfbBuARaesWELNztRYXf7mVhV8.m3u8"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "media": {
+                    "nodes": [
+                      {},
+                      {},
+                      {},
+                      {
+                        "url": "https://stream.mux.com/p7w41nuJ5ViptcfU4OMR9BGcTa02yVKJISDv1UNC01KT8.m3u8"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "sessions": {
+              "nodes": [
+                {
+                  "media": {
+                    "nodes": [
+                      {},
+                      {},
+                      {},
+                      {
+                        "url": "https://stream.mux.com/NjuiOoEuNf8ukV2NV9Y5BwuQvAqg02JLG202o2PWOfDOw.m3u8"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "media": {
+                    "nodes": [
+                      {},
+                      {},
+                      {},
+                      {
+                        "url": "https://stream.mux.com/xNOnwf2gVkpm4fdcbSEaQJBcYJPB00nXQCFJEY500qsAc.m3u8"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "media": {
+                    "nodes": [
+                      {},
+                      {},
+                      {},
+                      {
+                        "url": "https://stream.mux.com/V8sJrX02Ot9EVLnMXbz6vlu4lNPJe2MdN7DxjPuf01v7A.m3u8"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "media": {
+                    "nodes": [
+                      {},
+                      {},
+                      {},
+                      {
+                        "url": "https://stream.mux.com/9PkUL5YVqmJNMQW92Nq5bdw662LDiLPE1xxpBZJkekY.m3u8"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "media": {
+                    "nodes": [
+                      {},
+                      {},
+                      {},
+                      {
+                        "url": "https://stream.mux.com/eAYkjcbMDCWfapW5FcA101TheL3reecERSWaG7rhkj94.m3u8"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "sessions": {
+              "nodes": [
+                {
+                  "media": {
+                    "nodes": [
+                      {},
+                      {},
+                      {},
+                      {
+                        "url": "https://stream.mux.com/V9aP9js7sBECt2dwQA9kmjekwaQTJ02WBTrkWRsGsKE4.m3u8"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "media": {
+                    "nodes": [
+                      {},
+                      {},
+                      {},
+                      {
+                        "url": "https://stream.mux.com/4Hk022kdEaYSK00NUojW7InIOk1AbMhFekBVqlluZhVPo.m3u8"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "media": {
+                    "nodes": [
+                      {},
+                      {},
+                      {},
+                      {
+                        "url": "https://stream.mux.com/Bp27PLjZBPlpJPQWPCeSFWaLccllq3qgEU5TrRCGfd4.m3u8"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "media": {
+                    "nodes": [
+                      {},
+                      {},
+                      {},
+                      {
+                        "url": "https://stream.mux.com/a8VGS9QydlRVAVL8wZCMzHGEsoigYmdllRL400oV00FZ4.m3u8"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "media": {
+                    "nodes": [
+                      {},
+                      {},
+                      {},
+                      {
+                        "url": "https://stream.mux.com/5jnc3GSuDA7nzudlmjCwch4RmDL0146IBGGqjJQpky00I.m3u8"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "sessions": {
+              "nodes": [
+                {
+                  "media": {
+                    "nodes": [
+                      {},
+                      {},
+                      {},
+                      {
+                        "url": "https://stream.mux.com/TLryECvsqFQqhrYCuNXdAdEM02qQUn00VER01YhGmV9E3A.m3u8"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "media": {
+                    "nodes": [
+                      {},
+                      {},
+                      {},
+                      {
+                        "url": "https://stream.mux.com/EwQCkCvDcm00qU3JQUst8bOeJCmiZO0200sncOCpEEjQYs.m3u8"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "media": {
+                    "nodes": [
+                      {},
+                      {},
+                      {},
+                      {
+                        "url": "https://stream.mux.com/Nl4g02omfEF4v2d27AAX6UczsknLuSt6ti97k01DYaAfg.m3u8"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "media": {
+                    "nodes": [
+                      {},
+                      {},
+                      {},
+                      {
+                        "url": "https://stream.mux.com/101cZgC0200n02pzRQvL4LFwBubM4a601fbgNa3MTUOOcRfU.m3u8"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "sessions": {
+              "nodes": [
+                {
+                  "media": {
+                    "nodes": [
+                      {},
+                      {},
+                      {},
+                      {
+                        "url": "https://stream.mux.com/szibO9aYkt7UCEbat7oIlIanNouV3plVR4Q00tExjVTs.m3u8"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "media": {
+                    "nodes": [
+                      {},
+                      {},
+                      {},
+                      {
+                        "url": "https://stream.mux.com/SFaay5uIXIvw3TRzD38q4oestguQ5sqBhjev35EB7o8.m3u8"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "media": {
+                    "nodes": [
+                      {},
+                      {},
+                      {},
+                      {
+                        "url": "https://stream.mux.com/rCLQlZ9Ly8ENC4HJruc7QlH01fjC002S485n00trGj33XQ.m3u8"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "media": {
+                    "nodes": [
+                      {},
+                      {},
+                      {},
+                      {
+                        "url": "https://stream.mux.com/eQETE45Y64NCNvgfN1XYnMBReCdtLypcvDkthkl2URE.m3u8"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "media": {
+                    "nodes": [
+                      {},
+                      {},
+                      {},
+                      {
+                        "url": "https://stream.mux.com/3RDBV55PbgPqHEkug9tDGTR4GXeBehWSLiC6qfKjuwg.m3u8"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "media": {
+                    "nodes": [
+                      {},
+                      {},
+                      {},
+                      {
+                        "url": "https://stream.mux.com/SXiYbrS00SJSUzZtzSlmswFOy5cbd7JNaxjKTdzfmqCc.m3u8"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "sessions": {
+              "nodes": [
+                {
+                  "media": {
+                    "nodes": [
+                      {},
+                      {},
+                      {},
+                      {
+                        "url": "https://stream.mux.com/f84u9WXKD9XwBKVH02esfb9yTV5Wo74w00vcLIiXLPVxc.m3u8"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "media": {
+                    "nodes": [
+                      {},
+                      {},
+                      {},
+                      {
+                        "url": "https://stream.mux.com/jE02DiP9iPMwaTt3suKKkKFTPTuxBYTr7Nm76zjwEkd00.m3u8"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "media": {
+                    "nodes": [
+                      {},
+                      {},
+                      {},
+                      {
+                        "url": "https://stream.mux.com/iw01czMu00NlSbxRejRPB9w01ymFD1LgPzFZBl8GP93Vg4.m3u8"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "media": {
+                    "nodes": [
+                      {},
+                      {},
+                      {},
+                      {
+                        "url": "https://stream.mux.com/9EYZWr3S7bIrQpngRbVuB0249DbpG01S4B8wRayN02sv00I.m3u8"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "media": {
+                    "nodes": [
+                      {},
+                      {},
+                      {},
+                      {
+                        "url": "https://stream.mux.com/aKf00xM3xkwSwAY4qwLjs8zObcxopksmi4501R7WzFP1M.m3u8"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "artwork": [
+        {
+          "aspectRatio": "1:1",
+          "url": "https://dpl8xh3azv1ec.cloudfront.net/_static/assets/artwork/ezekiel/class-ezekiel-square.jpg"
+        },
+        {
+          "aspectRatio": "16:9",
+          "url": "https://dpl8xh3azv1ec.cloudfront.net/_static/assets/artwork/ezekiel/class-ezekiel-wide.jpg"
+        },
+        {
+          "aspectRatio": "9:16",
+          "url": "https://dpl8xh3azv1ec.cloudfront.net/_static/assets/artwork/ezekiel/class-ezekiel-tall.jpg"
+        }
+      ]
+    }
+  }
+}
