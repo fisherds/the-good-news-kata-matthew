@@ -68,3 +68,4 @@ node_modules/
 # dataconnect generated files
 .dataconnect
 public/audio/.DS_Store
+public/.DS_Store
