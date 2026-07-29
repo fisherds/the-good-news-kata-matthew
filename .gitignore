@@ -69,3 +69,5 @@ node_modules/
 .dataconnect
 public/audio/.DS_Store
 public/.DS_Store
+
+.claude/
