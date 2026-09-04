@@ -1,16 +1,18 @@
 [
   {
     "verse_range": "1:1-17",
-    "major_heading": "Matthew 1",
+    "major_heading": "Connecting to the OT",
+    "minor_heading": "Genealogy",
     "url": "https://d3kfvpfexuy5fk.cloudfront.net/visuals/literary-design-units/matthew-1-1-17"
   },
   {
     "verse_range": "1:18-25",
+    "minor_heading": "Birth of Jesus",
     "url": "https://d3kfvpfexuy5fk.cloudfront.net/visuals/literary-design-units/matthew-1-18-25"
   },
   {
     "verse_range": "2:1-12",
-    "major_heading": "Matthew 2",
+    "minor_heading": "Magi",
     "url": "https://d3kfvpfexuy5fk.cloudfront.net/visuals/literary-design-units/matthew-2-1-12"
   },
   {
@@ -18,12 +20,8 @@
     "url": "https://d3kfvpfexuy5fk.cloudfront.net/visuals/literary-design-units/matthew-2-13-23"
   },
   {
-    "verse_range": "3:1-17",
-    "major_heading": "Matthew 3",
-    "url": "https://d3kfvpfexuy5fk.cloudfront.net/visuals/literary-design-units/matthew-3-1-17"
-  },
-  {
     "verse_range": "3:1-6",
+    "minor_heading": "John the Baptist",
     "url": "https://d3kfvpfexuy5fk.cloudfront.net/visuals/literary-design-units/matthew-3-1-6"
   },
   {
@@ -36,32 +34,40 @@
   },
   {
     "verse_range": "4:1-11",
-    "major_heading": "Matthew 4",
+    "minor_heading": "Wilderness",
     "url": "https://d3kfvpfexuy5fk.cloudfront.net/visuals/literary-design-units/matthew-4-1-11"
   },
   {
     "verse_range": "4:12-17",
+    "minor_heading": "Move to become a Preacher",
     "url": "https://d3kfvpfexuy5fk.cloudfront.net/visuals/literary-design-units/matthew-4-12-17"
   },
   {
     "verse_range": "4:17-5:2",
+    "major_heading": "Announcing God's Kingdom",
+    "minor_heading": "Follow Me!",
     "url": "https://d3kfvpfexuy5fk.cloudfront.net/visuals/literary-design-units/matthew-4-17-5-2"
   },
   {
     "verse_range": "5:3-12",
-    "major_heading": "Matthew 5",
+    "major_heading": "SOTM Kingdom Identity",
+    "minor_heading": "Beatitudes",
     "url": "https://d3kfvpfexuy5fk.cloudfront.net/visuals/literary-design-units/matthew-5-3-12"
   },
   {
     "verse_range": "5:13-16",
+    "minor_heading": "Salt and Light",
     "url": "https://d3kfvpfexuy5fk.cloudfront.net/visuals/literary-design-units/matthew-5-13-16"
   },
   {
     "verse_range": "5:17-20",
+    "major_heading": "SOTM Greater Righteousness צְדָקָה",
+    "minor_heading": "Torah and Prophets",
     "url": "https://d3kfvpfexuy5fk.cloudfront.net/visuals/literary-design-units/matthew-5-17-20"
   },
   {
     "verse_range": "5:21-26",
+    "minor_heading": "Case Study Examples",
     "url": "https://d3kfvpfexuy5fk.cloudfront.net/visuals/literary-design-units/matthew-5-21-26"
   },
   {
@@ -78,56 +84,70 @@
   },
   {
     "verse_range": "5:38-42",
+    "minor_heading": "Upsidedown Resistance",
     "url": "https://d3kfvpfexuy5fk.cloudfront.net/visuals/literary-design-units/matthew-5-38-42"
   },
   {
     "verse_range": "5:43-48",
+    "minor_heading": "Love your enemies",
     "url": "https://d3kfvpfexuy5fk.cloudfront.net/visuals/literary-design-units/matthew-5-43-48"
   },
   {
     "verse_range": "6:1-4",
-    "major_heading": "Matthew 6",
+    "major_heading": "SOTM How you do your Mispat מִשְׁפָּט",
+    "minor_heading": "Giving",
     "url": "https://d3kfvpfexuy5fk.cloudfront.net/visuals/literary-design-units/matthew-6-1-4"
   },
   {
     "verse_range": "6:5-15",
+    "minor_heading": "Prayer",
     "url": "https://d3kfvpfexuy5fk.cloudfront.net/visuals/literary-design-units/matthew-6-5-15"
   },
   {
     "verse_range": "6:9-13",
+    "minor_heading": "The Lord's Prayer",
     "url": "https://d3kfvpfexuy5fk.cloudfront.net/visuals/literary-design-units/matthew-6-9-13"
   },
   {
     "verse_range": "6:16-18",
+    "minor_heading": "Fasting",
     "url": "https://d3kfvpfexuy5fk.cloudfront.net/visuals/literary-design-units/matthew-6-16-18"
   },
   {
     "verse_range": "6:19-24",
+    "minor_heading": "Wealth",
     "url": "https://d3kfvpfexuy5fk.cloudfront.net/visuals/literary-design-units/matthew-6-19-24"
   },
   {
     "verse_range": "6:25-34",
+    "minor_heading": "Worry",
     "url": "https://d3kfvpfexuy5fk.cloudfront.net/visuals/literary-design-units/matthew-6-25-34"
   },
   {
     "verse_range": "7:1-12",
-    "major_heading": "Matthew 7",
+    "minor_heading": "Golden Rule",
     "url": "https://d3kfvpfexuy5fk.cloudfront.net/visuals/literary-design-units/matthew-7-1-12"
   },
   {
     "verse_range": "7:13-14",
+    "major_heading": "SOTM The Choice",
+    "minor_heading": "Gate",
     "url": "https://d3kfvpfexuy5fk.cloudfront.net/visuals/literary-design-units/matthew-7-13-14"
   },
   {
     "verse_range": "7:15-23",
+    "minor_heading": "Producing Fruit",
     "url": "https://d3kfvpfexuy5fk.cloudfront.net/visuals/literary-design-units/matthew-7-15-23"
   },
   {
     "verse_range": "7:24-27",
+    "minor_heading": "House on the Rock",
     "url": "https://d3kfvpfexuy5fk.cloudfront.net/visuals/literary-design-units/matthew-7-24-27"
   },
   {
     "verse_range": "7:28-29",
+    "major_heading": "Jesus Finished",
+    "minor_heading": "Formula for Ending a Section",
     "url": "https://d3kfvpfexuy5fk.cloudfront.net/visuals/literary-design-units/matthew-7-28-29"
   }
 ]
