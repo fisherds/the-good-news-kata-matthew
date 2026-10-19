@@ -30,7 +30,7 @@ window.addEventListener('load', () => {
 
 async function loadTextVisuals() {
     try {
-        const response = await fetch('scripts/text_visuals.json');
+        const response = await fetch(window.TEXT_VISUALS_JSON || 'scripts/text_visuals.json');
         textVisuals = await response.json();
         populateNavigation();
         if (textVisuals.length > 0) {
