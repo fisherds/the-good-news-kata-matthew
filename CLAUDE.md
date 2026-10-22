@@ -5,13 +5,23 @@ Static Firebase Hosting site (`public/`, `cleanUrls: true`, so `public/sotm.html
 - `public/index.html` — the study calendar. Sermon on the Mount days link to `/sotm` as "Sermon Outline".
 - `public/sotm.html` — Sermon on the Mount outline table (Matthew 5:1–7:27).
 
+## Literary-design text (hosted locally)
+
+BibleProject Classroom's literary-design units (Tim Mackie's translation with highlighting) were served from d3kfvpfexuy5fk.cloudfront.net, which is expected to go away. We keep our own copies and render them ourselves:
+
+- `tools/fetch_visuals.py` — one-time downloader: reads every URL in `public/scripts/*text_visuals.json` and saves `public/visuals/<id>.json` (`reference`, `title`, `caption`, and `usx`; older units such as most of Ephesians have `html` instead). Re-run with `--force` to refresh while the site still exists.
+- `public/scripts/literary-design.js` — `LiteraryDesign.load(id)` and `LiteraryDesign.render(visual, "5:1–5:2")`. Renders USX to HTML and can slice a unit to a verse range (verse markers that go backwards, like the footnote-style 1–7 in Matthew 4:23–24, are ignored).
+- `public/styles/literary-design.css` — highlight colors and group layout copied from bp-web-components v0.27.2 (`mark.css`, `literary-design.css`).
+- Backup source: the user's old checkout of BibleProject's classroom-content repo at `/Users/davidfisher/Documents/BibleProject/github/classroom-content` has all 294 units as YAML in `public/data/visuals/literary-design-units/`.
+- Not yet done: `/reader` still iframes the cloudfront URLs. Ephesians (a side project for a friend) is low priority; its `html` format has no renderer.
+
 ## Sermon on the Mount outline (`public/sotm.html`)
 
 Word counts come from `data/sotm_greek_word_counts.tsv` (Greek words per verse, 109 verses, 2000 words total).
 
 - Text is **Byzantine** (longer readings in e.g. 6:5, 6:6, 6:10, 6:16, 6:18), but **without the 6:13 doxology** — 6:13 is 12 words.
 - A row's word count is the sum of its verses in the TSV; its verse count is the number of verses. Parent rows must equal the sum of their children.
-- Bar width = row words ÷ 283 × 100 (283 = 3.0 Choice, the longest barred row), one decimal place. If the longest barred row changes, rescale all bars.
+- Bar width = row words ÷ 268 × 100 (268 = 2.1.2 Case studies: anger, adultery, divorce — the longest barred row; group headers `kG` have no bar), one decimal place. If the longest barred row changes, rescale all bars.
 
 Structural decisions:
 
@@ -27,4 +37,6 @@ Row markup (the table is all on one line):
 - Color: `x` grey (total, 0.0 Introduction, 2.0 Torah), `id` Identity, `r` Righteousness, `p` Religious practice, `t` Trust, `c` Choice.
 - Level: `kT` top total row, `kG` group header (no bar — empty `<td class="barc"></td>`), `kP` row that has sub-rows (full bar), `kS` leaf sub-row (thin faded bar).
 - Indent by depth: 8, 26, 44, 62px (add 18px per further level).
+- 📖 reading button: add `data-unit="<visual id>"` to the `<tr>` and put `<button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>` at the start of the `.ref` cell, right before the range (CSS reserves a slot so every range lines up). The row's verse range is the `.ref` cell text minus the icon. A row spanning several units lists them space-separated in order (`data-unit="matthew-5-3-12 matthew-5-13-16"`); each is cut to the range. Panels stay open, but opening one closes any open panel with overlapping verses (parent/child rows). Every numbered row has one. The Lord's Prayer has its own unit (`matthew-6-9-13`, which has no verse markers, so it is shown whole); only 2.2.2.2 uses it, and every other row covering 6:9–13 uses `matthew-6-5-15`.
+- When adding buttons, compare row titles with Tim's wording in the unit and tell the user about mismatches (e.g. he renders δικαιοσύνη as "righteousness" in 5:6, 10 but "doing-what-is-right" in 5:20, 6:1, 6:33).
 - Single-verse ranges show one reference (`5:13`), not `5:13–5:13`. Use an en dash `–` in ranges.

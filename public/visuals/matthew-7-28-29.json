@@ -1,0 +1,9 @@
+{
+  "id": "matthew-7-28-29",
+  "reference": "Matthew 7:28-29",
+  "title": "Translation and Literary Design of Matthew 7:28-29",
+  "caption": "<bp-cite>Matthew 7:28-29</bp-cite>. Translation and Literary Design by Tim Mackie for BibleProject Classroom: The Messianic Torah (2024).",
+  "updatedAt": "2025-07-24T17:08:45.000Z",
+  "usx": "<usx version=\"2.6\">\n  <para>\n    <group type=\"primary\">\n      <group>\n        <verse number=\"28\" /> And it came about when Iesous finished these words,\n      </group>\n      <group>\n        the crowds were astonished at his <char mark-variant=\"highlight\" mark-color=\"black\">teaching</char>,\n      </group>\n      <optbreak />\n      <group>\n        <verse number=\"29\" /> because he was <char mark-variant=\"highlight\" mark-color=\"black\">teaching</char> as one having authority,\n      </group>\n      <group>\n        and not like their scribes.\n      </group>\n    </group>\n  </para>\n</usx>\n",
+  "html": null
+}

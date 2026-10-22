@@ -1,0 +1,113 @@
+/* Literary-design text (BibleProject Classroom USX), rendered by scripts/literary-design.js.
+   Colors and layout follow bp-web-components v0.27.2 (mark.css, literary-design.css). */
+.ld {
+  --ld-white: #ffffff;
+  --ld-black: #1b1b1b;
+  --ld-neutral-10: #e4e8ed; --ld-neutral-50: #6b7384; --ld-neutral-60: #4f5669; --ld-neutral-70: #3e4054; --ld-neutral-90: #181d36;
+  --ld-red-10: #f9e3de; --ld-red-50: #be4967; --ld-red-60: #972a4e; --ld-red-70: #751f40;
+  --ld-orange-10: #fae4c4; --ld-orange-50: #b5543a; --ld-orange-60: #91362e; --ld-orange-70: #742626;
+  --ld-green-10: #d3f2cd; --ld-green-50: #3a8060; --ld-green-60: #2b6146; --ld-green-70: #204b3c;
+  --ld-turquoise-10: #b9eff7; --ld-turquoise-50: #097d8d; --ld-turquoise-60: #00626f; --ld-turquoise-70: #004d58;
+  --ld-cyan-10: #ccf1fa; --ld-cyan-50: #3678b4; --ld-cyan-60: #245791; --ld-cyan-70: #1b4575;
+  --ld-blue-10: #d9ecfd; --ld-blue-50: #5869cd; --ld-blue-60: #404ca6; --ld-blue-70: #313c86;
+  --ld-violet-10: #e6e6fa; --ld-violet-50: #7e62bc; --ld-violet-60: #5d4897; --ld-violet-70: #47347e;
+  --ld-purple-10: #f7e1f5; --ld-purple-50: #9855af; --ld-purple-60: #713c92; --ld-purple-70: #552d7d;
+  --ld-tan-10: #efe8db; --ld-tan-50: #816f4d; --ld-tan-60: #645537; --ld-tan-70: #504329;
+
+  font-family: "Graphik Web", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--ld-black);
+  background: var(--ld-white);
+  padding: 12px 12px 12px 48px; /* room for sidebar labels */
+  border-radius: 8px;
+}
+
+.ld-title { font-size: 22px; font-weight: 400; line-height: 1.375; }
+.ld-reference { font-size: 18px; font-weight: 700; }
+.ld-caption { margin-top: 12px; font-size: 13px; color: var(--ld-neutral-60); }
+.ld-status { color: var(--ld-neutral-60); font-style: italic; }
+
+.ld-para { display: block; }
+
+.ld-group { position: relative; display: block; padding: 0; border-radius: 12px; }
+.ld-group[data-type="primary"],
+.ld-group[data-type="primary-alt"],
+.ld-group[data-type="secondary"] { box-sizing: border-box; margin: 12px 0; padding: 12px; }
+.ld-group[data-type="primary"] { border: 2px solid var(--ld-black); }
+.ld-group[data-type="primary-alt"] { border-top: 2px solid var(--ld-black); border-radius: 0; padding: 12px 0 0; }
+.ld-group[data-type="secondary"] { border: 2px solid var(--ld-neutral-10); }
+.ld-group > .ld-group:last-child[data-type] { margin-bottom: 0; }
+.ld-group[data-indent="1"] { margin-inline-start: 1.5rem; }
+.ld-group[data-indent="2"] { margin-inline-start: 3rem; }
+.ld-group[data-indent="3"] { margin-inline-start: 4.5rem; }
+.ld-group[data-indent="4"] { margin-inline-start: 6rem; }
+.ld-group[data-indent="5"] { margin-inline-start: 7.5rem; }
+
+.ld-group-title { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+
+.ld-sidebar-value {
+  position: absolute; top: 50%; inset-inline-start: 0;
+  transform: translate(calc(-100% - 8px), -50%);
+  color: var(--ld-neutral-60); font-size: 13px; padding-bottom: 2px;
+}
+
+.ld-verse { font-size: 12px; vertical-align: 4px; }
+.ld-optbreak { display: block; border-bottom: 2px solid var(--ld-neutral-10); margin: 12px 0; }
+.ld-word-original { white-space: nowrap; }
+
+.ld-mark {
+  padding: 1px 4px; border-radius: 4px; font-weight: 600;
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+}
+.ld-mark.text { background-color: transparent; padding: 0; border-radius: 0; }
+
+.ld-mark.red { color: var(--ld-red-50); }
+.ld-mark.red.highlight-light { color: var(--ld-red-60); background-color: var(--ld-red-10); }
+.ld-mark.red.highlight { color: var(--ld-white); background-color: var(--ld-red-50); }
+.ld-mark.red.highlight-dark { color: var(--ld-white); background-color: var(--ld-red-70); }
+
+.ld-mark.orange { color: var(--ld-orange-50); }
+.ld-mark.orange.highlight-light { color: var(--ld-orange-60); background-color: var(--ld-orange-10); }
+.ld-mark.orange.highlight { color: var(--ld-white); background-color: var(--ld-orange-50); }
+.ld-mark.orange.highlight-dark { color: var(--ld-white); background-color: var(--ld-orange-70); }
+
+.ld-mark.green { color: var(--ld-green-50); }
+.ld-mark.green.highlight-light { color: var(--ld-green-60); background-color: var(--ld-green-10); }
+.ld-mark.green.highlight { color: var(--ld-white); background-color: var(--ld-green-50); }
+.ld-mark.green.highlight-dark { color: var(--ld-white); background-color: var(--ld-green-70); }
+
+.ld-mark.turquoise { color: var(--ld-turquoise-50); }
+.ld-mark.turquoise.highlight-light { color: var(--ld-turquoise-60); background-color: var(--ld-turquoise-10); }
+.ld-mark.turquoise.highlight { color: var(--ld-white); background-color: var(--ld-turquoise-50); }
+.ld-mark.turquoise.highlight-dark { color: var(--ld-white); background-color: var(--ld-turquoise-70); }
+
+.ld-mark.cyan { color: var(--ld-cyan-50); }
+.ld-mark.cyan.highlight-light { color: var(--ld-cyan-60); background-color: var(--ld-cyan-10); }
+.ld-mark.cyan.highlight { color: var(--ld-white); background-color: var(--ld-cyan-50); }
+.ld-mark.cyan.highlight-dark { color: var(--ld-white); background-color: var(--ld-cyan-70); }
+
+.ld-mark.blue { color: var(--ld-blue-50); }
+.ld-mark.blue.highlight-light { color: var(--ld-blue-60); background-color: var(--ld-blue-10); }
+.ld-mark.blue.highlight { color: var(--ld-white); background-color: var(--ld-blue-50); }
+.ld-mark.blue.highlight-dark { color: var(--ld-white); background-color: var(--ld-blue-70); }
+
+.ld-mark.violet { color: var(--ld-violet-50); }
+.ld-mark.violet.highlight-light { color: var(--ld-violet-60); background-color: var(--ld-violet-10); }
+.ld-mark.violet.highlight { color: var(--ld-white); background-color: var(--ld-violet-50); }
+.ld-mark.violet.highlight-dark { color: var(--ld-white); background-color: var(--ld-violet-70); }
+
+.ld-mark.purple { color: var(--ld-purple-50); }
+.ld-mark.purple.highlight-light { color: var(--ld-purple-60); background-color: var(--ld-purple-10); }
+.ld-mark.purple.highlight { color: var(--ld-white); background-color: var(--ld-purple-50); }
+.ld-mark.purple.highlight-dark { color: var(--ld-white); background-color: var(--ld-purple-70); }
+
+.ld-mark.tan { color: var(--ld-tan-50); }
+.ld-mark.tan.highlight-light { color: var(--ld-tan-60); background-color: var(--ld-tan-10); }
+.ld-mark.tan.highlight { color: var(--ld-white); background-color: var(--ld-tan-50); }
+.ld-mark.tan.highlight-dark { color: var(--ld-white); background-color: var(--ld-tan-70); }
+
+.ld-mark.black { color: var(--ld-neutral-90); }
+.ld-mark.black.highlight-light { color: var(--ld-neutral-60); background-color: var(--ld-neutral-10); }
+.ld-mark.black.highlight { color: var(--ld-white); background-color: var(--ld-neutral-50); }
+.ld-mark.black.highlight-dark { color: var(--ld-white); background-color: var(--ld-neutral-70); }

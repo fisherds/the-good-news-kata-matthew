@@ -1,0 +1,9 @@
+{
+  "id": "matthew-7-13-14",
+  "reference": "Matthew 7:13-14",
+  "title": "Translation and Literary Design of Matthew 7:13-14",
+  "caption": "<bp-cite>Matthew 7:13-14</bp-cite>. Translation and Literary Design by Tim Mackie for BibleProject Classroom: The Messianic Torah (2024).",
+  "updatedAt": "2025-08-26T23:29:44.000Z",
+  "usx": "<usx version=\"2.6\">\n  <para>\n    <group indent=\"1\" sidebar-value=\"A\" type=\"primary\">\n      <group>\n        <verse number=\"13\" /> Enter through the <char mark-variant=\"highlight-light\" mark-color=\"tan\">narrow</char> <char mark-variant=\"highlight\" mark-color=\"tan\">gate</char>. \n      </group>\n    </group>\n  </para>\n  <para>\n    <group indent=\"2\" sidebar-value=\"B'\" type=\"secondary\">\n      <group indent=\"1\" sidebar-value=\"a\">\n        Because <char mark-variant=\"highlight-light\" mark-color=\"tan\">wide is the</char> <char mark-variant=\"highlight\" mark-color=\"tan\">gate</char>, and broad \n      </group>\n      <group indent=\"2\" sidebar-value=\"b\">\n        <char mark-variant=\"text\" mark-color=\"purple\">is the road that leads to ruin</char>, \n      </group>\n      <group indent=\"3\" sidebar-value=\"c\">\n        and those who enter through it are many. \n      </group>\n    </group>\n  </para>\n  <para>\n    <group indent=\"1\" sidebar-value=\"A'\" type=\"primary\">\n      <group indent=\"1\" sidebar-value=\"a'\">\n        <verse number=\"14\" /> How <char mark-variant=\"highlight-light\" mark-color=\"tan\">narrow is the</char> <char mark-variant=\"highlight\" mark-color=\"tan\">gate</char>, and constricted, \n      </group>\n      <group indent=\"2\" sidebar-value=\"b'\">\n        <char mark-variant=\"text\" mark-color=\"purple\">is the road that leads to life</char>, \n      </group>\n      <group indent=\"3\" sidebar-value=\"c'\">\n        and those who find it are few. \n      </group>\n    </group>\n  </para>\n</usx>\n",
+  "html": null
+}

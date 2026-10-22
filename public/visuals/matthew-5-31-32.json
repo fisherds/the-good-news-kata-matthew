@@ -1,0 +1,9 @@
+{
+  "id": "matthew-5-31-32",
+  "reference": "Matthew 5:31-32",
+  "title": "Translation and Literary Design of Matthew 5:31-32",
+  "caption": "<bp-cite>Matthew 5:31-32</bp-cite>. Translation and Literary Design by Tim Mackie for BibleProject Classroom: The Messianic Torah (2024).",
+  "updatedAt": "2025-08-26T23:29:41.000Z",
+  "usx": "<usx version=\"2.6\">\n  <para>\n    <group type=\"primary\">\n      <group>\n        <verse number=\"31\" /> It <char mark-variant=\"text\" mark-color=\"black\">has also been said</char>, \n      </group>\n      <optbreak />\n      <group indent=\"1\">\n        “Whoever <char mark-variant=\"text\" mark-color=\"orange\">sends away his wife</char>, \n      </group>\n      <group indent=\"1\">\n        he must give her a certificate of divorce.”\n      </group>\n    </group>\n  </para>\n  <para>\n    <group type=\"primary\">\n      <group>\n        <verse number=\"32\" /> <char mark-variant=\"text\" mark-color=\"black\">And I say to you that</char>\n      </group>\n      <optbreak />\n      <group>\n        everyone who <char mark-variant=\"text\" mark-color=\"orange\">sends away his wife</char>, \n      </group>\n      <group indent=\"1\">\n        —except on the ground of sexual immorality— \n      </group>\n      <group>\n        he makes her a <char mark-variant=\"highlight-light\" mark-color=\"red\">victim of adultery</char>, \n      </group>\n      <optbreak />\n      <group>\n        and whoever marries a <char mark-variant=\"text\" mark-color=\"orange\">sent-away-woman</char>\n      </group>\n      <group indent=\"1\">\n        he <char mark-variant=\"highlight-light\" mark-color=\"red\">commits adultery</char>. \n      </group>\n    </group>\n  </para>\n</usx>\n",
+  "html": null
+}
