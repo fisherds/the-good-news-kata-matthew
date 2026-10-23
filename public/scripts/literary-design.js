@@ -190,11 +190,40 @@ const LiteraryDesign = (() => {
     return root;
   }
 
-  async function load(unitId) {
-    const response = await fetch(`/visuals/${unitId}.json`);
-    if (!response.ok) throw new Error(`Could not load ${unitId}`);
-    return response.json();
+  // Loaded units by id, kept for the life of the page.
+  const cache = new Map();
+  let bundles = Promise.resolve();
+
+  // Start fetching a book's bundle (e.g. "matthew") so later loads are instant.
+  function preload(book) {
+    bundles = bundles.then(async () => {
+      try {
+        const response = await fetch(`/visuals/bundle-${book}.json`);
+        if (!response.ok) return;
+        for (const [id, visual] of Object.entries(await response.json())) {
+          if (!cache.has(id)) cache.set(id, Promise.resolve(visual));
+        }
+      } catch (error) {
+        // Fall back to fetching units one at a time.
+      }
+    });
+    return bundles;
   }
 
-  return { render, load, rangeKeys };
+  async function load(unitId) {
+    await bundles;
+    if (!cache.has(unitId)) {
+      cache.set(
+        unitId,
+        fetch(`/visuals/${unitId}.json`).then((response) => {
+          if (!response.ok) throw new Error(`Could not load ${unitId}`);
+          return response.json();
+        })
+      );
+      cache.get(unitId).catch(() => cache.delete(unitId));
+    }
+    return cache.get(unitId);
+  }
+
+  return { render, load, preload, rangeKeys };
 })();

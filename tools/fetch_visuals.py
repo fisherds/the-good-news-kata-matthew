@@ -4,7 +4,9 @@ Reads every URL in public/scripts/*text_visuals.json, pulls the visual data
 (reference, title, caption, and the text as USX, or as
 HTML for older units such as Ephesians) out of each page's window.__remixContext,
 and writes it to public/visuals/<id>.json so the site no longer depends on
-d3kfvpfexuy5fk.cloudfront.net.
+d3kfvpfexuy5fk.cloudfront.net. Then writes one bundle per book,
+public/visuals/bundle-<book>.json ({id: visual}), so a page can load a whole
+book's units in a single request.
 
 Usage: python3 tools/fetch_visuals.py [--force]
 """
@@ -37,6 +39,20 @@ def extract(html):
     }
 
 
+def write_bundles():
+    books = {}
+    for path in sorted(glob.glob(os.path.join(OUT_DIR, "*.json"))):
+        name = os.path.basename(path)[:-5]
+        if name.startswith("bundle-"):
+            continue
+        books.setdefault(name.split("-")[0], {})[name] = json.load(open(path, encoding="utf-8"))
+    for book, units in books.items():
+        out = os.path.join(OUT_DIR, f"bundle-{book}.json")
+        with open(out, "w", encoding="utf-8") as f:
+            json.dump(units, f, ensure_ascii=False, separators=(",", ":"))
+        print("bundled", len(units), "units into", os.path.relpath(out, ROOT))
+
+
 def main():
     force = "--force" in sys.argv
     os.makedirs(OUT_DIR, exist_ok=True)
@@ -58,6 +74,7 @@ def main():
         with open(out, "w", encoding="utf-8") as f:
             json.dump(visual, f, ensure_ascii=False, indent=2)
         print("saved", unit_id)
+    write_bundles()
 
 
 if __name__ == "__main__":
