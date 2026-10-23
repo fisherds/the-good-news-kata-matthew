@@ -2,6 +2,9 @@
 // (see tools/fetch_visuals.py) as plain HTML styled by styles/literary-design.css.
 // Mirrors the bp-literary-design web component, so no external site is needed.
 const LiteraryDesign = (() => {
+  // Unit files live in ../visuals/ next to this script, wherever the site is served from.
+  const VISUALS = new URL("../visuals/", document.currentScript.src);
+
   // "5:1" -> 5001; a bare "2" is resolved against the current chapter.
   function verseKey(chapter, verse) {
     return chapter * 1000 + verse;
@@ -198,7 +201,7 @@ const LiteraryDesign = (() => {
   function preload(book) {
     bundles = bundles.then(async () => {
       try {
-        const response = await fetch(`/visuals/bundle-${book}.json`);
+        const response = await fetch(new URL(`bundle-${book}.json`, VISUALS));
         if (!response.ok) return;
         for (const [id, visual] of Object.entries(await response.json())) {
           if (!cache.has(id)) cache.set(id, Promise.resolve(visual));
@@ -215,7 +218,7 @@ const LiteraryDesign = (() => {
     if (!cache.has(unitId)) {
       cache.set(
         unitId,
-        fetch(`/visuals/${unitId}.json`).then((response) => {
+        fetch(new URL(`${unitId}.json`, VISUALS)).then((response) => {
           if (!response.ok) throw new Error(`Could not load ${unitId}`);
           return response.json();
         })

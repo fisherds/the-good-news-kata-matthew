@@ -37,11 +37,12 @@ Row markup (the table is all on one line):
 <tr class="{color} {level}"><td style="padding-left:{indent}px"><span class="num">{n}</span> {title}</td><td class="ref">{a}–{b}</td><td class="n">{words}</td><td class="n">{verses}</td><td class="barc"><span class="bar" style="width:{pct}%"></span></td></tr>
 ```
 
-- Color: `x` grey (total, 0.0 Introduction, 2.0 Torah), `id` Identity, `r` Righteousness, `p` Religious practice, `t` Trust, `c` Choice.
+- Color: `x` grey (total, 0.0 Introduction, 2.0 Instruction), `id` Identity, `r` Righteousness, `p` Religious practice, `t` Trust, `c` Choice.
 - Level: `kT` top total row, `kG` group header (no bar — empty `<td class="barc"></td>`), `kP` row that has sub-rows (full bar), `kS` leaf sub-row (thin faded bar).
 - Indent by depth: 8, 26, 44, 62px (add 18px per further level).
 - 📖 reading button: add `data-unit="<visual id>"` to the `<tr>` and put `<button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>` at the start of the `.ref` cell, right before the range (CSS reserves a slot so every range lines up). The row's verse range is the `.ref` cell text minus the icon. A row spanning several units lists them space-separated in order (`data-unit="matthew-5-3-12 matthew-5-13-16"`); each is cut to the range. Panels stay open, but opening one closes any open panel with overlapping verses (parent/child rows). Every numbered row has one. The Lord's Prayer has its own unit (`matthew-6-9-13`, which has no verse markers, so it is shown whole); only 2.2.2.2.2 uses it, and every other row covering 6:9–13 uses `matthew-6-5-15`.
 - When adding buttons, compare row titles with Tim's wording in the unit and tell the user about mismatches (e.g. he renders δικαιοσύνη as "righteousness" in 5:6, 10 but "doing-what-is-right" in 5:20, 6:1, 6:33).
 - Single-verse ranges show one reference (`5:13`), not `5:13–5:13`. Use an en dash `–` in ranges.
-- Collapsing (script at the bottom of `sotm.html`): sections 1.0, 2.1, 2.2, 2.3 and 3.0 start expanded; clicking a section header's title shows/hides all its rows at once (no partial states). `/sotm#2.3` opens that section. Section membership comes from the row number prefix (alt rows included), so new rows need no extra markup.
+- Collapsing (script at the bottom of `sotm.html`): sections 1.0, 2.1, 2.2, 2.3 and 3.0 start expanded; clicking a section header's title shows/hides all its rows at once (no partial states). `/sotm#2.3` collapses every other section and opens only 2.3; plain `/sotm` shows everything. Section membership comes from the row number prefix (alt rows included), so new rows need no extra markup.
 - `firebase.json` caches `/visuals/**` for a day (`max-age=86400`).
+- Narrow screens: below 900px the Greek words and Verses columns are hidden; below 700px the bars are hidden too (media queries in the `sotm.html` `<style>`).
