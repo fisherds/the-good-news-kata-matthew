@@ -26,6 +26,7 @@ Word counts come from `data/sotm_greek_word_counts.tsv` (Greek words per verse, 
 Structural decisions:
 
 - The six case studies (5:21–47) are split 3/3 (2.1.2 and 2.1.3): 5:33 opens with πάλιν ("Again") and repeats the full "to those of old" formula from 5:21.
+- 2.3 Trust is A B A′ B′ + Golden Rule: (A) stuff 6:19–24 / (B) worry 6:25–34 / (A′) relationships 7:1–6 / (B′) your Father: ask, seek, knock 7:7–11 / 7:12. Each A opens with a "do not…" command plus three sayings; each B ends on "your Father in the skies" providing. Kept flat (not nesting B under A) so the parallel shows and Worry isn't buried.
 - Alternate splits: the main rows follow Tim Mackie's divisions; the user's own alternative split goes right after them as `alt` rows (`<tr class="id kS alt" …>`, number shown as `alt 1.1.1`; italic, faded bar). Each set of children separately sums to the parent — alt rows are never added into totals. Currently: Beatitudes 1.1.1–1.1.3 are Tim's Social Status / Character / Conduct (5:3–5, 6–8, 9–12); alt rows are 5:3–6, 7–10, 11–12.
 - One-liner conclusions get their own row a level up rather than being folded into the previous section — unless they clearly close the unit before them. (5:48 Teleios was its own row, then folded into 2.1.3.3 "Enemies (be complete)" because "your Father in the skies" in 5:45 and 5:48 ties them together.)
 
