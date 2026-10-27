@@ -1,0 +1,219 @@
+{
+  "_note": "BibleProject Sermon on the Mount videos. Used by sotm.html (icons + hover card, matched by url). Collected 2026-10-27 from the two collection pages. Thumbnails are imagekit URLs at 240px wide (change w-240 for other sizes). 'passage' marked 'guess' was not shown on the site. 'mux' is the Mux playback id (from the contentUrl on each video page), played in the page's pop-up player.",
+  "collections": [
+    {
+      "title": "Sermon on the Mount Visual Commentaries",
+      "url": "https://bibleproject.com/videos/collections/sermon-on-the-mount-visual-commentaries/",
+      "videos": [
+        {
+          "title": "Matthew 5-7: Sermon Overview",
+          "passage": "5:1–7:29",
+          "duration": "9:05",
+          "url": "https://bibleproject.com/videos/matthew-5-7-sermon-overview/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/visual-commentary/matthew-5-7/tr:q-65,w-240/matthew-5-7_16.9.jpg",
+          "mux": "DMQYPSesvzZyWsOGKR02eA7dSQu3T028FDNO6EDW01k8PU"
+        },
+        {
+          "title": "Matthew 5:3-16: Beatitudes",
+          "passage": "5:3–5:16",
+          "duration": "10:13",
+          "url": "https://bibleproject.com/videos/matthew-5-3-16-beatitudes/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/visual-commentary-segments/VC-0015-0019/tr:q-65,w-240/matthew-5-3-16_video-page-hero.jpg",
+          "mux": "QitMM45oBYD4omgwwA01NI3hAStz02PyA1LxYPgFJLsFo"
+        },
+        {
+          "title": "Matthew 5:17-20: Righteousness and Jesus' Bible",
+          "passage": "5:17–5:20",
+          "duration": "6:18",
+          "url": "https://bibleproject.com/videos/matthew-5-17-20-righteousness-and-jesus-bible/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/visual-commentary/matthew-5.17-20/tr:q-65,w-240/matthew-5.17-20_16.9.jpg",
+          "mux": "GbCmMEQi75uPMKskmo01NEcbzQ00LUk8ugVXJK3iMzsSE"
+        },
+        {
+          "title": "Matthew 5:21-22: Murder and Contempt",
+          "passage": "5:21–5:22",
+          "duration": "3:13",
+          "url": "https://bibleproject.com/videos/matthew-521-22-murder-and-contempt/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/visual-commentary/matthew-5.21-22/tr:q-65,w-240/matthew-5.21-22_16.9.jpg",
+          "mux": "Gw2rkyn2OJ1wb8hcRp01LkQ3ftiJlaE0001aqTnuQsUdbQ"
+        },
+        {
+          "title": "Matthew 5:27-28: Adultery and Lust",
+          "passage": "5:27–5:28",
+          "duration": "2:07",
+          "url": "https://bibleproject.com/videos/matthew-527-28-adultery-and-lust/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/visual-commentary/matthew-5.27-28/tr:q-65,w-240/matthew-5.27-28_16.9.jpg",
+          "mux": "mnDok7dMFAve02Pfra8ZOVnftrHSB21GgUZI4DIxXBQU"
+        },
+        {
+          "title": "Matthew 5:29-30: Eye and Hand Mutilation",
+          "passage": "5:29–5:30",
+          "duration": "2:47",
+          "url": "https://bibleproject.com/videos/matthew-529-30-eye-and-hand-mutilation/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/visual-commentary/matthew-5.29-30/tr:q-65,w-240/matthew-5.29-30_16.9.jpg",
+          "mux": "23OrCqtnB5TwNLmQxzISdW56HtjUdpnM700bAZAvWrbE"
+        },
+        {
+          "title": "Matthew 5:33-37: Oaths and Truth-Telling",
+          "passage": "5:33–5:37",
+          "duration": "3:00",
+          "url": "https://bibleproject.com/videos/matthew-5-33-37-oaths/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/visual-commentary/matthew-5.33-37/tr:q-65,w-240/matthew-5.33-37_16.9.jpg",
+          "mux": "BoSAqDcSG01h6018CZ3mpq6W1M2pbJrTJNYtMdzUrf8qk"
+        },
+        {
+          "title": "Matthew 6:1-4: Generosity and the True Reward",
+          "passage": "6:1–6:4",
+          "duration": "4:16",
+          "url": "https://bibleproject.com/videos/matthew-6-1-4-generosity-and-true-reward/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/visual-commentary/matthew-6.1-4/tr:q-65,w-240/matthew-6.1-4_16.9.jpg",
+          "mux": "00UgyQ01VU9IaQjQb02v7SMZ4u6wKrfsKmTzhFlZSWFy9w"
+        },
+        {
+          "title": "Matthew 6:9-13: The Prayer of Jesus",
+          "passage": "6:9–6:13",
+          "duration": "6:06",
+          "url": "https://bibleproject.com/videos/matthew-6-9-13-prayer-jesus/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/visual-commentary/matthew-6.9-13/tr:q-65,w-240/matthew-6.9-13_16.9.jpg",
+          "mux": "6HAd7UQFq61tJvdCW4xwGde5g00brLiPA1F41paRvIng"
+        },
+        {
+          "title": "Matthew 6:19-23: True Wealth and Generosity",
+          "passage": "6:19–6:23",
+          "duration": "5:37",
+          "url": "https://bibleproject.com/videos/matthew-619-23-true-wealth-and-generosity/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/visual-commentary/matthew-6.19-23/tr:q-65,w-240/vc-0030-0031_16.9.jpg",
+          "mux": "sdgNn7hLjDa00PDuLSGlBhuIprZh7P95xL3swvRtg87I"
+        },
+        {
+          "title": "Matthew 7:1-2: Don't Judge",
+          "passage": "7:1–7:2",
+          "duration": "2:58",
+          "url": "https://bibleproject.com/videos/matthew-7-1-2-dont-judge/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/visual-commentary/matthew-7.1-2/tr:q-65,w-240/matthew-7.1-2_16.9.jpg",
+          "mux": "yM6gt7pUVdDfxEzbC5sEUmCwaCni9Fg1voS4B3gdZh8"
+        },
+        {
+          "title": "Matthew 7:6: Pearls Before Pigs",
+          "passage": "7:6",
+          "duration": "2:23",
+          "url": "https://bibleproject.com/videos/matthew-7-6-pearls-pigs/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/visual-commentary/matthew-7.6/tr:q-65,w-240/matthew-7.6_16.9.jpg",
+          "mux": "963tjVXI9U01n2A5JnK01lDPypodSa2rWNMrm763vjOts"
+        },
+        {
+          "title": "Matthew 7:12: The Golden Rule",
+          "passage": "7:12",
+          "duration": "2:51",
+          "url": "https://bibleproject.com/videos/matthew-7-12-golden-rule/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/visual-commentary/matthew-7.12/tr:q-65,w-240/matthew-7.12_16.9.jpg",
+          "mux": "t900wtFSCmAyzhX00kuxRSZtAQmqLVQ2vnKVHyhJlOk8A"
+        },
+        {
+          "title": "Matthew 7:24-27: The Two Houses",
+          "passage": "7:24–7:27",
+          "duration": "3:00",
+          "url": "https://bibleproject.com/videos/matthew-7-24-27-two-houses/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/visual-commentary/matthew-7.24-27/tr:q-65,w-240/matthew-7.24-27_16.9.jpg",
+          "mux": "w01Gbi00lPlTtA7wyVTS4rLxIHJ65VJNvEI2VkAprMHf8"
+        }
+      ],
+      "kind": "commentary"
+    },
+    {
+      "title": "Sermon on the Mount",
+      "url": "https://bibleproject.com/videos/collections/sermon-on-the-mount/",
+      "videos": [
+        {
+          "title": "Intro to the Sermon on the Mount",
+          "passage": "5:1–7:29",
+          "passageSource": "guess",
+          "duration": "5:19",
+          "url": "https://bibleproject.com/videos/intro-to-sermon-on-the-mount/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/sermon-on-the-mount/e1/tr:q-65,w-240/sotm-e1_16.9.jpg",
+          "mux": "83STGVxtcO01902cUvy00g1SJzT4xju2no7DTh9pCZJvRE"
+        },
+        {
+          "title": "The Beatitudes",
+          "passage": "5:3–5:16",
+          "passageSource": "guess",
+          "duration": "6:35",
+          "url": "https://bibleproject.com/videos/the-beatitudes/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/sermon-on-the-mount/e2/tr:q-65,w-240/sotm-e2_16.9.jpg",
+          "mux": "Ikf7tTbhu7Nba75THD00kHPRPX0100aDAEUxHWgj8ozmI4"
+        },
+        {
+          "title": "Jesus Fulfills the Law",
+          "passage": "5:17–5:20",
+          "passageSource": "guess",
+          "duration": "6:10",
+          "url": "https://bibleproject.com/videos/jesus-fulfills-the-law/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/sermon-on-the-mount/e3/tr:q-65,w-240/sotm-e3_16.9.jpg",
+          "mux": "OfeVSkoOnWcqajEKVZ901iTfWeWs3yN01Xr8bWzF004Yvc"
+        },
+        {
+          "title": "Murder, Adultery, and Divorce",
+          "passage": "5:21–5:32",
+          "passageSource": "guess",
+          "duration": "8:03",
+          "url": "https://bibleproject.com/videos/wisdom-underneath-laws/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/sermon-on-the-mount/e4/tr:q-65,w-240/sotm-e4_16.9.jpg",
+          "mux": "2zpmXs00DUhjxKnmYVBTYpUiLWayRQrkavB01gu6gGbaw"
+        },
+        {
+          "title": "Oaths, Retaliation, and Enemy Love",
+          "passage": "5:33–5:48",
+          "passageSource": "guess (site says Matthew 5)",
+          "duration": "7:59",
+          "url": "https://bibleproject.com/videos/wisdom-within-laws-about-oaths-retaliation-and-enemy-love/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/sermon-on-the-mount/e5/tr:q-65,w-240/sotm-e5_16.9.jpg",
+          "mux": "vjNu00fhh6VpkYQ9pycVWXhLAv9GbKtH13ZSalwOwKow"
+        },
+        {
+          "title": "Warnings About Religious Practices",
+          "passage": "6:1–6:8",
+          "duration": "6:33",
+          "url": "https://bibleproject.com/videos/warnings-about-religious-practices/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/sermon-on-the-mount/e6/tr:q-65,w-240/sotm-e6_16.9.jpg",
+          "mux": "qfikVrPuNDqwDyNhAK01buX6KtmE9v6h1G1JCOc0201VNo"
+        },
+        {
+          "title": "The Lord’s Prayer",
+          "passage": "6:9–6:15",
+          "passageSource": "guess",
+          "duration": "9:22",
+          "url": "https://bibleproject.com/videos/lords-prayer/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/sermon-on-the-mount/e7/tr:q-65,w-240/sotm-e7_16.9.jpg",
+          "mux": "Ok02b3DgDhHj1pqIXldDtkGTMrkrygpUlJpxaCzqq6K4"
+        },
+        {
+          "title": "Wealth and Worry",
+          "passage": "6:19–6:34",
+          "passageSource": "guess",
+          "duration": "6:47",
+          "url": "https://bibleproject.com/videos/wealth-and-worry/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/sermon-on-the-mount/e8/tr:q-65,w-240/sotm-e8_16.9.jpg",
+          "mux": "U01wiDwhj602YJPtukuNGOYLYOiWeaTHwFkI3hhEz5CJE"
+        },
+        {
+          "title": "Wisdom in Relationships",
+          "passage": "7:1–7:12",
+          "duration": "5:15",
+          "url": "https://bibleproject.com/videos/wisdom-in-relationships/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/sermon-on-the-mount/e9/video/tr:q-65,w-240/sotm-e9_16.9.jpg",
+          "mux": "gECIK1hB3lBrkd00reyesZtDdVkQWVBl3PVpoBN5UzSo"
+        },
+        {
+          "title": "The Choice",
+          "passage": "7:13–7:27",
+          "passageSource": "guess",
+          "duration": "6:55",
+          "url": "https://bibleproject.com/videos/the-choice/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/sermon-on-the-mount/e10/video/tr:q-65,w-240/sotm-e10_16.9.jpg",
+          "mux": "GQuIQuYEH6IoixgZkMyU2sv8T0100N3022A00QrNmGNvONM"
+        }
+      ],
+      "kind": "series"
+    }
+  ]
+}
