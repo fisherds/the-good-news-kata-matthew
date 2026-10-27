@@ -32,7 +32,7 @@
 @keyframes video-in{from{opacity:0;transform:scale(.96)}}
 .sotm-outline .video-modal header{display:flex;align-items:center;gap:12px;padding:8px 8px 8px 16px} .sotm-outline .video-modal h2{flex:1;margin:0;font-size:1rem;font-weight:600}
 .sotm-outline .video-modal .close{border:0;background:none;color:inherit;font-size:1.6rem;line-height:1;cursor:pointer;padding:2px 10px 6px;border-radius:6px} .sotm-outline .video-modal .close:hover{background:rgba(255,255,255,.12)}
-.sotm-outline .video-modal .screen{aspect-ratio:16/9;background:#000} .sotm-outline .video-modal mux-player{display:block;width:100%;height:100%}
+.sotm-outline .video-modal .screen{aspect-ratio:16/9;background:#000} .sotm-outline .video-modal .screen:fullscreen{aspect-ratio:auto} .sotm-outline .video-modal mux-player{display:block;width:100%;height:100%}
 .sotm-outline .video-modal footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;padding:10px 16px 12px;font-size:.85rem;color:#c9c5d6} .sotm-outline .video-modal footer a{color:#fff}
 .sotm-outline tr.section td:first-child,.sotm-outline tr[data-unit]:not(.section){cursor:pointer}
 .sotm-outline tr[data-unit]:not(.section):hover td{background:var(--tint)}
@@ -132,7 +132,7 @@ function closePanel(panel, animate = true) {
 // 🎬 Video icons link to BibleProject. Hovering (or focusing) one shows a card with
 // its thumbnail (local copies in images/videos/), title and length; clicking plays it
 // in a pop-up Mux player (ctrl/cmd/shift-click still opens the BibleProject page).
-// On touch screens the first tap shows the card and a second tap plays the video.
+// Touch screens get no card; a tap plays the video straight away.
 // Details, including the Mux playback id, come from data/sotm_videos.json by url.
 const videos = {};
 fetch("data/sotm_videos.json")
@@ -148,7 +148,6 @@ card.hidden = true;
 card.innerHTML = "<img alt=\"\"><div><strong></strong><span></span></div>";
 outline.append(card);
 let cardFor = null;
-let lastPointer = "mouse";
 const slugOf = (link) => link.pathname.split("/").filter(Boolean).pop();
 function describe(video) {
   const { collection } = video;
@@ -174,7 +173,6 @@ function hideCard() {
   card.hidden = true;
   cardFor = null;
 }
-outline.addEventListener("pointerdown", (event) => (lastPointer = event.pointerType));
 outline.addEventListener("pointerover", (event) => {
   const link = event.target.closest("a.video");
   if (link && event.pointerType !== "touch" && link !== cardFor) showCard(link);
@@ -187,7 +185,8 @@ outline.addEventListener("focusin", (event) => event.target.matches("a.video:foc
 outline.addEventListener("focusout", (event) => event.target.matches("a.video") && hideCard());
 window.addEventListener("scroll", hideCard, { passive: true });
 
-// The player script is only fetched the first time a video is played.
+// The player script is only fetched the first time a video is played (on phones
+// it is fetched after the page loads, so a tap can go straight to full screen).
 const MUX_PLAYER = "https://cdn.jsdelivr.net/npm/@mux/mux-player@3.14.0/dist/mux-player.js";
 let muxLoaded;
 const loadMux = () =>
@@ -198,6 +197,8 @@ const loadMux = () =>
     script.onerror = () => reject((muxLoaded = null));
     document.head.append(script);
   }));
+const PHONE = matchMedia("(hover: none) and (pointer: coarse)");
+if (PHONE.matches) addEventListener("load", () => loadMux().catch(() => {}));
 const modal = document.createElement("dialog");
 modal.className = "video-modal";
 modal.innerHTML =
@@ -205,7 +206,11 @@ modal.innerHTML =
   '<div class="screen"></div><footer><span></span><a target="_blank" rel="noopener">Watch on BibleProject ↗</a></footer>';
 outline.append(modal);
 // Closing (×, Esc or a click outside) removes the player, which stops the video.
-modal.addEventListener("close", () => modal.querySelector(".screen").replaceChildren());
+modal.addEventListener("close", () => {
+  delete modal.dataset.fullscreen;
+  if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
+  modal.querySelector(".screen").replaceChildren();
+});
 modal.addEventListener("click", (event) => {
   if (event.target === modal || event.target.closest(".close")) modal.close();
 });
@@ -225,21 +230,45 @@ function playVideo(link) {
     autoplay: "",
   }))
     player.setAttribute(name, value);
-  modal.querySelector(".screen").replaceChildren(player);
+  const screenEl = modal.querySelector(".screen");
+  screenEl.replaceChildren(player);
   modal.showModal();
+  if (PHONE.matches) enterFullscreen(screenEl).catch(() => {});
+  // Full screen is the .screen box, so the player's own full-screen button and ours agree.
+  customElements.whenDefined("mux-player").then(async () => {
+    if (!player.mediaController) await new Promise(requestAnimationFrame);
+    if (player.mediaController) player.mediaController.fullscreenElement = screenEl;
+  });
   loadMux().catch(() => {
     modal.close();
     window.open(video.url, "_blank", "noopener");
   });
 }
 
+// Phones play full screen straight from the tap. Full screen needs the tap's user
+// activation, which only lasts a moment, so it is requested right away (the player
+// script is preloaded on phones). iPhone has no element full screen, only the
+// <video>'s, so it uses mux-player's, which does that. Leaving full screen closes the pop-up.
+function enterFullscreen(screenEl) {
+  modal.dataset.fullscreen = "true";
+  if (document.fullscreenEnabled) {
+    return screenEl.requestFullscreen().then(() => screen.orientation?.lock?.("landscape").catch(() => {}));
+  }
+  const player = screenEl.firstElementChild;
+  return customElements.whenDefined("mux-player").then(async () => {
+    if (!player.mediaController) await new Promise(requestAnimationFrame);
+    await player.requestFullscreen();
+    player.media?.nativeEl?.addEventListener("webkitendfullscreen", () => modal.close(), { once: true });
+  });
+}
+document.addEventListener("fullscreenchange", () => {
+  if (!document.fullscreenElement && modal.dataset.fullscreen && modal.open) modal.close();
+});
+
 outline.addEventListener("click", async (event) => {
   const video = event.target.closest("a.video");
   if (video) {
-    if (lastPointer === "touch" && cardFor !== video) {
-      event.preventDefault();
-      showCard(video);
-    } else if (videos[video.href]?.mux && !(event.metaKey || event.ctrlKey || event.shiftKey || event.altKey)) {
+    if (videos[video.href]?.mux && !(event.metaKey || event.ctrlKey || event.shiftKey || event.altKey)) {
       event.preventDefault();
       playVideo(video);
     }
