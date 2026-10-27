@@ -1,5 +1,5 @@
 {
-  "_note": "BibleProject Sermon on the Mount videos. Used by sotm.html (icons + hover card, matched by url). Collected 2026-10-27 from the two collection pages. Thumbnails are imagekit URLs at 240px wide (change w-240 for other sizes). 'passage' marked 'guess' was not shown on the site. 'mux' is the Mux playback id (from the contentUrl on each video page), played in the page's pop-up player.",
+  "_note": "BibleProject Sermon on the Mount videos. Used by sotm.html (icons + hover card, matched by url). Collected 2026-10-27 from the two collection pages. Thumbnails are imagekit URLs at 240px wide (change w-240 for other sizes). 'passage' marked 'guess' was not shown on the site. 'mux' is the Mux playback id (from the contentUrl on each video page), played in the page's pop-up player. 'portrait': true marks the three videos BibleProject uploaded as 1080x1920: the desktop pop-up is tall and narrow for them, and phones keep them upright in full screen.",
   "collections": [
     {
       "title": "Sermon on the Mount Visual Commentaries",
@@ -35,7 +35,8 @@
           "duration": "3:13",
           "url": "https://bibleproject.com/videos/matthew-521-22-murder-and-contempt/",
           "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/visual-commentary/matthew-5.21-22/tr:q-65,w-240/matthew-5.21-22_16.9.jpg",
-          "mux": "Gw2rkyn2OJ1wb8hcRp01LkQ3ftiJlaE0001aqTnuQsUdbQ"
+          "mux": "Gw2rkyn2OJ1wb8hcRp01LkQ3ftiJlaE0001aqTnuQsUdbQ",
+          "portrait": true
         },
         {
           "title": "Matthew 5:27-28: Adultery and Lust",
@@ -43,7 +44,8 @@
           "duration": "2:07",
           "url": "https://bibleproject.com/videos/matthew-527-28-adultery-and-lust/",
           "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/visual-commentary/matthew-5.27-28/tr:q-65,w-240/matthew-5.27-28_16.9.jpg",
-          "mux": "mnDok7dMFAve02Pfra8ZOVnftrHSB21GgUZI4DIxXBQU"
+          "mux": "mnDok7dMFAve02Pfra8ZOVnftrHSB21GgUZI4DIxXBQU",
+          "portrait": true
         },
         {
           "title": "Matthew 5:29-30: Eye and Hand Mutilation",
@@ -51,7 +53,8 @@
           "duration": "2:47",
           "url": "https://bibleproject.com/videos/matthew-529-30-eye-and-hand-mutilation/",
           "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/visual-commentary/matthew-5.29-30/tr:q-65,w-240/matthew-5.29-30_16.9.jpg",
-          "mux": "23OrCqtnB5TwNLmQxzISdW56HtjUdpnM700bAZAvWrbE"
+          "mux": "23OrCqtnB5TwNLmQxzISdW56HtjUdpnM700bAZAvWrbE",
+          "portrait": true
         },
         {
           "title": "Matthew 5:33-37: Oaths and Truth-Telling",
