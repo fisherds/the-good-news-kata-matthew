@@ -1,5 +1,5 @@
 {
-  "_note": "BibleProject Sermon on the Mount videos. Used by sotm.html (icons + hover card, matched by url). Collected 2026-10-27 from the two collection pages. Thumbnails are imagekit URLs at 240px wide (change w-240 for other sizes). 'passage' marked 'guess' was not shown on the site. 'mux' is the Mux playback id (from the contentUrl on each video page), played in the page's pop-up player. 'portrait': true marks the three videos BibleProject uploaded as 1080x1920: the desktop pop-up is tall and narrow for them, and phones keep them upright in full screen.",
+  "_note": "BibleProject Sermon on the Mount videos. Used by sotm.html (icons + hover card, matched by url). Collected 2026-10-27 from the two collection pages; the 11 Sermon on the Mount videos from the Insights collection (of its 32) added 2026-10-29. Thumbnails are imagekit URLs at 240px wide (change w-240 for other sizes). 'passage' marked 'guess' was not shown on the site. 'mux' is the Mux playback id (from the contentUrl on each video page), played in the page's pop-up player. 'portrait': true marks the three videos BibleProject uploaded as 1080x1920: the desktop pop-up is tall and narrow for them, and phones keep them upright in full screen.",
   "collections": [
     {
       "title": "Sermon on the Mount Visual Commentaries",
@@ -217,6 +217,104 @@
         }
       ],
       "kind": "series"
+    },
+    {
+      "title": "Insights",
+      "url": "https://bibleproject.com/videos/collections/insights/",
+      "kind": "insight",
+      "videos": [
+        {
+          "title": "Good Tree vs. Bad Tree",
+          "passage": "7:15–7:20",
+          "duration": "2:41",
+          "url": "https://bibleproject.com/videos/passage-insight-good-tree-bad-tree/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/insights/good-tree-and-bad-tree/tr:q-65,w-240/good-tree-bad-tree_16.9.jpg",
+          "mux": "yTwajq00UB2zbSEtYljMj3dsGu7mqA7byiaHtDPy1fJM"
+        },
+        {
+          "title": "Speck in the Eye",
+          "passage": "7:3–7:5",
+          "duration": "1:54",
+          "url": "https://bibleproject.com/videos/passage-insight-speck-eye/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/insights/speck-in-the-eye/tr:q-65,w-240/speck-in-the-eye_16.9.jpg",
+          "mux": "JNKuG7jo9dHTDtWtgiNThuld2JS6G83DQmxGxCrcVFQ"
+        },
+        {
+          "title": "Basileia / Kingdom",
+          "passage": "5:3–7:27 (word study)",
+          "duration": "1:00",
+          "url": "https://bibleproject.com/videos/vocab-insight-basileia-kingdom/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/insights/basileia/tr:q-65,w-240/basileia_16.9.jpg",
+          "mux": "gtHI9FseS88blMMuiYOVdnpLwmn1d02f302n6mAZdMd2w"
+        },
+        {
+          "title": "Do Not Worry",
+          "passage": "6:25–6:34",
+          "duration": "2:24",
+          "url": "https://bibleproject.com/videos/passage-insight-do-not-worry/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/insights/worry-vs-anxiety/tr:q-65,w-240/worry-vs-anxiety_16.9.jpg",
+          "mux": "ffOmi02vVF00m53JRcNi97hBXE01HkhiPLg2f501L1Wr4UM",
+          "portrait": true
+        },
+        {
+          "title": "Mammon / Wealth",
+          "passage": "6:24",
+          "duration": "1:00",
+          "url": "https://bibleproject.com/videos/vocab-insight-mammon-wealth/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/insights/mammon/tr:q-65,w-240/mammon_16.9.jpg",
+          "mux": "DS02VBpQtv8rHRN4JIC3UoF00sOf0200yX2TPwny3tOOaKY"
+        },
+        {
+          "title": "Purpose of Fasting",
+          "passage": "6:16–6:18",
+          "duration": "1:36",
+          "url": "https://bibleproject.com/videos/passage-insight-purpose-fasting/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/insights/purpose-of-fasting/tr:q-65,w-240/pi_purpose-of-fasting_16.9.jpg",
+          "mux": "00fLzm156kyv94Wj017gCjrcGLUk3GBJC4ATboAVl02pJY",
+          "portrait": true
+        },
+        {
+          "title": "Teleios / Whole",
+          "passage": "5:48",
+          "duration": "1:00",
+          "url": "https://bibleproject.com/videos/vocab-insight-teleios-whole/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/insights/teleios/tr:q-65,w-240/teleios_16.9.jpg",
+          "mux": "dqmY1s8xTmPu4FR43G5bLqqRSG6dHaEEVZ45Xxuwt2o"
+        },
+        {
+          "title": "Creative Nonviolence",
+          "passage": "5:38–5:42",
+          "duration": "2:05",
+          "url": "https://bibleproject.com/videos/passage-insight-creative-non-violence/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/insights/creative-nonviolence/tr:q-65,w-240/creative-nonviolence_16.9.jpg",
+          "mux": "8HmUbdzVV2vMhPYs1a7ZTFXQwjNRGSzzPmNCUW1SbLU",
+          "portrait": true
+        },
+        {
+          "title": "Gehenna / Valley of Wailing",
+          "passage": "5:22, 5:29–5:30 (word study)",
+          "duration": "1:00",
+          "url": "https://bibleproject.com/videos/vocab-insight-gehenna-valley-wailing/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/insights/gehenna/tr:q-65,w-240/gehenna_16.9.jpg",
+          "mux": "MJdn1lzbsTyqAX5ja9jmtqRbRGtdj11Bhbm2B1OGvAg"
+        },
+        {
+          "title": "Dikaiosune / Righteousness",
+          "passage": "5:6, 5:10, 5:20, 6:1, 6:33 (word study)",
+          "duration": "1:00",
+          "url": "https://bibleproject.com/videos/vocab-insight-dikaiosune-righteousness/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/insights/righteousness/tr:q-65,w-240/righteousness_16.9.jpg",
+          "mux": "ulIlrXkH02M7bZb2NzOFDyzb9SoWDbI02iJthGS6oFWSs"
+        },
+        {
+          "title": "Torah / Instruction",
+          "passage": "5:17 (word study)",
+          "duration": "1:00",
+          "url": "https://bibleproject.com/videos/vocab-insight-torah/",
+          "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/insights/torah/tr:q-65,w-240/torah_16.9.jpg",
+          "mux": "VcInXXv6p01XRTPbG01HHKW901Eqio2er1eWZYTwcAUBOA"
+        }
+      ]
     }
   ]
 }
