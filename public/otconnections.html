@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Connection to the Old Testament</title>
+<link rel="stylesheet" href="styles/literary-design.css">
+<style>
+.ot-outline{--bg:#f7f6fb;--fg:#1f1b2e;--muted:#6b6580;--line:#e2dfeb;--tint:#eeebf5;--g:#2f9e5b;--b:#2f6fd6;--j:#d9822b;--w:#8a3fd1;--c:#d6337a;--x:#9a95a8;--fill:#3678b4;
+  overflow-x:auto;background:var(--bg);color:var(--fg);padding:12px;border-radius:6px;font-family:"Graphik Web",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:16px;line-height:1.5}
+.ot-outline table{line-height:normal;border-collapse:collapse;width:100%;min-width:620px;font-variant-numeric:tabular-nums}
+.ot-outline th{text-align:left;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border-bottom:2px solid var(--line);padding:8px}
+.ot-outline td{padding:7px 8px;border-bottom:1px solid var(--line);border-top:0;vertical-align:middle}
+.ot-outline td:first-child{border-left:4px solid var(--c0)}
+.ot-outline tr.g{--c0:var(--g)} .ot-outline tr.b{--c0:var(--b)} .ot-outline tr.j{--c0:var(--j)} .ot-outline tr.w{--c0:var(--w)} .ot-outline tr.c{--c0:var(--c)} .ot-outline tr.x{--c0:var(--x)}
+.ot-outline .n{text-align:right} .ot-outline .ref{white-space:nowrap} .ot-outline .num{color:var(--muted);margin-right:4px}
+.ot-outline .barc{width:25%;min-width:80px} .ot-outline .bar{display:block;height:10px;border-radius:2px;background:var(--c0)}
+.ot-outline tr.kS td{font-size:.9rem;padding-top:4px;padding-bottom:4px} .ot-outline tr.kS .bar{height:6px;opacity:.55}
+.ot-outline tr.kG td{font-weight:700;background:var(--tint)} .ot-outline tr.kG td:first-child{border-left-width:6px}
+.ot-outline tr.kP td:first-child .num{color:var(--fg)}
+.ot-outline tr.top td:first-child{border-left-width:6px} /* the five parts all get the same thick line */
+.ot-outline tr.kT td{font-weight:700;font-size:1.05rem;background:var(--tint);border-top:2px solid var(--line);border-bottom:2px solid var(--line)} .ot-outline tr.kT td:first-child{border-left:6px solid var(--fg)}
+.ot-outline .ref{position:relative;padding-left:32px}
+.ot-outline .read{position:absolute;left:6px;top:50%;transform:translateY(-50%);border:0;background:none;padding:0 2px;cursor:pointer;font-size:.95em;line-height:1;opacity:.75}
+.ot-outline .read:hover,.ot-outline .read[aria-expanded="true"]{opacity:1}
+.ot-outline tr.reading td{padding:0;border-left:4px solid var(--c0);background:var(--tint)}
+.ot-outline .sheet{overflow:hidden} .ot-outline .sheet-inner{padding:8px 8px 16px}
+.ot-outline tr.collapsed{display:none}
+.ot-outline tr.section td:first-child,.ot-outline tr[data-unit]:not(.section){cursor:pointer}
+.ot-outline tr[data-unit]:not(.section):hover td{background:var(--tint)}
+.ot-outline .toggle{border:0;background:none;padding:0 4px;margin-left:2px;cursor:pointer;color:var(--muted);font-size:.9em;line-height:1;display:inline-block;transition:transform .15s}
+.ot-outline .toggle[aria-expanded="true"]{transform:rotate(90deg)}
+/* Old Testament quote circles: filled = "so that it would be filled-full" (πληρόω),
+   outlined = names the prophet without "filled-full", dark = Jesus' "it has been written". */
+.ot-outline .ot{white-space:nowrap;line-height:0}
+.ot-outline .quote{display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;min-width:22px;height:22px;padding:0 5px;margin-right:4px;box-sizing:border-box;border-radius:11px;border:2px solid var(--fill);background:var(--fill);color:#fff;font:700 11px/1 inherit;font-family:inherit;cursor:pointer;transition:transform .12s}
+.ot-outline .quote.prophet{background:#fff;color:var(--fill)}
+.ot-outline .quote.jesus{border-color:var(--fg);background:var(--fg)}
+.ot-outline .quote:hover,.ot-outline .quote:focus-visible{transform:scale(1.15)}
+.ot-outline .legend{display:flex;flex-wrap:wrap;gap:4px 16px;margin:10px 4px 0;font-size:.8rem;color:var(--muted)} .ot-outline .legend .quote{cursor:default;transform:none;margin-right:6px}
+/* The quote pop-up: Tim's text of the Matthew verses, then the Old Testament passages. */
+.ot-outline .quote-modal{width:min(760px,calc(100vw - 32px));max-height:calc(100vh - 48px);padding:0;border:0;border-radius:10px;background:var(--bg);color:var(--fg);box-shadow:0 20px 60px rgba(0,0,0,.45);overflow:hidden}
+.ot-outline .quote-modal[open]{display:flex;flex-direction:column;animation:quote-in .2s ease-out} .ot-outline .quote-modal::backdrop{background:rgba(15,12,25,.6)}
+@keyframes quote-in{from{opacity:0;transform:scale(.96)}}
+.ot-outline .quote-modal header{display:flex;align-items:center;gap:10px;padding:10px 8px 10px 16px;border-bottom:1px solid var(--line)} .ot-outline .quote-modal h2{flex:1;margin:0;font-size:1.05rem;font-weight:600}
+.ot-outline .quote-modal header .quote{cursor:default;transform:none;margin:0}
+.ot-outline .quote-modal .close{border:0;background:none;color:inherit;font-size:1.6rem;line-height:1;cursor:pointer;padding:2px 10px 6px;border-radius:6px} .ot-outline .quote-modal .close:hover{background:var(--tint)}
+.ot-outline .quote-modal .body{overflow-y:auto;padding:12px 16px 16px}
+.ot-outline .quote-modal .formula{margin:0 0 10px;color:var(--muted);font-size:.9rem} .ot-outline .quote-modal .formula span{color:var(--fg);font-size:1rem}
+.ot-outline .quote-modal h3{margin:16px 0 6px;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.ot-outline .quote-modal .passage{background:#fff;border-radius:8px;padding:10px 14px;margin:0 0 8px;line-height:1.55}
+.ot-outline .quote-modal .passage strong{display:block;margin-bottom:4px}
+.ot-outline .quote-modal .passage sup{font-size:.7em;color:var(--muted);margin-right:2px}
+.ot-outline .quote-modal .passage mark{background:#fae4c4;color:inherit;border-radius:3px;padding:0 2px}
+.ot-outline .quote-modal .note{margin:12px 0 0;padding:10px 14px;border-left:4px solid var(--fill);background:var(--tint);border-radius:0 8px 8px 0}
+.ot-outline .quote-modal footer{padding:8px 16px 10px;font-size:.8rem;color:var(--muted);border-top:1px solid var(--line)}
+/* Narrow screens: drop the count columns, then the bars. */
+@media (max-width:900px){.ot-outline th.n,.ot-outline td.n{display:none}.ot-outline table{min-width:0}}
+@media (max-width:700px){.ot-outline th.barc,.ot-outline td.barc{display:none}}
+/* Display modes (press "n" to cycle). 0 default: no numbers, no Verses column.
+   1: everything. 2: leanest, titles + ranges + bars only. */
+.ot-outline[data-mode="0"] .num,.ot-outline[data-mode="2"] .num{display:none}
+.ot-outline[data-mode="0"] :is(th,td):nth-child(5){display:none}
+.ot-outline[data-mode="2"] .read,.ot-outline[data-mode="2"] :is(th,td):is(.n,.ot),.ot-outline[data-mode="2"] .legend{display:none}
+.ot-outline[data-mode="2"] .ref{padding-left:8px}
+</style>
+</head>
+<body>
+<div class="ot-outline" data-mode="0"><table><thead><tr><th>Title</th><th class="ref">Verse range</th><th class="ot">OT quotes</th><th class="n">Greek words</th><th class="n">Verses</th><th class="barc"><span style="position:absolute;left:-9999px">Relative length</span></th></tr></thead><tbody><tr class="x kT" data-unit="matthew-1-1-17 matthew-1-18-25 matthew-2-1-12 matthew-2-13-23 matthew-3-1-6 matthew-3-7-12 matthew-3-13-17 matthew-4-1-11 matthew-4-12-17"><td style="padding-left:8px"><span class="num"></span> Connection to the Old Testament</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>1:1–4:17</td><td class="ot"></td><td class="n">1506</td><td class="n">82</td><td class="barc"></td></tr><tr class="g kP top" data-unit="matthew-1-1-17"><td style="padding-left:8px"><span class="num">1.0</span> Genealogy</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>1:1–1:17</td><td class="ot"></td><td class="n">277</td><td class="n">17</td><td class="barc"><span class="bar" style="width:100.0%"></span></td></tr><tr class="b kG" data-unit="matthew-1-18-25 matthew-2-1-12 matthew-2-13-23"><td style="padding-left:8px"><span class="num">2.0</span> Birth and Magi</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>1:18–2:23</td><td class="ot"></td><td class="n">628</td><td class="n">31</td><td class="barc"></td></tr><tr class="b kP" data-unit="matthew-1-18-25"><td style="padding-left:26px"><span class="num">2.1</span> Birth of Jesus</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>1:18–1:25</td><td class="ot"><button class="quote fill" type="button" data-quote="1" aria-label="Quote 1: Immanuel">1</button></td><td class="n">167</td><td class="n">8</td><td class="barc"><span class="bar" style="width:60.3%"></span></td></tr><tr class="b kP" data-unit="matthew-2-1-12"><td style="padding-left:26px"><span class="num">2.2</span> Magi visit</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>2:1–2:12</td><td class="ot"><button class="quote prophet" type="button" data-quote="2" aria-label="Quote 2: Bethlehem">2</button></td><td class="n">220</td><td class="n">12</td><td class="barc"><span class="bar" style="width:79.4%"></span></td></tr><tr class="b kP" data-unit="matthew-2-13-23"><td style="padding-left:26px"><span class="num">2.3</span> Herod</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>2:13–2:23</td><td class="ot"><button class="quote fill" type="button" data-quote="3" aria-label="Quote 3: Egypt">3</button><button class="quote fill" type="button" data-quote="4" aria-label="Quote 4: Rachel">4</button><button class="quote fill" type="button" data-quote="5" aria-label="Quote 5: Nazareth">5</button></td><td class="n">241</td><td class="n">11</td><td class="barc"><span class="bar" style="width:87.0%"></span></td></tr><tr class="j kG" data-unit="matthew-3-1-6 matthew-3-7-12 matthew-3-13-17"><td style="padding-left:8px"><span class="num">3.0</span> John the Baptist</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>3:1–3:17</td><td class="ot"></td><td class="n">335</td><td class="n">17</td><td class="barc"></td></tr><tr class="j kP" data-unit="matthew-3-1-6"><td style="padding-left:26px"><span class="num">3.1</span> A voice in the wilderness</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>3:1–3:6</td><td class="ot"><button class="quote prophet" type="button" data-quote="6" aria-label="Quote 6: A voice in the wilderness">6</button></td><td class="n">101</td><td class="n">6</td><td class="barc"><span class="bar" style="width:36.5%"></span></td></tr><tr class="j kP" data-unit="matthew-3-7-12"><td style="padding-left:26px"><span class="num">3.2</span> Pharisees and Sadducees</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>3:7–3:12</td><td class="ot"></td><td class="n">135</td><td class="n">6</td><td class="barc"><span class="bar" style="width:48.7%"></span></td></tr><tr class="j kP" data-unit="matthew-3-13-17"><td style="padding-left:26px"><span class="num">3.3</span> Jesus is baptized</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>3:13–3:17</td><td class="ot"></td><td class="n">99</td><td class="n">5</td><td class="barc"><span class="bar" style="width:35.7%"></span></td></tr><tr class="w kG" data-unit="matthew-4-1-11"><td style="padding-left:8px"><span class="num">4.0</span> Wilderness</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>4:1–4:11</td><td class="ot"></td><td class="n">183</td><td class="n">11</td><td class="barc"></td></tr><tr class="w kP" data-unit="matthew-4-1-11"><td style="padding-left:26px"><span class="num">4.1</span> Test 1: Bread</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>4:1–4:4</td><td class="ot"><button class="quote jesus" type="button" data-quote="J1" aria-label="Quote J1: Test 1: bread">J1</button></td><td class="n">60</td><td class="n">4</td><td class="barc"><span class="bar" style="width:21.7%"></span></td></tr><tr class="w kP" data-unit="matthew-4-1-11"><td style="padding-left:26px"><span class="num">4.2</span> Test 2: Temple</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>4:5–4:7</td><td class="ot"><button class="quote jesus" type="button" data-quote="J2" aria-label="Quote J2: Test 2: the temple">J2</button></td><td class="n">61</td><td class="n">3</td><td class="barc"><span class="bar" style="width:22.0%"></span></td></tr><tr class="w kP" data-unit="matthew-4-1-11"><td style="padding-left:26px"><span class="num">4.3</span> Test 3: Kingdoms</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>4:8–4:11</td><td class="ot"><button class="quote jesus" type="button" data-quote="J3" aria-label="Quote J3: Test 3: the kingdoms">J3</button></td><td class="n">62</td><td class="n">4</td><td class="barc"><span class="bar" style="width:22.4%"></span></td></tr><tr class="c kP top" data-unit="matthew-4-12-17"><td style="padding-left:8px"><span class="num">5.0</span> Capernaum</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>4:12–4:17</td><td class="ot"><button class="quote fill" type="button" data-quote="7" aria-label="Quote 7: Zebulun and Naphtali">7</button></td><td class="n">83</td><td class="n">6</td><td class="barc"><span class="bar" style="width:30.0%"></span></td></tr></tbody></table><div class="legend"><span><span class="quote fill">1</span>filled-full: “so that what was spoken through the prophet would be filled-full”</span><span><span class="quote prophet">2</span>through the prophet</span><span><span class="quote jesus">J1</span>Jesus: “it has been written”</span></div></div>
+<script src="scripts/literary-design.js?v=2"></script>
+<script>
+const outline = document.querySelector(".ot-outline");
+
+// Sections 2.0, 3.0 and 4.0 start expanded; clicking a section's header shows
+// or hides all of its rows at once. /otconnections#3.0 opens only that section.
+const SECTIONS = ["2.0", "3.0", "4.0"];
+const numOf = (row) => row.querySelector(".num")?.textContent || "";
+const sectionOf = (num) =>
+  SECTIONS.find((s) => num !== s && num.startsWith(s.replace(/\.0$/, "") + "."));
+const sectionRows = {};
+for (const row of outline.querySelectorAll("tbody tr")) {
+  const num = numOf(row);
+  if (SECTIONS.includes(num)) {
+    row.classList.add("section");
+    row.dataset.section = num;
+    const title = row.querySelector("td");
+    title.insertAdjacentHTML("beforeend", ' <button class="toggle" type="button" aria-expanded="true" aria-label="Hide this section">▸</button>');
+  } else if (sectionOf(num)) {
+    (sectionRows[sectionOf(num)] ||= []).push(row);
+  }
+}
+
+function setSection(section, expanded) {
+  const header = outline.querySelector(`tr[data-section="${section}"]`);
+  header.querySelector(".toggle").setAttribute("aria-expanded", String(expanded));
+  header.querySelector(".toggle").setAttribute("aria-label", expanded ? "Hide this section" : "Show this section");
+  for (const row of sectionRows[section]) {
+    row.classList.toggle("collapsed", !expanded);
+    if (!expanded) for (const panel of panelsOf(row)) closePanel(panel, false);
+  }
+}
+
+function openFromHash() {
+  const section = decodeURIComponent(location.hash.slice(1));
+  if (!SECTIONS.includes(section)) return;
+  for (const s of SECTIONS) setSection(s, s === section);
+  outline.querySelector(`tr[data-section="${section}"]`).scrollIntoView({ block: "start" });
+}
+openFromHash();
+window.addEventListener("hashchange", openFromHash);
+
+// Secret display modes: "n" cycles 0 (default) → 1 (everything) → 2 (leanest) → 0.
+const MODES = 3;
+document.addEventListener("keydown", (event) => {
+  if (event.key !== "n" || event.metaKey || event.ctrlKey || event.altKey) return;
+  if (modal.open || event.target.closest?.("input, textarea, [contenteditable]")) return;
+  outline.dataset.mode = (Number(outline.dataset.mode) + 1) % MODES;
+});
+
+if (typeof LiteraryDesign !== "undefined") LiteraryDesign.preload("matthew");
+
+// 📖 opens the row's text under it. Panels stay open, except that opening one
+// closes any open panel whose verses overlap it (its parent or sub-sections).
+// Panels roll down like a screen and roll back up when closed.
+const rangeOf = (row) => row.querySelector(".ref").textContent.trim().replace("📖", "");
+const panelsOf = (row) => [...outline.querySelectorAll("tr.reading")].filter((panel) => panel.row === row);
+const openPanels = () => [...outline.querySelectorAll("tr.reading:not(.closing)")];
+
+// Animates the sheet's height from `from` to `to` px while sliding its content
+// with the bottom edge, so the text moves down with it rather than being uncovered.
+function roll(panel, from, to) {
+  const sheet = panel.querySelector(".sheet");
+  const inner = sheet.firstElementChild;
+  const full = inner.offsetHeight;
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const options = { duration: reduce ? 0 : 400, easing: "cubic-bezier(.25,.8,.25,1)", fill: "forwards" };
+  for (const animation of [...sheet.getAnimations(), ...inner.getAnimations()]) animation.cancel();
+  inner.animate([{ transform: `translateY(${from - full}px)` }, { transform: `translateY(${to - full}px)` }], options);
+  return sheet.animate([{ height: `${from}px` }, { height: `${to}px` }], options).finished;
+}
+
+function closePanel(panel, animate = true) {
+  panel.classList.add("closing");
+  if (!panelsOf(panel.row).some((p) => !p.classList.contains("closing")))
+    panel.row.querySelector("button.read").setAttribute("aria-expanded", "false");
+  if (!animate) return panel.remove();
+  roll(panel, panel.querySelector(".sheet").getBoundingClientRect().height, 0).then(() => panel.remove(), () => {});
+}
+
+// Quote circles open a pop-up with Tim's text of the Matthew verses and the Old
+// Testament passages they draw on (BSB), from data/otconnections_quotes.json.
+const quotes = {};
+const quotesLoaded = fetch("data/otconnections_quotes.json")
+  .then((response) => response.json())
+  .then((data) => {
+    for (const quote of data.quotes) quotes[quote.id] = quote;
+    for (const button of outline.querySelectorAll("button.quote[data-quote]")) {
+      const quote = quotes[button.dataset.quote];
+      if (quote) button.title = `${quote.title}: ${quote.passages.map((p) => p.ref).join(", ")}`;
+    }
+  })
+  .catch(() => {});
+const KINDS = { fill: "Prophet quote", prophet: "Prophet quote", jesus: "Jesus quotes Torah" };
+const modal = document.createElement("dialog");
+modal.className = "quote-modal";
+modal.innerHTML =
+  '<header><span class="quote"></span><h2></h2><button class="close" type="button" aria-label="Close">×</button></header>' +
+  '<div class="body"></div><footer>Old Testament text: Berean Standard Bible (public domain).</footer>';
+outline.append(modal);
+modal.addEventListener("click", (event) => {
+  if (event.target === modal || event.target.closest(".close")) modal.close();
+});
+
+const escapeHtml = (text) => text.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+
+async function showQuote(id) {
+  await quotesLoaded;
+  const quote = quotes[id];
+  if (!quote) return;
+  const badge = modal.querySelector("header .quote");
+  badge.className = `quote ${quote.kind}`;
+  badge.textContent = quote.id;
+  modal.querySelector("h2").textContent = `${KINDS[quote.kind]}: ${quote.title}`;
+  const body = modal.querySelector(".body");
+  body.innerHTML =
+    `<p class="formula">Matthew ${quote.matthew.replace(/–\d+:/, "–")} · <span lang="grc">${escapeHtml(quote.formula)}</span></p>` +
+    '<div class="matthew"></div><h3>Old Testament</h3>' +
+    quote.passages
+      .map(
+        (p) =>
+          `<div class="passage"><strong>${escapeHtml(p.ref)}</strong>` +
+          p.verses
+            .map((v) => {
+              const text = `<sup>${v.v}</sup>${escapeHtml(v.text)}`;
+              return p.focus.includes(v.v) ? `<mark>${text}</mark>` : text;
+            })
+            .join(" ") +
+          "</div>"
+      )
+      .join("") +
+    `<p class="note">${escapeHtml(quote.note)}</p>`;
+  body.scrollTop = 0;
+  modal.showModal();
+  try {
+    body.querySelector(".matthew").replaceChildren(LiteraryDesign.render(await LiteraryDesign.load(quote.unit), quote.matthew));
+  } catch (error) {
+    body.querySelector(".matthew").remove();
+  }
+}
+
+outline.addEventListener("click", async (event) => {
+  const quoteButton = event.target.closest("button.quote[data-quote]");
+  if (quoteButton) {
+    showQuote(quoteButton.dataset.quote);
+    return;
+  }
+  if (event.target.closest(".quote-modal, .legend")) return;
+  const header = event.target.closest("tr.section");
+  if (header && !event.target.closest("td.ref")) {
+    const toggle = header.querySelector(".toggle");
+    setSection(header.dataset.section, toggle.getAttribute("aria-expanded") !== "true");
+    return;
+  }
+  // On every other row, a click anywhere works like clicking its 📖.
+  const button =
+    event.target.closest("button.read") ||
+    event.target.closest("tr[data-unit]:not(.section)")?.querySelector("button.read");
+  if (!button) return;
+  const row = button.closest("tr");
+  const open = openPanels().find((panel) => panel.row === row);
+  if (open) {
+    closePanel(open);
+    return;
+  }
+  const range = rangeOf(row);
+  const [from, to] = LiteraryDesign.rangeKeys(range);
+  for (const panel of openPanels()) {
+    const [a, b] = LiteraryDesign.rangeKeys(rangeOf(panel.row));
+    if (a <= to && from <= b) closePanel(panel);
+  }
+  // The white box lines up with the start of the row's title text (panels have
+  // a 4px left border; group and total rows have 6px).
+  const title = getComputedStyle(row.firstElementChild);
+  const indent = `${parseFloat(title.paddingLeft) + parseFloat(title.borderLeftWidth) - 4}px`;
+  const panel = document.createElement("tr");
+  panel.className = `reading ${row.classList[0]}`;
+  panel.row = row;
+  panel.innerHTML = `<td colspan="6"><div class="sheet" style="height:0"><div class="sheet-inner" style="padding-left:${indent}"></div></div></td>`;
+  row.after(panel);
+  button.setAttribute("aria-expanded", "true");
+  const inner = panel.querySelector(".sheet-inner");
+  try {
+    const visuals = await Promise.all(row.dataset.unit.split(" ").map(LiteraryDesign.load));
+    inner.replaceChildren(LiteraryDesign.render(visuals, range));
+  } catch (error) {
+    inner.innerHTML = `<div class="ld"><span class="ld-status">Couldn't load this passage.</span></div>`;
+  }
+  if (panel.classList.contains("closing")) return;
+  panel.querySelector(".sheet").style.height = "";
+  // Once open, drop the animations so the sheet goes back to its natural height.
+  roll(panel, 0, inner.offsetHeight).then(() => {
+    for (const animation of [...panel.querySelector(".sheet").getAnimations(), ...inner.getAnimations()]) animation.cancel();
+  }, () => {});
+});
+</script>
+</body>
+</html>

@@ -24,6 +24,15 @@ const LiteraryDesign = (() => {
     );
   }
 
+  // The genealogy (Matthew 1:1-17) also uses verse markers to count the 41
+  // generations: most sit right against a name ("Abra’am¹") or end with a comma
+  // ("41,"). Real verse markers start a line or follow a space.
+  function isCounter(v) {
+    const before = v.previousSibling;
+    return v.getAttribute("number").endsWith(",") ||
+      (before?.nodeType === Node.TEXT_NODE && /\S$/.test(before.textContent));
+  }
+
   // Remove every line that holds no verse in [from, to]. Verse markers that go
   // backwards (e.g. the footnote-style 1..7 inside Matthew 4:23-24) are ignored.
   function sliceToRange(doc, startChapter, from, to) {
@@ -33,9 +42,12 @@ const LiteraryDesign = (() => {
       const keys = [];
       if (current) keys.push(current);
       for (const v of line.getElementsByTagName("verse")) {
+        if (isCounter(v)) continue;
         const n = v.getAttribute("number");
         if (n.includes(":")) chapter = +n.split(":")[0];
         const key = parseRef(n, chapter);
+        // A few counters have a space before them ("Iekhonia ²⁸"); verses never jump ahead like that.
+        if (current && !n.includes(":") && key > current + 3) continue;
         if (key > current) {
           current = key;
           keys.push(key);
@@ -172,7 +184,11 @@ const LiteraryDesign = (() => {
     for (const visual of visuals) {
       const doc = new DOMParser().parseFromString(visual.usx, "text/xml");
       // Units without verse markers (e.g. Matthew 6:9-13) can't be sliced; show them whole.
-      if (range && doc.getElementsByTagName("verse").length) {
+      // So are units the range fully covers: the genealogy (1:1-17) also uses verse
+      // markers to count generations (1-41), which slicing would mistake for verses.
+      const [unitFrom, unitTo] = rangeKeys(visual.reference.match(/\d+:[\d:–-]+$/)[0]);
+      const [from, to] = range ? rangeKeys(range) : [0, 0];
+      if (range && doc.getElementsByTagName("verse").length && !(from <= unitFrom && unitTo <= to)) {
         const startChapter = +visual.reference.match(/(\d+):\d+/)[1];
         sliceToRange(doc, startChapter, ...rangeKeys(range));
         if (!doc.getElementsByTagName("group").length) continue;

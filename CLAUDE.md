@@ -2,8 +2,8 @@
 
 Static Firebase Hosting site (`public/`, `cleanUrls: true`, so `public/sotm.html` is served at `/sotm`).
 
-- `public/index.html` — the study calendar. Sermon on the Mount days link to `/sotm` as "Sermon Outline".
-- `public/sotm.html` — Sermon on the Mount outline table (Matthew 5:1–7:27).
+- `public/index.html` — the study calendar. Each day lists its Google Slides links (labelled "… Slides") and the site reader for that section: "Old Testament Connections reader" (`/otconnections`) on the 1:1–4:16 days, "Sermon on the Mount reader" (`/sotm`) on the Sermon days.
+- `public/sotm.html` — Sermon on the Mount outline table (Matthew 5:1–7:27). A complete page (doctype, charset, viewport, title); it used to be a paste-in fragment, which put browsers in quirks mode and, with no viewport tag, made phones lay it out 980px wide so the narrow-screen media queries never fired. To keep the old compact rows in standards mode the table has `line-height:normal` and `.vid` has `line-height:0`.
 
 ## Literary-design text (hosted locally)
 
@@ -17,7 +17,7 @@ BibleProject Classroom's literary-design units (Tim Mackie's translation with hi
 
 ## Master plan
 
-Two ways into the same text, both built from the same underlying data:
+Two ways into the same text. **Text and highlighting are shared** (the USX unit files, rendered by `LiteraryDesign`); **outlines are not** — each reader and section page keeps its own outline data, and duplication there is fine. Videos are mostly an sotm thing; BibleProject has few outside the Sermon on the Mount. Section colors should carry a meaning through the whole book where possible (some colors will be reused). Sections overlap where Tim's units do (4:17 is in both `/otconnections` and `/announcingkingdom`).
 
 - **Readers** (whole-book, unit after unit):
   - `/reader` — only what BibleProject has published (they have more, not yet published).
@@ -26,6 +26,20 @@ Two ways into the same text, both built from the same underlying data:
   - `/matthew` — colorful overview page linking to the sections below.
   - `/otconnections` — 1:1–4:17.
   - `/announcingkingdom` — 4:17–4:25.
+  - `/otconnections` (first draft) is described below; the thinking behind it is in `docs/old-testament-connections-notes.md`.
+
+`/matthew` (`public/matthew.html`) is the top of the hierarchy: kept simple, the BibleProject mountain image (`images/mountain.jpg`, local copy of imagekit `the-mountain/mountain_16.9.jpg`) above an sotm-style list of the sections, each row linking to its page (rows without a page yet are muted, marked "coming"). Story sections green, teaching blocks blue; counts are Textus Receptus, bars scale to the longest section (Sermon on the Mount, 2043). Add a section's link when its page exists.
+
+### The 60,000-foot view: waterfalls up the mountain
+
+How the user sees Matthew's shape (a possible future infographic on `/matthew`, in the style of the mountain image):
+
+- The story is a climb. **The five teaching blocks are waterfalls** we travel *up*; the narrative between them are **pools**, each at a higher energy level than the last, like a symphony getting louder and more climactic.
+- Base pool: Connection to the OT (1:1–4:17) and 4:17–25 sit at the same level. **Waterfall 1:** Sermon on the Mount (5–7).
+- Pool 2: the nine miracle stories (8–9). Almost no pushback yet — only "it is by Beelzebul, the prince of demons, that he drives out demons", and Jesus answers it kindly. **Waterfall 2:** sending the Twelve (10).
+- Pool 3: responses to Jesus (11–12), a reset that starts with John the Baptist's question (John was also in the story just before the Sermon). Different people react differently; the Beelzebul charge comes back and Jesus answers less kindly — the stakes are higher. **Waterfall 3:** the kingdom parables (13).
+- Pool 4: John the Baptist returns at the same pivot and is killed (14); the miracles get bigger (feeding the 5000, walking on water, feeding the 4000) than the nine of 8–9. And so on up.
+- Recurring markers to watch as pools rise: John the Baptist at each pivot, the Beelzebul charge, the scale of the miracles, the level of opposition.
   - `/sotm` — Matthew 5–7, first of the five teaching blocks (done).
   - `/ninemiraclestories` — Matthew 8–9.
   - `/sendingthetwelve` — Matthew 10, second teaching block.
@@ -35,17 +49,30 @@ Two ways into the same text, both built from the same underlying data:
 
 ## Extended translation (planned `public/extendedreader.html`)
 
-Goal: continue Tim Mackie's style of translation and literary design past Matthew 7:29, a little at a time, with everything stored in this repo. The page shows Tim's units for chapters 1–7. Our own practice translations of 1–7 are only for comparing with his, never shown to users. Reference files in `data/`:
+Goal: continue Tim Mackie's style of translation and literary design past Matthew 7:29, a little at a time, with everything stored in this repo. The page shows Tim's units for chapters 1–7. Our own practice translations of 1–7 are only for comparing with his, never shown to users. **Style guide: `docs/translation-style.md`** (findings from comparing his 1–7 with the Greek and four translations; keep findings there, not here). Side-by-side working file: `data/compare/matthew-1-7.md` (gitignored). Reference files in `data/`:
 
 - `matthew_greek.txt` — SBLGNT (1,068 verses; `Matt 1:1<TAB>text`; strip the ⸀ ⸂ ⸃ variant markers). The base text. CC BY 4.0, needs attribution.
+- `matthew_tr.json` — Textus Receptus (Elzevir 1624) from bolls.life (`TR`), same format as the English files, lowercase without accents. Public domain. **Greek word counts on every page come from this** (sotm's TSV matches it).
+- `matthew_byzantine.csv` — Robinson–Pierpont Byzantine text (`chapter,verse,text`, without accents), from github.com/byztxt/byzantine-majority-text. Public domain. Reference only.
 - `matthew_concordance.json` — KJV/Textus Receptus interlinear by verse id (`40001001`) with Strong's numbers; `greek.json` — Strong's lexicon (5,523 entries). Source and license unknown, so both are gitignored (local reference only).
 - `matthew_{niv,esv,nasb95,net}.json` — English translations from bolls.life (`[{chapter, verses:[{pk, verse, text}]}]`; NIV and NET text has `<b>` tags). Downloaded with `getting_bible_text.py` (codes NIV2011, ESV, NASB = 1995, NET = 2007). **Copyrighted and gitignored — never commit or publish them; the repo is public.**
+
+## Connection to the Old Testament (`public/otconnections.html`)
+
+Matthew 1:1–4:17, built from the `/sotm` pattern (same row markup, levels, indents, 📖 panels, collapsing, `n` modes; CSS prefix `.ot-outline`). Differences:
+
+- Five parts with sotm's palette in order: `g` Genealogy green `#2f9e5b`, `b` Birth and Magi blue `#2f6fd6`, `j` John the Baptist orange `#d9822b`, `w` Wilderness purple `#8a3fd1`, `c` Capernaum pink `#d6337a`; `x` grey total. All five parts have the same 6px left line (`top` class on the two that have no sub-rows). Sections that collapse: 2.0, 3.0, 4.0. No more sub-rows wanted (Herod's three quotes stay on one row; no genealogy split).
+- Row titles are the user's familiar names (John the Baptist, Herod, Jesus is baptized), not Tim's (Ioannes the immerser, Herodes, immersed) — that's intended. "Test 1: Bread / Test 2: Temple / Test 3: Kingdoms" follow Tim's group titles.
+- Bars scale to 277 (1.0 The Genealogy, the longest barred row). Word counts are Textus Receptus.
+- The third column is **OT quotes**, not videos: `<button class="quote {kind}" type="button" data-quote="{id}" aria-label="Quote {id}: {title}">{id}</button>` in `td.ot`, kind `fill` (filled-full formula, solid), `prophet` (names the prophet, no filled-full; outlined) or `jesus` (J1–J3, dark). Clicking opens a pop-up with Tim's text of the Matthew verses (`unit` + `matthew` range), the Greek formula, the OT passages (BSB) with focus verses highlighted, and a note. Data: `public/data/otconnections_quotes.json`, generated by `tools/fetch_ot_quotes.py` — edit the `QUOTES` list there and re-run, don't hand-edit the JSON.
+- The genealogy's verse markers also count the 41 generations. `literary-design.js` skips those when cutting to a range (`isCounter`: right against a name or ending in a comma; plus any marker jumping more than 3 verses ahead, e.g. "Iekhonia ²⁸" after verse 11) and shows a unit whole when the range covers all of it.
+- Pages load `scripts/literary-design.js?v=N`; Firebase caches it for an hour, so **bump `v` in every page that loads it whenever the script changes** (stale copies once cut the genealogy off at 1:7).
 
 ## Sermon on the Mount outline (`public/sotm.html`)
 
 Word counts come from `data/sotm_greek_word_counts.tsv` (Greek words per verse, 109 verses, 2000 words total).
 
-- Text is **Byzantine** (longer readings in e.g. 6:5, 6:6, 6:10, 6:16, 6:18), but **without the 6:13 doxology** — 6:13 is 12 words.
+- Text is the **Textus Receptus** (Elzevir 1624, `data/matthew_tr.json`; longer readings in e.g. 5:27, 6:5, 6:6, 6:10, 6:16, 6:18), but **without the 6:13 doxology** — 6:13 is 12 words. All 109 verses match TR exactly; Robinson–Pierpont differs in 7 (5:23, 5:27, 5:39, 5:45, 6:13, 6:18, 7:20).
 - A row's word count is the sum of its verses in the TSV; its verse count is the number of verses. Parent rows must equal the sum of their children.
 - Bar width = row words ÷ 268 × 100 (268 = 2.1.2 Case studies: Murder, Adultery, Divorce — the longest barred row; group headers `kG` have no bar), one decimal place. If the longest barred row changes, rescale all bars.
 
@@ -63,7 +90,7 @@ Row markup (the table is all on one line):
 <tr class="{color} {level}"><td style="padding-left:{indent}px"><span class="num">{n}</span> {title}</td><td class="ref">{a}–{b}</td><td class="vid">{video links}</td><td class="n">{words}</td><td class="n">{verses}</td><td class="barc"><span class="bar" style="width:{pct}%"></span></td></tr>
 ```
 
-- Color: `x` grey (total, 0.0 Introduction, 2.0 Instruction), `id` Identity, `r` Righteousness, `p` Religious practice, `t` Trust, `c` Choice.
+- Color: `x` grey (total, 0.0 Introduction, 2.0 Instruction), `id` Identity green `#2f9e5b`, `r` Righteousness blue `#2f6fd6`, `p` Religious practice orange `#d9822b`, `t` Trust purple `#8a3fd1`, `c` Choice pink `#d6337a`. Neighboring sections need clearly different hues (Practice and Trust were once two purples). Leaf rows (`kS`) have the same solid, full-color left border as other rows (no dots, no fading). The diagrams in `images/` still use the old palette; they now live in Google Slides, so leave them alone.
 - Level: `kT` top total row, `kG` group header (no bar — empty `<td class="barc"></td>`), `kP` row that has sub-rows (full bar), `kS` leaf sub-row (thin faded bar).
 - Indent by depth: 8, 26, 44, 62px (add 18px per further level).
 - 📖 reading button: add `data-unit="<visual id>"` to the `<tr>` and put `<button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>` at the start of the `.ref` cell, right before the range (CSS reserves a slot so every range lines up). The row's verse range is the `.ref` cell text minus the icon. A row spanning several units lists them space-separated in order (`data-unit="matthew-5-3-12 matthew-5-13-16"`); each is cut to the range. Panels stay open, but opening one closes any open panel with overlapping verses (parent/child rows). Every numbered row has one. Panels roll down like a screen (sheet height and content slide together, 400ms, off under `prefers-reduced-motion`) and roll back up on close; the white box's left edge lines up with the row's title text (the title cell's padding). The Lord's Prayer has its own unit (`matthew-6-9-13`, which has no verse markers, so it is shown whole); only 2.2.2.2.2 uses it, and every other row covering 6:9–13 uses `matthew-6-5-15`.

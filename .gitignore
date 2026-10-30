@@ -81,3 +81,6 @@ data/*_net.json
 # Unknown source/license
 data/greek.json
 data/matthew_concordance.json
+
+# Side-by-side working files (contain copyrighted translation text)
+data/compare/
