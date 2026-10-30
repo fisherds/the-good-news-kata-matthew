@@ -5,6 +5,10 @@ Static Firebase Hosting site (`public/`, `cleanUrls: true`, so `public/sotm.html
 - `public/index.html` — the study calendar. Each day lists its Google Slides links (labelled "… Slides") and the site reader for that section: "Old Testament Connections reader" (`/otconnections`) on the 1:1–4:16 days, "Sermon on the Mount reader" (`/sotm`) on the Sermon days.
 - `public/sotm.html` — Sermon on the Mount outline table (Matthew 5:1–7:27). A complete page (doctype, charset, viewport, title); it used to be a paste-in fragment, which put browsers in quirks mode and, with no viewport tag, made phones lay it out 980px wide so the narrow-screen media queries never fired. To keep the old compact rows in standards mode the table has `line-height:normal` and `.vid` has `line-height:0`.
 
+## Shared title bar
+
+`public/scripts/site-header.js` defines `<site-header>`: the olive (`#657A55`) bar with "The Good News *kata* Matthew" (→ `/`, the calendar) and links to Matthew (`/matthew`) and Reader (`/reader`). Section pages aren't in the bar — `/matthew` links to them. Its HTML and CSS live in the script (shadow DOM, so page CSS such as the calendar's Bootstrap can't change it). Every page except `ephesians.html` (a separate side project) loads `<script src="scripts/site-header.js?v=1"></script>` in `<head>` and puts `<site-header current="home|matthew|reader"></site-header>` first in `<body>` (section pages leave out `current`). Pages set `body{margin:0}` so the bar touches the edges; the reader is a flex column so its panels fill the rest of the window. Bump `?v` on every page when the script changes.
+
 ## Literary-design text (hosted locally)
 
 BibleProject Classroom's literary-design units (Tim Mackie's translation with highlighting) were served from d3kfvpfexuy5fk.cloudfront.net, which is expected to go away. We keep our own copies and render them ourselves:
@@ -25,10 +29,10 @@ Two ways into the same text. **Text and highlighting are shared** (the USX unit 
 - **Section pages** (one per part of Matthew, like `/sotm`: outline table, 📖 text panels, videos):
   - `/matthew` — colorful overview page linking to the sections below.
   - `/otconnections` — 1:1–4:17.
-  - `/announcingkingdom` — 4:17–4:25.
+  - Announcing the Kingdom — 4:17–7:29, which *contains* the Sermon on the Mount: the calling of Peter, Andrew, James, and John (4:17–4:25, its own page to come, maybe `/announcingkingdom`) then `/sotm`.
   - `/otconnections` (first draft) is described below; the thinking behind it is in `docs/old-testament-connections-notes.md`.
 
-`/matthew` (`public/matthew.html`) is the top of the hierarchy: kept simple, the BibleProject mountain image (`images/mountain.jpg`, local copy of imagekit `the-mountain/mountain_16.9.jpg`) above an sotm-style list of the sections, each row linking to its page (rows without a page yet are muted, marked "coming"). Story sections green, teaching blocks blue; counts are Textus Receptus, bars scale to the longest section (Sermon on the Mount, 2043). Add a section's link when its page exists.
+`/matthew` (`public/matthew.html`) is the top of the hierarchy: kept simple, the BibleProject mountain image (`images/mountain.jpg`, local copy of imagekit `the-mountain/mountain_16.9.jpg`) above an sotm-style list of the sections, each row linking to its page (rows without a page yet are muted, marked "coming"). The title "The Good News *kata* Matthew" is an HTML `<h1>` laid over the image with CSS (`.hero`), so the image can be swapped without editing it. Story sections green, teaching blocks blue; bars scale to the longest barred row (Sermon on the Mount, 2000). **Announcing the Kingdom (4:17–7:29) is a group** (`kG`, no bar) holding, indented, Calling of Peter, Andrew, James, and John (4:17–4:25, page coming) and the Sermon on the Mount (5:1–7:27, matching `/sotm`); 7:28–29 (28 words) is in the group but in neither child. Add a section's link when its page exists. The calendar's first day links here as "Matthew Overview reader".
 
 ### The 60,000-foot view: waterfalls up the mountain
 
@@ -52,7 +56,7 @@ How the user sees Matthew's shape (a possible future infographic on `/matthew`, 
 Goal: continue Tim Mackie's style of translation and literary design past Matthew 7:29, a little at a time, with everything stored in this repo. The page shows Tim's units for chapters 1–7. Our own practice translations of 1–7 are only for comparing with his, never shown to users. **Style guide: `docs/translation-style.md`** (findings from comparing his 1–7 with the Greek and four translations; keep findings there, not here). Side-by-side working file: `data/compare/matthew-1-7.md` (gitignored). Reference files in `data/`:
 
 - `matthew_greek.txt` — SBLGNT (1,068 verses; `Matt 1:1<TAB>text`; strip the ⸀ ⸂ ⸃ variant markers). The base text. CC BY 4.0, needs attribution.
-- `matthew_tr.json` — Textus Receptus (Elzevir 1624) from bolls.life (`TR`), same format as the English files, lowercase without accents. Public domain. **Greek word counts on every page come from this** (sotm's TSV matches it).
+- `matthew_tr.json` — Textus Receptus (Elzevir 1624) from bolls.life (`TR`), same format as the English files, lowercase without accents. Public domain. **Greek word counts on every page come from this, always without the 6:13 doxology** (sotm's TSV matches it; it was first counted by hand from the concordance).
 - `matthew_byzantine.csv` — Robinson–Pierpont Byzantine text (`chapter,verse,text`, without accents), from github.com/byztxt/byzantine-majority-text. Public domain. Reference only.
 - `matthew_concordance.json` — KJV/Textus Receptus interlinear by verse id (`40001001`) with Strong's numbers; `greek.json` — Strong's lexicon (5,523 entries). Source and license unknown, so both are gitignored (local reference only).
 - `matthew_{niv,esv,nasb95,net}.json` — English translations from bolls.life (`[{chapter, verses:[{pk, verse, text}]}]`; NIV and NET text has `<b>` tags). Downloaded with `getting_bible_text.py` (codes NIV2011, ESV, NASB = 1995, NET = 2007). **Copyrighted and gitignored — never commit or publish them; the repo is public.**

@@ -5,10 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Matthew</title>
 <style>
-body{margin:8px;background:#fff}
+body{margin:0;background:#fff}
 .mt-outline{--bg:#f7f6fb;--fg:#1f1b2e;--muted:#6b6580;--line:#e2dfeb;--tint:#eeebf5;--story:#2f9e5b;--teach:#2f6fd6;--x:#9a95a8;
-  max-width:1000px;margin:0 auto;background:var(--bg);color:var(--fg);padding:12px;border-radius:6px;font-family:"Graphik Web",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:16px;line-height:1.5}
-.mt-outline .hero{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:6px;margin-bottom:12px}
+  max-width:1000px;margin:8px auto;background:var(--bg);color:var(--fg);padding:12px;border-radius:6px;font-family:"Graphik Web",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:16px;line-height:1.5}
+.mt-outline .hero{position:relative;margin-bottom:12px;border-radius:6px;overflow:hidden}
+.mt-outline .hero img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+/* The title sits over the sky; it is text, not part of the image, so the image can be swapped. */
+.mt-outline .hero h1{position:absolute;inset:0 0 auto;margin:0;padding:5% 4% 0;text-align:center;font-size:clamp(1.4rem,5.2vw,3.2rem);font-weight:700;line-height:1.1;letter-spacing:-.01em;color:#fff;text-shadow:0 2px 12px rgba(20,40,60,.55),0 1px 2px rgba(20,40,60,.5)}
+.mt-outline .hero h1 span{font-style:italic;font-weight:400}
 .mt-outline table{line-height:normal;border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
 .mt-outline th{text-align:left;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border-bottom:2px solid var(--line);padding:8px}
 .mt-outline td{padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:middle}
@@ -17,6 +21,7 @@ body{margin:8px;background:#fff}
 .mt-outline .n{text-align:right} .mt-outline .ref{white-space:nowrap}
 .mt-outline .barc{width:25%;min-width:80px} .mt-outline .bar{display:block;height:10px;border-radius:2px;background:var(--c0)}
 .mt-outline tr.kT td{font-weight:700;font-size:1.05rem;background:var(--tint);border-top:2px solid var(--line);border-bottom:2px solid var(--line)} .mt-outline tr.kT td:first-child{border-left:6px solid var(--fg)}
+.mt-outline tr.kG td{font-weight:700;background:var(--tint)} .mt-outline tr.kG td:first-child{border-left-width:6px}
 .mt-outline tr.teach td:first-child{font-weight:600}
 .mt-outline a{color:inherit;text-decoration:none} .mt-outline a::after{content:" →";color:var(--muted)}
 .mt-outline tr:has(a){cursor:pointer} .mt-outline tr:has(a):hover td{background:var(--tint)} .mt-outline tr:has(a):hover a{text-decoration:underline}
@@ -28,11 +33,13 @@ body{margin:8px;background:#fff}
 @media (max-width:900px){.mt-outline th.n,.mt-outline td.n{display:none}}
 @media (max-width:700px){.mt-outline th.barc,.mt-outline td.barc{display:none}}
 </style>
+<script src="scripts/site-header.js?v=1"></script>
 </head>
 <body>
+<site-header current="matthew"></site-header>
 <div class="mt-outline">
-<img class="hero" src="images/mountain.jpg" alt="Mountain landscape (BibleProject)" width="1600" height="900">
-<table><thead><tr><th>Section</th><th class="ref">Verse range</th><th class="n">Greek words</th><th class="n">Verses</th><th class="barc"><span style="position:absolute;left:-9999px">Relative length</span></th></tr></thead><tbody><tr class="x kT"><td>The Gospel according to Matthew</td><td class="ref">1:1–28:20</td><td class="n">18775</td><td class="n">1071</td><td class="barc"></td></tr><tr class="story"><td><a href="/otconnections">Connection to the Old Testament</a></td><td class="ref">1:1–4:17</td><td class="n">1506</td><td class="n">82</td><td class="barc"><span class="bar" style="width:73.7%"></span></td></tr><tr class="story soon"><td>Announcing the Kingdom<span class="tag">coming</span></td><td class="ref">4:17–4:25</td><td class="n">182</td><td class="n">9</td><td class="barc"><span class="bar" style="width:8.9%"></span></td></tr><tr class="teach"><td><a href="/sotm">Sermon on the Mount</a></td><td class="ref">5:1–7:29</td><td class="n">2043</td><td class="n">111</td><td class="barc"><span class="bar" style="width:100.0%"></span></td></tr><tr class="story soon"><td>Nine Miracle Stories<span class="tag">coming</span></td><td class="ref">8:1–9:38</td><td class="n">1259</td><td class="n">72</td><td class="barc"><span class="bar" style="width:61.6%"></span></td></tr><tr class="teach soon"><td>Sending the Twelve<span class="tag">coming</span></td><td class="ref">10:1–10:42</td><td class="n">723</td><td class="n">42</td><td class="barc"><span class="bar" style="width:35.4%"></span></td></tr><tr class="story soon"><td>Responses to Jesus<span class="tag">coming</span></td><td class="ref">11:1–12:50</td><td class="n">1420</td><td class="n">80</td><td class="barc"><span class="bar" style="width:69.5%"></span></td></tr><tr class="teach soon"><td>Kingdom Parables<span class="tag">coming</span></td><td class="ref">13:1–13:58</td><td class="n">1100</td><td class="n">58</td><td class="barc"><span class="bar" style="width:53.8%"></span></td></tr><tr class="x soon"><td>More to come</td><td class="ref">14:1–28:20</td><td class="n">10557</td><td class="n">618</td><td class="barc"></td></tr></tbody></table>
+<div class="hero"><img src="images/mountain.jpg" alt="Mountain landscape (BibleProject)" width="1600" height="900"><h1>The Good News <span>kata</span> Matthew</h1></div>
+<table><thead><tr><th>Section</th><th class="ref">Verse range</th><th class="n">Greek words</th><th class="n">Verses</th><th class="barc"><span style="position:absolute;left:-9999px">Relative length</span></th></tr></thead><tbody><tr class="x kT"><td style="padding-left:8px">The Gospel according to Matthew</td><td class="ref">1:1–28:20</td><td class="n">18760</td><td class="n">1071</td><td class="barc"></td></tr><tr class="story"><td style="padding-left:8px"><a href="/otconnections">Connection to the Old Testament</a></td><td class="ref">1:1–4:17</td><td class="n">1506</td><td class="n">82</td><td class="barc"><span class="bar" style="width:75.3%"></span></td></tr><tr class="story kG"><td style="padding-left:8px">Announcing the Kingdom</td><td class="ref">4:17–7:29</td><td class="n">2210</td><td class="n">120</td><td class="barc"></td></tr><tr class="story soon"><td style="padding-left:26px">Calling of Peter, Andrew, James, and John<span class="tag">coming</span></td><td class="ref">4:17–4:25</td><td class="n">182</td><td class="n">9</td><td class="barc"><span class="bar" style="width:9.1%"></span></td></tr><tr class="teach"><td style="padding-left:26px"><a href="/sotm">Sermon on the Mount</a></td><td class="ref">5:1–7:27</td><td class="n">2000</td><td class="n">109</td><td class="barc"><span class="bar" style="width:100.0%"></span></td></tr><tr class="story soon"><td style="padding-left:8px">Nine Miracle Stories<span class="tag">coming</span></td><td class="ref">8:1–9:38</td><td class="n">1259</td><td class="n">72</td><td class="barc"><span class="bar" style="width:62.9%"></span></td></tr><tr class="teach soon"><td style="padding-left:8px">Sending the Twelve<span class="tag">coming</span></td><td class="ref">10:1–10:42</td><td class="n">723</td><td class="n">42</td><td class="barc"><span class="bar" style="width:36.1%"></span></td></tr><tr class="story soon"><td style="padding-left:8px">Responses to Jesus<span class="tag">coming</span></td><td class="ref">11:1–12:50</td><td class="n">1420</td><td class="n">80</td><td class="barc"><span class="bar" style="width:71.0%"></span></td></tr><tr class="teach soon"><td style="padding-left:8px">Kingdom Parables<span class="tag">coming</span></td><td class="ref">13:1–13:58</td><td class="n">1100</td><td class="n">58</td><td class="barc"><span class="bar" style="width:55.0%"></span></td></tr><tr class="x soon"><td style="padding-left:8px">More to come<span class="tag">coming</span></td><td class="ref">14:1–28:20</td><td class="n">10557</td><td class="n">618</td><td class="barc"></td></tr></tbody></table>
 <div class="legend"><span style="--c:var(--story)">Story</span><span style="--c:var(--teach)">Teaching block (a waterfall up to the next level)</span></div>
 </div>
 <script>

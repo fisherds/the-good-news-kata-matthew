@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
     <title>Matthew</title>
     <link rel="stylesheet" href="styles/style.css">
     <style>
+        /* The title bar sits above; the reader fills the rest of the window. */
+        body {
+            display: flex;
+            flex-direction: column;
+        }
         .main-container {
             display: flex;
-            height: 100vh;
+            flex: 1;
+            min-height: 0;
+            height: auto;
+        }
+        .main-container .left-panel {
+            height: 100%;
         }
         #left-panel {
             width: 100% !important;
@@ -52,8 +63,10 @@
         }
     </style>
     <script type="text/javascript" src="scripts/reader.js"></script>
+    <script src="scripts/site-header.js?v=1"></script>
 </head>
 <body>
+    <site-header current="reader"></site-header>
     <div class="main-container">
         <div class="left-panel" id="left-panel">
             <div class="bible-reader-container">
