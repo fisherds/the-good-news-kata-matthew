@@ -15,6 +15,32 @@ BibleProject Classroom's literary-design units (Tim Mackie's translation with hi
 - Backup source: the user's old checkout of BibleProject's classroom-content repo at `/Users/davidfisher/Documents/BibleProject/github/classroom-content` has all 294 units as YAML in `public/data/visuals/literary-design-units/`.
 - Not yet done: `/reader` still iframes the cloudfront URLs. Ephesians (a side project for a friend) is low priority; its `html` format has no renderer.
 
+## Master plan
+
+Two ways into the same text, both built from the same underlying data:
+
+- **Readers** (whole-book, unit after unit):
+  - `/reader` — only what BibleProject has published (they have more, not yet published).
+  - `/extendedreader` (planned) — all of Matthew: BibleProject's published units first, then our own continuation in the same style.
+- **Section pages** (one per part of Matthew, like `/sotm`: outline table, 📖 text panels, videos):
+  - `/matthew` — colorful overview page linking to the sections below.
+  - `/otconnections` — 1:1–4:17.
+  - `/announcingkingdom` — 4:17–4:25.
+  - `/sotm` — Matthew 5–7, first of the five teaching blocks (done).
+  - `/ninemiraclestories` — Matthew 8–9.
+  - `/sendingthetwelve` — Matthew 10, second teaching block.
+  - `/responses` — Matthew 11–12, people's different reactions to Jesus.
+  - `/kingdomparables` — Matthew 13, third teaching block.
+  - More sections to come, in the same pattern.
+
+## Extended translation (planned `public/extendedreader.html`)
+
+Goal: continue Tim Mackie's style of translation and literary design past Matthew 7:29, a little at a time, with everything stored in this repo. The page shows Tim's units for chapters 1–7. Our own practice translations of 1–7 are only for comparing with his, never shown to users. Reference files in `data/`:
+
+- `matthew_greek.txt` — SBLGNT (1,068 verses; `Matt 1:1<TAB>text`; strip the ⸀ ⸂ ⸃ variant markers). The base text. CC BY 4.0, needs attribution.
+- `matthew_concordance.json` — KJV/Textus Receptus interlinear by verse id (`40001001`) with Strong's numbers; `greek.json` — Strong's lexicon (5,523 entries). Source and license unknown, so both are gitignored (local reference only).
+- `matthew_{niv,esv,nasb95,net}.json` — English translations from bolls.life (`[{chapter, verses:[{pk, verse, text}]}]`; NIV and NET text has `<b>` tags). Downloaded with `getting_bible_text.py` (codes NIV2011, ESV, NASB = 1995, NET = 2007). **Copyrighted and gitignored — never commit or publish them; the repo is public.**
+
 ## Sermon on the Mount outline (`public/sotm.html`)
 
 Word counts come from `data/sotm_greek_word_counts.tsv` (Greek words per verse, 109 verses, 2000 words total).

@@ -72,3 +72,12 @@ public/.DS_Store
 
 .claude/
 .DS_Store
+
+# Copyrighted English translations (reference only; the repo is public)
+data/*_niv.json
+data/*_esv.json
+data/*_nasb95.json
+data/*_net.json
+# Unknown source/license
+data/greek.json
+data/matthew_concordance.json
