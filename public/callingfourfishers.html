@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calling of Peter, Andrew, James, and John</title>
+<link rel="stylesheet" href="styles/literary-design.css">
+<style>
+.fishers{--bg:#f7f6fb;--fg:#1f1b2e;--muted:#6b6580;--line:#e2dfeb;--tint:#eeebf5;--c0:#2f9e5b;
+  background:var(--bg);color:var(--fg);padding:12px 16px 16px;border-radius:6px;border-left:6px solid var(--c0);max-width:820px;margin:8px auto;
+  font-family:"Graphik Web",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:16px;line-height:1.5}
+.fishers h1{margin:0 0 12px;font-size:1.3rem;font-weight:700}
+.fishers .passage{background:#fff;border-radius:8px;padding:12px 16px}
+body{margin:0}
+@media (max-width:860px){.fishers{margin:8px}}
+</style>
+<script src="scripts/site-header.js?v=1"></script>
+</head>
+<body>
+<site-header></site-header>
+<script src="scripts/literary-design.js?v=2"></script>
+<main class="fishers">
+<h1>Calling of Peter, Andrew, James, and John</h1>
+<div class="passage">Loading…</div>
+</main>
+<script>
+(async () => {
+  const text = document.querySelector(".fishers .passage");
+  try {
+    const visual = await LiteraryDesign.load("matthew-4-17-5-2");
+    text.replaceChildren(LiteraryDesign.render(visual));
+  } catch (err) {
+    text.textContent = "Couldn't load the text.";
+    console.error(err);
+  }
+})();
+</script>
+</body>
+</html>
