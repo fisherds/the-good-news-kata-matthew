@@ -1,0 +1,176 @@
+{
+ "translation": "Berean Standard Bible (BSB), public domain",
+ "quotes": [
+  {
+   "id": "J1",
+   "label": "unclean",
+   "kind": "jesus",
+   "title": "Show yourself to the priest",
+   "matthew": "8:4",
+   "unit": "kata-matthew-8-1-4",
+   "formula": "ὃ προσέταξεν Μωϋσῆς",
+   "passages": [
+    {
+     "ref": "Leviticus 13:45–46",
+     "focus": [
+      45,
+      46
+     ],
+     "verses": [
+      {
+       "v": 45,
+       "text": "A diseased person must wear torn clothes and let his hair hang loose, and he must cover his mouth and cry out, ‘Unclean, unclean!’"
+      },
+      {
+       "v": 46,
+       "text": "As long as he has the infection, he remains unclean. He must live alone in a place outside the camp."
+      }
+     ]
+    },
+    {
+     "ref": "Leviticus 14:1–4",
+     "focus": [
+      2,
+      3,
+      4
+     ],
+     "verses": [
+      {
+       "v": 1,
+       "text": "Then the LORD said to Moses,"
+      },
+      {
+       "v": 2,
+       "text": "“This is the law for the one afflicted with a skin disease on the day of his cleansing, when he is brought to the priest."
+      },
+      {
+       "v": 3,
+       "text": "The priest is to go outside the camp to examine him, and if the skin disease of the afflicted person has healed,"
+      },
+      {
+       "v": 4,
+       "text": "the priest shall order that two live clean birds, cedar wood, scarlet yarn, and hyssop be brought for the one to be cleansed."
+      }
+     ]
+    }
+   ],
+   "note": "Leviticus 13 is why the touch was shocking: a man with a skin disease lived alone outside the camp, calling out \"Unclean!\". Leviticus 14 is the way back: the priest goes out to him, sees that he is healed, and the offerings bring him home. \"A witness to them\" (plural): the people who will now see him restored."
+  },
+  {
+   "id": "1",
+   "label": "weaknesses",
+   "kind": "fill",
+   "title": "He took our weaknesses",
+   "matthew": "8:17",
+   "unit": "kata-matthew-8-14-17",
+   "formula": "ὅπως πληρωθῇ τὸ ῥηθὲν διὰ Ἠσαΐου τοῦ προφήτου",
+   "passages": [
+    {
+     "ref": "Isaiah 53:3–5",
+     "focus": [
+      4
+     ],
+     "verses": [
+      {
+       "v": 3,
+       "text": "He was despised and rejected by men, a man of sorrows, acquainted with grief. Like one from whom men hide their faces, He was despised, and we esteemed Him not."
+      },
+      {
+       "v": 4,
+       "text": "Surely He took on our infirmities and carried our sorrows; yet we considered Him stricken by God, struck down and afflicted."
+      },
+      {
+       "v": 5,
+       "text": "But He was pierced for our transgressions, He was crushed for our iniquities; the punishment that brought us peace was upon Him, and by His stripes we are healed."
+      }
+     ]
+    }
+   ],
+   "note": "Matthew translates Isaiah's Hebrew himself, keeping its bodily words, weaknesses and diseases, where the Greek Old Testament of his day read \"he bears our sins\". The servant who will carry our sins first carries our sicknesses, one evening in Kapharnaoum."
+  },
+  {
+   "id": "J2",
+   "label": "mercy",
+   "kind": "jesus",
+   "title": "Mercy, not sacrifice",
+   "matthew": "9:13",
+   "unit": "kata-matthew-9-9-13",
+   "formula": "πορευθέντες δὲ μάθετε τί ἐστιν",
+   "passages": [
+    {
+     "ref": "Hosea 6:4–6",
+     "focus": [
+      6
+     ],
+     "verses": [
+      {
+       "v": 4,
+       "text": "What shall I do with you, O Ephraim? What shall I do with you, O Judah? For your loyalty is like a morning mist, like the early dew that vanishes."
+      },
+      {
+       "v": 5,
+       "text": "Therefore I have hewn them by the prophets; I have slain them by the words of My mouth, and My judgments go forth like lightning."
+      },
+      {
+       "v": 6,
+       "text": "For I desire mercy, not sacrifice, and the knowledge of God rather than burnt offerings."
+      }
+     ]
+    }
+   ],
+   "note": "\"Go and learn what this means\" was a teacher's phrase, said here to Pharisees. Hosea's word is hesed, faithful covenant love, which God wants more than offerings. Jesus quotes it again in 12:7."
+  },
+  {
+   "id": "E1",
+   "label": "shepherd",
+   "kind": "echo",
+   "title": "Sheep without a shepherd",
+   "matthew": "9:36",
+   "unit": "kata-matthew-9-35-38",
+   "formula": "ὡσεὶ πρόβατα μὴ ἔχοντα ποιμένα",
+   "passages": [
+    {
+     "ref": "Numbers 27:15–17",
+     "focus": [
+      17
+     ],
+     "verses": [
+      {
+       "v": 15,
+       "text": "So Moses appealed to the LORD,"
+      },
+      {
+       "v": 16,
+       "text": "“May the LORD, the God of the spirits of all flesh, appoint a man over the congregation"
+      },
+      {
+       "v": 17,
+       "text": "who will go out and come in before them, and who will lead them out and bring them in, so that the congregation of the LORD will not be like sheep without a shepherd.”"
+      }
+     ]
+    },
+    {
+     "ref": "Ezekiel 34:4–6",
+     "focus": [
+      5
+     ],
+     "verses": [
+      {
+       "v": 4,
+       "text": "You have not strengthened the weak, healed the sick, bound up the injured, brought back the strays, or searched for the lost. Instead, you have ruled them with violence and cruelty."
+      },
+      {
+       "v": 5,
+       "text": "They were scattered for lack of a shepherd, and when they were scattered they became food for all the wild beasts."
+      },
+      {
+       "v": 6,
+       "text": "My flock went astray on all the mountains and every high hill. They were scattered over the face of all the earth, with no one to search for them or seek them out.’"
+      }
+     ]
+    }
+   ],
+   "note": "Moses asks God for a leader after him, so the people won't be sheep without a shepherd: the answer is Joshua (Iesous in Greek). Ezekiel blames Israel's shepherds for the scattering, and goes on (34:11, 23): God himself will shepherd them, through a new Dauid."
+  }
+ ]
+}

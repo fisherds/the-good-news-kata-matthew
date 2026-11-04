@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nine Miracle Stories</title>
+<link rel="stylesheet" href="styles/literary-design.css">
+<style>
+.nm-outline{--bg:#f7f6fb;--fg:#1f1b2e;--muted:#6b6580;--line:#e2dfeb;--tint:#eeebf5;--g:#2f9e5b;--b:#2f6fd6;--j:#d9822b;--f:#8a3fd1;--x:#9a95a8;--fill:#3678b4;
+  overflow-x:auto;background:var(--bg);color:var(--fg);padding:12px;border-radius:6px;font-family:"Graphik Web",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:16px;line-height:1.5}
+.nm-outline table{line-height:normal;border-collapse:collapse;width:100%;min-width:620px;font-variant-numeric:tabular-nums}
+.nm-outline th{text-align:left;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border-bottom:2px solid var(--line);padding:8px}
+.nm-outline td{padding:7px 8px;border-bottom:1px solid var(--line);border-top:0;vertical-align:middle}
+.nm-outline td:first-child{border-left:4px solid var(--c0)}
+.nm-outline tr.g{--c0:var(--g)} .nm-outline tr.b{--c0:var(--b)} .nm-outline tr.j{--c0:var(--j)} .nm-outline tr.f{--c0:var(--f)} .nm-outline tr.x{--c0:var(--x)}
+.nm-outline .n{text-align:right} .nm-outline .ref{white-space:nowrap} .nm-outline .num{color:var(--muted);margin-right:4px}
+.nm-outline .barc{width:25%;min-width:80px} .nm-outline .bar{display:block;height:10px;border-radius:2px;background:var(--c0)}
+.nm-outline tr.kS td{font-size:.9rem;padding-top:4px;padding-bottom:4px} .nm-outline tr.kS .bar{height:6px;opacity:.55}
+.nm-outline tr.kG td{font-weight:700;background:var(--tint)} .nm-outline tr.kG td:first-child{border-left-width:6px}
+.nm-outline tr.kP td:first-child .num{color:var(--fg)}
+.nm-outline tr.top td:first-child{border-left-width:6px} /* the unnumbered "follow" rows get the same thick line as the three groups */
+.nm-outline tr.kT td{font-weight:700;font-size:1.05rem;background:var(--tint);border-top:2px solid var(--line);border-bottom:2px solid var(--line)} .nm-outline tr.kT td:first-child{border-left:6px solid var(--fg)}
+.nm-outline .ref{position:relative;padding-left:32px}
+.nm-outline .ld-group{font-size:1.05rem} /* Greek reads a little small at 16px */
+.nm-outline .read{position:absolute;left:6px;top:50%;transform:translateY(-50%);border:0;background:none;padding:0 2px;cursor:pointer;font-size:.95em;line-height:1;opacity:.75}
+.nm-outline .read:hover,.nm-outline .read[aria-expanded="true"]{opacity:1}
+.nm-outline tr.reading td{padding:0;border-left:4px solid var(--c0);background:var(--tint)}
+.nm-outline .sheet{overflow:hidden} .nm-outline .sheet-inner{padding:8px 8px 16px}
+.nm-outline tr.collapsed{display:none}
+.nm-outline tr.section td:first-child,.nm-outline tr[data-unit]:not(.section){cursor:pointer}
+.nm-outline tr[data-unit]:not(.section):hover td{background:var(--tint)}
+.nm-outline .toggle{border:0;background:none;padding:0 4px;margin-left:2px;cursor:pointer;color:var(--muted);font-size:.9em;line-height:1;display:inline-block;transition:transform .15s}
+.nm-outline .toggle[aria-expanded="true"]{transform:rotate(90deg)}
+/* Old Testament circles: filled = "so that it would be filled-full" (πληρόω),
+   dark = Jesus quotes or points to Scripture, dashed = an echo with no quotation formula. */
+.nm-outline .ot{white-space:nowrap;line-height:0}
+.nm-outline .quote{display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;min-width:22px;height:22px;padding:0 5px;margin-right:4px;box-sizing:border-box;border-radius:11px;border:2px solid var(--fill);background:var(--fill);color:#fff;font:700 11px/1 inherit;font-family:inherit;cursor:pointer;transition:transform .12s}
+.nm-outline .quote.prophet{background:#fff;color:var(--fill)}
+.nm-outline .quote.jesus{border-color:var(--fg);background:var(--fg)}
+.nm-outline .quote{padding:0 8px;font-weight:600} /* one-word labels, not numbers */
+.nm-outline .quote.echo{background:#fff;color:var(--fill);border-style:dashed}
+.nm-outline .quote:hover,.nm-outline .quote:focus-visible{transform:scale(1.15)}
+.nm-outline .legend{display:flex;flex-wrap:wrap;gap:4px 16px;margin:10px 4px 0;font-size:.8rem;color:var(--muted)} .nm-outline .legend .quote{cursor:default;transform:none;margin-right:6px}
+/* The quote pop-up: Tim's text of the Matthew verses, then the Old Testament passages. */
+.nm-outline .quote-modal{width:min(760px,calc(100vw - 32px));max-height:calc(100vh - 48px);padding:0;border:0;border-radius:10px;background:var(--bg);color:var(--fg);box-shadow:0 20px 60px rgba(0,0,0,.45);overflow:hidden}
+.nm-outline .quote-modal[open]{display:flex;flex-direction:column;animation:quote-in .2s ease-out} .nm-outline .quote-modal::backdrop{background:rgba(15,12,25,.6)}
+@keyframes quote-in{from{opacity:0;transform:scale(.96)}}
+.nm-outline .quote-modal header{display:flex;align-items:center;gap:10px;padding:10px 8px 10px 16px;border-bottom:1px solid var(--line)} .nm-outline .quote-modal h2{flex:1;margin:0;font-size:1.05rem;font-weight:600}
+.nm-outline .quote-modal header .quote{cursor:default;transform:none;margin:0}
+.nm-outline .quote-modal .close{border:0;background:none;color:inherit;font-size:1.6rem;line-height:1;cursor:pointer;padding:2px 10px 6px;border-radius:6px} .nm-outline .quote-modal .close:hover{background:var(--tint)}
+.nm-outline .quote-modal .body{overflow-y:auto;padding:12px 16px 16px}
+.nm-outline .quote-modal .formula{margin:0 0 10px;color:var(--muted);font-size:.9rem} .nm-outline .quote-modal .formula span{color:var(--fg);font-size:1rem}
+.nm-outline .quote-modal h3{margin:16px 0 6px;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.nm-outline .quote-modal .passage{background:#fff;border-radius:8px;padding:10px 14px;margin:0 0 8px;line-height:1.55}
+.nm-outline .quote-modal .passage strong{display:block;margin-bottom:4px}
+.nm-outline .quote-modal .passage sup{font-size:.7em;color:var(--muted);margin-right:2px}
+.nm-outline .quote-modal .passage mark{background:#fae4c4;color:inherit;border-radius:3px;padding:0 2px}
+.nm-outline .quote-modal .note{margin:12px 0 0;padding:10px 14px;border-left:4px solid var(--fill);background:var(--tint);border-radius:0 8px 8px 0}
+.nm-outline .quote-modal footer{padding:8px 16px 10px;font-size:.8rem;color:var(--muted);border-top:1px solid var(--line)}
+/* Narrow screens: drop the count columns, then the bars. */
+@media (max-width:900px){.nm-outline th.n,.nm-outline td.n{display:none}.nm-outline table{min-width:0}}
+@media (max-width:700px){.nm-outline th.barc,.nm-outline td.barc{display:none}}
+/* Display modes (press "n" to cycle). 0 default: no numbers, no Verses column.
+   1: everything. 2: leanest, titles + ranges + bars only. */
+.nm-outline[data-mode="0"] .num,.nm-outline[data-mode="2"] .num{display:none}
+.nm-outline[data-mode="0"] :is(th,td):nth-child(5){display:none}
+.nm-outline[data-mode="2"] .read,.nm-outline[data-mode="2"] :is(th,td):is(.n,.ot),.nm-outline[data-mode="2"] .legend{display:none}
+.nm-outline[data-mode="2"] .ref{padding-left:8px}
+body{margin:0} .nm-outline{margin:8px}
+</style>
+<script src="scripts/site-header.js?v=1"></script>
+</head>
+<body>
+<site-header></site-header>
+<div class="nm-outline" data-mode="0"><table><thead><tr><th>Title</th><th class="ref">Verse range</th><th class="ot">OT</th><th class="n">Greek words</th><th class="n">Verses</th><th class="barc"><span style="position:absolute;left:-9999px">Relative length</span></th></tr></thead><tbody><tr class="x kT" data-unit="kata-matthew-8-1-4 kata-matthew-8-5-13 kata-matthew-8-14-17 kata-matthew-8-18-22 kata-matthew-8-23-27 kata-matthew-8-28-34 kata-matthew-9-1-8 kata-matthew-9-9-13 kata-matthew-9-14-17 kata-matthew-9-18-26 kata-matthew-9-27-31 kata-matthew-9-32-34 kata-matthew-9-35-38"><td style="padding-left:8px"><span class="num"></span> Nine Miracle Stories</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>8:1–9:38</td><td class="ot"></td><td class="n">1259</td><td class="n">72</td><td class="barc"></td></tr><tr class="g kG" data-unit="kata-matthew-8-1-4 kata-matthew-8-5-13 kata-matthew-8-14-17"><td style="padding-left:8px"><span class="num">1.0</span> First three miracle stories</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>8:1–8:17</td><td class="ot"></td><td class="n">300</td><td class="n">17</td><td class="barc"></td></tr><tr class="g kP" data-unit="kata-matthew-8-1-4"><td style="padding-left:26px"><span class="num">1.1</span> You can make me clean</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>8:1–8:4</td><td class="ot"><button class="quote jesus" type="button" data-quote="J1" aria-label="Unclean: Show yourself to the priest">unclean</button></td><td class="n">64</td><td class="n">4</td><td class="barc"><span class="bar" style="width:37.6%"></span></td></tr><tr class="g kP" data-unit="kata-matthew-8-5-13"><td style="padding-left:26px"><span class="num">1.2</span> The centurion’s servant</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>8:5–8:13</td><td class="ot"></td><td class="n">170</td><td class="n">9</td><td class="barc"><span class="bar" style="width:100.0%"></span></td></tr><tr class="g kP" data-unit="kata-matthew-8-14-17"><td style="padding-left:26px"><span class="num">1.3</span> Peter’s mother-in-law</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>8:14–8:17</td><td class="ot"><button class="quote fill" type="button" data-quote="1" aria-label="Weaknesses: He took our weaknesses">weaknesses</button></td><td class="n">66</td><td class="n">4</td><td class="barc"><span class="bar" style="width:38.8%"></span></td></tr><tr class="f kP top" data-unit="kata-matthew-8-18-22"><td style="padding-left:8px"><span class="num"></span> Follow me</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>8:18–8:22</td><td class="ot"></td><td class="n">83</td><td class="n">5</td><td class="barc"><span class="bar" style="width:48.8%"></span></td></tr><tr class="b kG" data-unit="kata-matthew-8-23-27 kata-matthew-8-28-34 kata-matthew-9-1-8"><td style="padding-left:8px"><span class="num">2.0</span> Second three miracle stories</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>8:23–9:8</td><td class="ot"></td><td class="n">348</td><td class="n">20</td><td class="barc"></td></tr><tr class="b kP" data-unit="kata-matthew-8-23-27"><td style="padding-left:26px"><span class="num">2.1</span> Jesus calms a storm</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>8:23–8:27</td><td class="ot"></td><td class="n">77</td><td class="n">5</td><td class="barc"><span class="bar" style="width:45.3%"></span></td></tr><tr class="b kP" data-unit="kata-matthew-8-28-34"><td style="padding-left:26px"><span class="num">2.2</span> Two demon-possessed men</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>8:28–8:34</td><td class="ot"></td><td class="n">141</td><td class="n">7</td><td class="barc"><span class="bar" style="width:82.9%"></span></td></tr><tr class="b kP" data-unit="kata-matthew-9-1-8"><td style="padding-left:26px"><span class="num">2.3</span> Your sins are forgiven</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>9:1–9:8</td><td class="ot"></td><td class="n">130</td><td class="n">8</td><td class="barc"><span class="bar" style="width:76.5%"></span></td></tr><tr class="f kP top" data-unit="kata-matthew-9-9-13"><td style="padding-left:8px"><span class="num"></span> A meal with Matthew</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>9:9–9:13</td><td class="ot"><button class="quote jesus" type="button" data-quote="J2" aria-label="Mercy: Mercy, not sacrifice">mercy</button></td><td class="n">97</td><td class="n">5</td><td class="barc"><span class="bar" style="width:57.1%"></span></td></tr><tr class="f kP top" data-unit="kata-matthew-9-14-17"><td style="padding-left:8px"><span class="num"></span> Fasting</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>9:14–9:17</td><td class="ot"></td><td class="n">104</td><td class="n">4</td><td class="barc"><span class="bar" style="width:61.2%"></span></td></tr><tr class="j kG" data-unit="kata-matthew-9-18-26 kata-matthew-9-27-31 kata-matthew-9-32-34"><td style="padding-left:8px"><span class="num">3.0</span> Third three miracle stories</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>9:18–9:34</td><td class="ot"></td><td class="n">253</td><td class="n">17</td><td class="barc"></td></tr><tr class="j kP" data-unit="kata-matthew-9-18-26"><td style="padding-left:26px"><span class="num">3.1</span> Bleeding and raising the dead</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>9:18–9:26</td><td class="ot"></td><td class="n">138</td><td class="n">9</td><td class="barc"><span class="bar" style="width:81.2%"></span></td></tr><tr class="j kP" data-unit="kata-matthew-9-27-31"><td style="padding-left:26px"><span class="num">3.2</span> Two blind men</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>9:27–9:31</td><td class="ot"></td><td class="n">75</td><td class="n">5</td><td class="barc"><span class="bar" style="width:44.1%"></span></td></tr><tr class="j kP" data-unit="kata-matthew-9-32-34"><td style="padding-left:26px"><span class="num">3.3</span> Mute, demon-possessed</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>9:32–9:34</td><td class="ot"></td><td class="n">40</td><td class="n">3</td><td class="barc"><span class="bar" style="width:23.5%"></span></td></tr><tr class="f kP top" data-unit="kata-matthew-9-35-38"><td style="padding-left:8px"><span class="num"></span> The harvest is plentiful</td><td class="ref"><button class="read" type="button" aria-label="Read the text" title="Read the text">📖</button>9:35–9:38</td><td class="ot"><button class="quote echo" type="button" data-quote="E1" aria-label="Shepherd: Sheep without a shepherd">shepherd</button></td><td class="n">74</td><td class="n">4</td><td class="barc"><span class="bar" style="width:43.5%"></span></td></tr></tbody></table><div class="legend"><span><span class="quote fill">weaknesses</span>filled-full: “so that what was spoken through the prophet would be filled-full”</span><span><span class="quote jesus">unclean</span>Jesus points to Scripture</span><span><span class="quote echo">shepherd</span>echo: the wording draws on a passage</span></div></div>
+<script src="scripts/literary-design.js?v=2"></script>
+<script>
+const outline = document.querySelector(".nm-outline");
+
+// Sections 1.0, 2.0 and 3.0 start expanded; clicking a section's header shows
+// or hides all of its rows at once. /ninemiraclestories#2.0 opens only that section.
+const SECTIONS = ["1.0", "2.0", "3.0"];
+const numOf = (row) => row.querySelector(".num")?.textContent || "";
+const sectionOf = (num) =>
+  SECTIONS.find((s) => num !== s && num.startsWith(s.replace(/\.0$/, "") + "."));
+const sectionRows = {};
+for (const row of outline.querySelectorAll("tbody tr")) {
+  const num = numOf(row);
+  if (SECTIONS.includes(num)) {
+    row.classList.add("section");
+    row.dataset.section = num;
+    const title = row.querySelector("td");
+    title.insertAdjacentHTML("beforeend", ' <button class="toggle" type="button" aria-expanded="true" aria-label="Hide this section">▸</button>');
+  } else if (sectionOf(num)) {
+    (sectionRows[sectionOf(num)] ||= []).push(row);
+  }
+}
+
+function setSection(section, expanded) {
+  const header = outline.querySelector(`tr[data-section="${section}"]`);
+  header.querySelector(".toggle").setAttribute("aria-expanded", String(expanded));
+  header.querySelector(".toggle").setAttribute("aria-label", expanded ? "Hide this section" : "Show this section");
+  for (const row of sectionRows[section]) {
+    row.classList.toggle("collapsed", !expanded);
+    if (!expanded) for (const panel of panelsOf(row)) closePanel(panel, false);
+  }
+}
+
+function openFromHash() {
+  const section = decodeURIComponent(location.hash.slice(1));
+  if (!SECTIONS.includes(section)) return;
+  for (const s of SECTIONS) setSection(s, s === section);
+  outline.querySelector(`tr[data-section="${section}"]`).scrollIntoView({ block: "start" });
+}
+openFromHash();
+window.addEventListener("hashchange", openFromHash);
+
+// Secret display modes: "n" cycles 0 (default) → 1 (everything) → 2 (leanest) → 0.
+const MODES = 3;
+document.addEventListener("keydown", (event) => {
+  if (event.key !== "n" || event.metaKey || event.ctrlKey || event.altKey) return;
+  if (modal.open || event.target.closest?.("input, textarea, [contenteditable]")) return;
+  outline.dataset.mode = (Number(outline.dataset.mode) + 1) % MODES;
+});
+
+if (typeof LiteraryDesign !== "undefined") LiteraryDesign.preload("kata");
+
+// 📖 opens the row's text under it. Panels stay open, except that opening one
+// closes any open panel whose verses overlap it (its parent or sub-sections).
+// Panels roll down like a screen and roll back up when closed.
+const rangeOf = (row) => row.querySelector(".ref").textContent.trim().replace("📖", "");
+const panelsOf = (row) => [...outline.querySelectorAll("tr.reading")].filter((panel) => panel.row === row);
+const openPanels = () => [...outline.querySelectorAll("tr.reading:not(.closing)")];
+
+// Animates the sheet's height from `from` to `to` px while sliding its content
+// with the bottom edge, so the text moves down with it rather than being uncovered.
+function roll(panel, from, to) {
+  const sheet = panel.querySelector(".sheet");
+  const inner = sheet.firstElementChild;
+  const full = inner.offsetHeight;
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const options = { duration: reduce ? 0 : 400, easing: "cubic-bezier(.25,.8,.25,1)", fill: "forwards" };
+  for (const animation of [...sheet.getAnimations(), ...inner.getAnimations()]) animation.cancel();
+  inner.animate([{ transform: `translateY(${from - full}px)` }, { transform: `translateY(${to - full}px)` }], options);
+  return sheet.animate([{ height: `${from}px` }, { height: `${to}px` }], options).finished;
+}
+
+function closePanel(panel, animate = true) {
+  panel.classList.add("closing");
+  if (!panelsOf(panel.row).some((p) => !p.classList.contains("closing")))
+    panel.row.querySelector("button.read").setAttribute("aria-expanded", "false");
+  if (!animate) return panel.remove();
+  roll(panel, panel.querySelector(".sheet").getBoundingClientRect().height, 0).then(() => panel.remove(), () => {});
+}
+
+// Quote circles open a pop-up with our text of the Matthew verses and the Old
+// Testament passages they draw on (BSB), from data/ninemiraclestories_quotes.json.
+const quotes = {};
+const quotesLoaded = fetch("data/ninemiraclestories_quotes.json")
+  .then((response) => response.json())
+  .then((data) => {
+    for (const quote of data.quotes) quotes[quote.id] = quote;
+    for (const button of outline.querySelectorAll("button.quote[data-quote]")) {
+      const quote = quotes[button.dataset.quote];
+      if (quote) button.title = `${quote.title}: ${quote.passages.map((p) => p.ref).join(", ")}`;
+    }
+  })
+  .catch(() => {});
+const KINDS = { fill: "Prophet quote", jesus: "Jesus points to Scripture", echo: "Echo" };
+const modal = document.createElement("dialog");
+modal.className = "quote-modal";
+modal.innerHTML =
+  '<header><span class="quote"></span><h2></h2><button class="close" type="button" aria-label="Close">×</button></header>' +
+  '<div class="body"></div><footer>Old Testament text: Berean Standard Bible (public domain).</footer>';
+outline.append(modal);
+modal.addEventListener("click", (event) => {
+  if (event.target === modal || event.target.closest(".close")) modal.close();
+});
+
+const escapeHtml = (text) => text.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+
+async function showQuote(id) {
+  await quotesLoaded;
+  const quote = quotes[id];
+  if (!quote) return;
+  const badge = modal.querySelector("header .quote");
+  badge.className = `quote ${quote.kind}`;
+  badge.textContent = quote.label || quote.id;
+  modal.querySelector("h2").textContent = `${KINDS[quote.kind]}: ${quote.title}`;
+  const body = modal.querySelector(".body");
+  body.innerHTML =
+    `<p class="formula">Matthew ${quote.matthew.replace(/–\d+:/, "–")} · <span lang="grc">${escapeHtml(quote.formula)}</span></p>` +
+    '<div class="matthew"></div><h3>Old Testament</h3>' +
+    quote.passages
+      .map(
+        (p) =>
+          `<div class="passage"><strong>${escapeHtml(p.ref)}</strong>` +
+          p.verses
+            .map((v) => {
+              const text = `<sup>${v.v}</sup>${escapeHtml(v.text)}`;
+              return p.focus.includes(v.v) ? `<mark>${text}</mark>` : text;
+            })
+            .join(" ") +
+          "</div>"
+      )
+      .join("") +
+    `<p class="note">${escapeHtml(quote.note)}</p>`;
+  body.scrollTop = 0;
+  modal.showModal();
+  try {
+    body.querySelector(".matthew").replaceChildren(LiteraryDesign.render(await LiteraryDesign.load(quote.unit), quote.matthew));
+  } catch (error) {
+    body.querySelector(".matthew").remove();
+  }
+}
+
+outline.addEventListener("click", async (event) => {
+  const quoteButton = event.target.closest("button.quote[data-quote]");
+  if (quoteButton) {
+    showQuote(quoteButton.dataset.quote);
+    return;
+  }
+  if (event.target.closest(".quote-modal, .legend")) return;
+  const header = event.target.closest("tr.section");
+  if (header && !event.target.closest("td.ref")) {
+    const toggle = header.querySelector(".toggle");
+    setSection(header.dataset.section, toggle.getAttribute("aria-expanded") !== "true");
+    return;
+  }
+  // On every other row, a click anywhere works like clicking its 📖.
+  const button =
+    event.target.closest("button.read") ||
+    event.target.closest("tr[data-unit]:not(.section)")?.querySelector("button.read");
+  if (!button) return;
+  const row = button.closest("tr");
+  const open = openPanels().find((panel) => panel.row === row);
+  if (open) {
+    closePanel(open);
+    return;
+  }
+  const range = rangeOf(row);
+  const [from, to] = LiteraryDesign.rangeKeys(range);
+  for (const panel of openPanels()) {
+    const [a, b] = LiteraryDesign.rangeKeys(rangeOf(panel.row));
+    if (a <= to && from <= b) closePanel(panel);
+  }
+  // The white box lines up with the start of the row's title text (panels have
+  // a 4px left border; group and total rows have 6px).
+  const title = getComputedStyle(row.firstElementChild);
+  const indent = `${parseFloat(title.paddingLeft) + parseFloat(title.borderLeftWidth) - 4}px`;
+  const panel = document.createElement("tr");
+  panel.className = `reading ${row.classList[0]}`;
+  panel.row = row;
+  panel.innerHTML = `<td colspan="6"><div class="sheet" style="height:0"><div class="sheet-inner" style="padding-left:${indent}"></div></div></td>`;
+  row.after(panel);
+  button.setAttribute("aria-expanded", "true");
+  const inner = panel.querySelector(".sheet-inner");
+  try {
+    const visuals = await Promise.all(row.dataset.unit.split(" ").map(LiteraryDesign.load));
+    inner.replaceChildren(LiteraryDesign.render(visuals, range));
+  } catch (error) {
+    inner.innerHTML = `<div class="ld"><span class="ld-status">Couldn't load this passage.</span></div>`;
+  }
+  if (panel.classList.contains("closing")) return;
+  panel.querySelector(".sheet").style.height = "";
+  // Once open, drop the animations so the sheet goes back to its natural height.
+  roll(panel, 0, inner.offsetHeight).then(() => {
+    for (const animation of [...panel.querySelector(".sheet").getAnimations(), ...inner.getAnimations()]) animation.cancel();
+  }, () => {});
+});
+</script>
+</body>
+</html>

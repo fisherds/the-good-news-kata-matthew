@@ -73,6 +73,14 @@ Matthew 1:1–4:17, built from the `/sotm` pattern (same row markup, levels, ind
 - The genealogy's verse markers also count the 41 generations. `literary-design.js` skips those when cutting to a range (`isCounter`: right against a name or ending in a comma; plus any marker jumping more than 3 verses ahead, e.g. "Iekhonia ²⁸" after verse 11) and shows a unit whole when the range covers all of it.
 - Pages load `scripts/literary-design.js?v=N`; Firebase caches it for an hour, so **bump `v` in every page that loads it whenever the script changes** (stale copies once cut the genealogy off at 1:7).
 
+## Our own translation units (`translation/`)
+
+Our translation lives as hand-edited USX files, one per unit: `translation/matthew/kata-matthew-8-1-4.usx` (same markup as Tim's units: `<group>`, `<verse>`, `<char mark-variant mark-color>`). `tools/build_translation.py` wraps each as `public/visuals/<id>.json` and rebuilds the bundles (ours go in `bundle-kata.json`, so pages call `LiteraryDesign.preload("kata")`); run it after every edit and never hand-edit the JSON. `--seed` writes any missing unit listed in its `UNITS` as plain SBLGNT Greek, one line per verse. Units are credited to SBLGNT (CC BY 4.0) until the `<usx>` element gets `status="translated"`. The `kata-` prefix keeps our ids from ever colliding with units BibleProject publishes later.
+
+## Nine Miracle Stories (`public/ninemiraclestories.html`)
+
+Matthew 8:1–9:38, built from `/otconnections` (CSS prefix `.nm-outline`; same rows, 📖 panels, collapsing, `n` modes, and the same OT column and pop-up). Text is our own units (8:1–4 translated, the rest Greek for now). OT buttons show one word (the quote's `label`), not its id: unclean 8:4 (Leviticus 13–14), weaknesses 8:17 (Isaiah 53:4, filled-full), mercy 9:13 (Hosea 6:6), shepherd 9:36 (Numbers 27:17, Ezekiel 34:5); kinds `fill`, `jesus` (Jesus quotes or points to Scripture) and `echo` (dashed outline: no formula, but the wording draws on a passage). Data: `public/data/ninemiraclestories_quotes.json`, from `NM_QUOTES` in `tools/fetch_ot_quotes.py`. Three numbered groups of three miracle stories (`kG`, collapsible: 1.0 green `g` 8:1–17, 2.0 blue `b` 8:23–9:8, 3.0 orange `j` 9:18–34) and four unnumbered purple `f` rows between and after them (Follow me 8:18–22, A meal with Matthew 9:9–13, Fasting 9:14–17, The harvest is plentiful 9:35–38; `kP top`), all about discipleship. Bars scale to 170 (1.2 The centurion's servant). Word counts are Textus Receptus (1259 words, 72 verses).
+
 ## Sermon on the Mount outline (`public/sotm.html`)
 
 Word counts come from `data/sotm_greek_word_counts.tsv` (Greek words per verse, 109 verses, 2000 words total).

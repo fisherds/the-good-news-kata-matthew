@@ -1,0 +1,71 @@
+<usx version="2.6" status="translated">
+  <para>
+    <group type="secondary">
+      <group>
+        <verse number="1" /> Now when he <char mark-variant="text" mark-color="tan">came down from the mountain</char>,
+      </group>
+      <group indent="1">
+        <char mark-variant="highlight-light" mark-color="cyan">many crowds</char> <char mark-variant="highlight" mark-color="purple">followed</char> him.
+      </group>
+    </group>
+  </para>
+  <para>
+    <group type="primary">
+      <group>
+        <verse number="2" /> And look, a <char mark-variant="highlight-light" mark-color="red" word-lang="greek" word-original="λεπρὸς">skin-diseased</char> man,
+      </group>
+      <optbreak />
+      <group>
+        approaching,
+      </group>
+      <group>
+        he <char mark-variant="highlight-dark" mark-color="green">bowed down to him</char>, saying,
+      </group>
+      <group indent="1">
+        “Master, if you <char mark-variant="highlight" mark-color="blue" word-lang="greek" word-original="θέλῃς">want</char>,
+      </group>
+      <group indent="1">
+        you are able <char mark-variant="highlight-light" mark-color="green" word-lang="greek" word-original="καθαρίσαι">to make me clean</char>.”
+      </group>
+      <optbreak />
+      <group>
+        <verse number="3" /> And stretching out the hand,
+      </group>
+      <group>
+        he <char mark-variant="highlight-dark" mark-color="green">touched him</char>, saying,
+      </group>
+      <group indent="1">
+        “I <char mark-variant="highlight" mark-color="blue" word-lang="greek" word-original="Θέλω">want</char>.
+      </group>
+      <group indent="1">
+        <char mark-variant="highlight-light" mark-color="green" word-lang="greek" word-original="καθαρίσθητι">Be clean</char>.”
+      </group>
+      <optbreak />
+      <group>
+        And immediately his <char mark-variant="highlight-light" mark-color="red" word-lang="greek" word-original="λέπρα">skin disease</char> <char mark-variant="highlight-light" mark-color="green" word-lang="greek" word-original="ἐκαθαρίσθη">was made clean</char>.
+      </group>
+    </group>
+  </para>
+  <para>
+    <group type="secondary">
+      <group>
+        <verse number="4" /> And Iesous said to him,
+      </group>
+      <group indent="1">
+        “See that you <char mark-variant="highlight-light" mark-color="orange">tell no one</char>,
+      </group>
+      <group indent="1">
+        but <char mark-variant="highlight" mark-color="purple">go</char>,
+      </group>
+      <group indent="2">
+        show yourself to the priest,
+      </group>
+      <group indent="2">
+        and present the offering that Mouses commanded,
+      </group>
+      <group indent="1">
+        as a <char mark-variant="highlight-light" mark-color="orange">witness</char> to <char mark-variant="highlight-light" mark-color="cyan">them</char>.”
+      </group>
+    </group>
+  </para>
+</usx>
