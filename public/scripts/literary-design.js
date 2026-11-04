@@ -140,7 +140,12 @@ const LiteraryDesign = (() => {
       case "char": {
         const variant = attr("mark-variant");
         const color = attr("mark-color");
-        el = document.createElement(variant || color ? "mark" : "span");
+        // <char style="bd"> (USX bold) with no highlight: bold text, for a word we want noticed.
+        // <char style="add"> (USX translator's addition): a word English needs but the Greek
+        // doesn't have, shown in light italics like the NASB.
+        const plainTag = { bd: "strong", add: "em" }[attr("style")] || "span";
+        el = document.createElement(variant || color ? "mark" : plainTag);
+        if (!variant && !color && attr("style") === "add") el.className = "ld-add";
         if (variant || color) {
           el.className = ["ld-mark", color, variant].filter(Boolean).join(" ");
         }
@@ -148,13 +153,26 @@ const LiteraryDesign = (() => {
         if (attr("word-original")) {
           const word = document.createElement("span");
           word.className = "ld-word-original";
-          word.textContent = ` (${attr("word-original")})`;
+          // word-gloss (ours): meanings shown after the Greek, e.g. "(καθαρίσθητι clean / pure)".
+          const gloss = attr("word-gloss") ? " " + attr("word-gloss") : "";
+          word.textContent = ` (${attr("word-original")}${gloss})`;
           el.appendChild(word);
         }
         return el;
       }
-      case "note":
-        return null;
+      case "note": {
+        // Cross-reference (USX <note style="x" xref="ID">): a small ⓘ that opens a pop-up
+        // with the evidence, from data/xrefs.json (tools/build_xrefs.py). Other notes stay hidden.
+        if (attr("style") !== "x" || !attr("xref")) return null;
+        el = document.createElement("button");
+        el.type = "button";
+        el.className = "ld-xref";
+        el.dataset.xref = attr("xref");
+        el.textContent = "i";
+        const target = node.querySelector('char[style="xt"]');
+        el.setAttribute("aria-label", `Cross-reference${target ? ": " + target.textContent : ""}`);
+        return el;
+      }
       default:
         return children();
     }
@@ -243,6 +261,53 @@ const LiteraryDesign = (() => {
     }
     return cache.get(unitId);
   }
+
+  // Cross-reference pop-up: one <dialog> for the page, filled from data/xrefs.json.
+  const XREFS = new URL("../data/xrefs.json", VISUALS);
+  let xrefs = null;
+  let dialog = null;
+
+  async function showXref(id) {
+    xrefs = xrefs || fetch(XREFS).then((r) => r.json()).then((d) => new Map(d.xrefs.map((x) => [x.id, x])));
+    let xref;
+    try {
+      xref = (await xrefs).get(id);
+    } catch (error) {
+      xrefs = null;
+    }
+    if (!xref) return;
+    if (!dialog) {
+      dialog = document.createElement("dialog");
+      dialog.className = "ld-xref-modal";
+      dialog.innerHTML =
+        '<header><span class="ld-xref" aria-hidden="true">i</span><h2></h2>' +
+        '<button class="close" type="button" aria-label="Close">×</button></header><div class="body"></div>';
+      dialog.addEventListener("click", (e) => {
+        if (e.target === dialog || e.target.closest(".close")) dialog.close();
+      });
+      document.body.appendChild(dialog);
+    }
+    dialog.querySelector("h2").textContent = xref.title;
+    // The texts are our own generated HTML (escaped, with <strong>/<mark> only).
+    dialog.querySelector(".body").innerHTML =
+      xref.passages
+        .map(
+          (p) =>
+            `<div class="passage"><div class="ref">${p.ref}</div>` +
+            `<p class="en">${p.en}</p>` +
+            `<div class="sources">${p.sources}</div></div>`
+        )
+        .join("") + `<p class="note">${xref.note}</p>`;
+    dialog.querySelector(".body").scrollTop = 0;
+    if (!dialog.open) dialog.showModal();
+  }
+
+  document.addEventListener("click", (e) => {
+    const button = e.target.closest?.("button.ld-xref[data-xref]");
+    if (!button) return;
+    e.stopPropagation();
+    showXref(button.dataset.xref);
+  }, true);
 
   return { render, load, preload, rangeKeys };
 })();

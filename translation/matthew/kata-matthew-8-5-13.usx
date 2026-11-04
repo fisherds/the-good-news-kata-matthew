@@ -1,32 +1,113 @@
 <usx version="2.6">
   <para>
+    <group type="secondary">
+      <group>
+        <verse number="5" /> Now when he entered into Kapharnaoum,
+      </group>
+    </group>
+  </para>
+  <para>
     <group type="primary">
       <group>
-        <verse number="5" /> Εἰσελθόντος δὲ αὐτοῦ εἰς Καφαρναοὺμ προσῆλθεν αὐτῷ ἑκατόνταρχος παρακαλῶν αὐτὸν
+        a centurion
+      </group>
+      <optbreak />
+      <group>
+        <char mark-variant="highlight-light" mark-color="turquoise" word-lang="greek" word-original="προσῆλθεν">approached</char> him,
       </group>
       <group>
-        <verse number="6" /> καὶ λέγων· Κύριε, ὁ παῖς μου βέβληται ἐν τῇ οἰκίᾳ παραλυτικός, δεινῶς βασανιζόμενος.
+        <char mark-variant="highlight-light" mark-color="violet" word-lang="greek" word-original="παρακαλῶν">pleading with</char> him <verse number="6" /> and saying,
+      </group>
+      <group indent="1">
+        “Master, my <char mark-variant="highlight" mark-color="blue" word-lang="greek" word-original="παῖς" word-gloss="son / servant">boy</char> <char mark-variant="highlight-light" mark-color="red" word-lang="greek" word-original="βέβληται">has been thrown down</char> in the house,
+      </group>
+      <group indent="1">
+        paralyzed, terribly tormented.”
+      </group>
+      <optbreak />
+      <group>
+        <verse number="7" /> καὶ λέγει αὐτῷ·
+      </group>
+      <group indent="1">
+        Ἐγὼ ἐλθὼν θεραπεύσω αὐτόν.
+      </group>
+      <optbreak />
+      <group>
+        <verse number="8" /> καὶ ἀποκριθεὶς ὁ ἑκατόνταρχος ἔφη·
+      </group>
+      <group indent="1">
+        Κύριε, οὐκ εἰμὶ ἱκανὸς ἵνα μου ὑπὸ τὴν στέγην εἰσέλθῃς·
+      </group>
+      <group indent="1">
+        ἀλλὰ μόνον εἰπὲ λόγῳ,
+      </group>
+      <group indent="1">
+        καὶ ἰαθήσεται ὁ <char mark-variant="highlight" mark-color="blue">παῖς</char> μου·
+      </group>
+      <optbreak />
+      <group indent="1">
+        <verse number="9" /> καὶ γὰρ ἐγὼ ἄνθρωπός εἰμι ὑπὸ ἐξουσίαν,
+      </group>
+      <group indent="1">
+        ἔχων ὑπʼ ἐμαυτὸν στρατιώτας,
+      </group>
+      <group indent="2">
+        καὶ λέγω τούτῳ· Πορεύθητι, καὶ πορεύεται,
+      </group>
+      <group indent="2">
+        καὶ ἄλλῳ· Ἔρχου, καὶ ἔρχεται,
+      </group>
+      <group indent="2">
+        καὶ τῷ δούλῳ μου· Ποίησον τοῦτο, καὶ ποιεῖ.
+      </group>
+    </group>
+  </para>
+  <para>
+    <group type="secondary">
+      <group>
+        <verse number="10" /> ἀκούσας δὲ ὁ Ἰησοῦς ἐθαύμασεν
       </group>
       <group>
-        <verse number="7" /> καὶ λέγει αὐτῷ· Ἐγὼ ἐλθὼν θεραπεύσω αὐτόν.
+        καὶ εἶπεν τοῖς <char mark-variant="highlight" mark-color="purple">ἀκολουθοῦσιν</char>·
       </group>
-      <group>
-        <verse number="8" /> καὶ ἀποκριθεὶς ὁ ἑκατόνταρχος ἔφη· Κύριε, οὐκ εἰμὶ ἱκανὸς ἵνα μου ὑπὸ τὴν στέγην εἰσέλθῃς· ἀλλὰ μόνον εἰπὲ λόγῳ, καὶ ἰαθήσεται ὁ παῖς μου·
+      <group indent="1">
+        Ἀμὴν λέγω ὑμῖν,
       </group>
-      <group>
-        <verse number="9" /> καὶ γὰρ ἐγὼ ἄνθρωπός εἰμι ὑπὸ ἐξουσίαν, ἔχων ὑπʼ ἐμαυτὸν στρατιώτας, καὶ λέγω τούτῳ· Πορεύθητι, καὶ πορεύεται, καὶ ἄλλῳ· Ἔρχου, καὶ ἔρχεται, καὶ τῷ δούλῳ μου· Ποίησον τοῦτο, καὶ ποιεῖ.
+      <group indent="1">
+        παρʼ οὐδενὶ τοσαύτην πίστιν ἐν τῷ Ἰσραὴλ εὗρον.
       </group>
-      <group>
-        <verse number="10" /> ἀκούσας δὲ ὁ Ἰησοῦς ἐθαύμασεν καὶ εἶπεν τοῖς ἀκολουθοῦσιν· Ἀμὴν λέγω ὑμῖν, παρʼ οὐδενὶ τοσαύτην πίστιν ἐν τῷ Ἰσραὴλ εὗρον.
+      <optbreak />
+      <group indent="1">
+        <verse number="11" /> λέγω δὲ ὑμῖν ὅτι
       </group>
-      <group>
-        <verse number="11" /> λέγω δὲ ὑμῖν ὅτι πολλοὶ ἀπὸ ἀνατολῶν καὶ δυσμῶν ἥξουσιν καὶ ἀνακλιθήσονται μετὰ Ἀβραὰμ καὶ Ἰσαὰκ καὶ Ἰακὼβ ἐν τῇ βασιλείᾳ τῶν οὐρανῶν·
+      <group indent="2">
+        πολλοὶ ἀπὸ ἀνατολῶν καὶ δυσμῶν ἥξουσιν
       </group>
-      <group>
-        <verse number="12" /> οἱ δὲ υἱοὶ τῆς βασιλείας ἐκβληθήσονται εἰς τὸ σκότος τὸ ἐξώτερον· ἐκεῖ ἔσται ὁ κλαυθμὸς καὶ ὁ βρυγμὸς τῶν ὀδόντων.
+      <group indent="2">
+        καὶ ἀνακλιθήσονται μετὰ Ἀβραὰμ καὶ Ἰσαὰκ καὶ Ἰακὼβ ἐν τῇ βασιλείᾳ τῶν οὐρανῶν·
       </group>
+      <group indent="2">
+        <verse number="12" /> οἱ δὲ υἱοὶ τῆς βασιλείας <char mark-variant="highlight-light" mark-color="red">ἐκβληθήσονται</char> εἰς τὸ σκότος τὸ ἐξώτερον·
+      </group>
+      <group indent="2">
+        ἐκεῖ ἔσται ὁ κλαυθμὸς καὶ ὁ βρυγμὸς τῶν ὀδόντων.
+      </group>
+    </group>
+  </para>
+  <para>
+    <group type="primary">
       <group>
-        <verse number="13" /> καὶ εἶπεν ὁ Ἰησοῦς τῷ ἑκατοντάρχῃ· Ὕπαγε, ὡς ἐπίστευσας γενηθήτω σοι· καὶ ἰάθη ὁ παῖς ἐν τῇ ὥρᾳ ἐκείνῃ.
+        <verse number="13" /> καὶ εἶπεν ὁ Ἰησοῦς τῷ ἑκατοντάρχῃ·
+      </group>
+      <group indent="1">
+        <char mark-variant="highlight" mark-color="purple">Ὕπαγε</char>,
+      </group>
+      <group indent="1">
+        ὡς ἐπίστευσας γενηθήτω σοι·
+      </group>
+      <optbreak />
+      <group>
+        καὶ ἰάθη ὁ <char mark-variant="highlight" mark-color="blue">παῖς</char> ἐν τῇ ὥρᾳ ἐκείνῃ.
       </group>
     </group>
   </para>

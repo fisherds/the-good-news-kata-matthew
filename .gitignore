@@ -86,3 +86,6 @@ data/matthew_concordance.json
 data/compare/
 
 __pycache__/
+
+# Septuagint in dictionary forms from bolls.life (source license unknown): local reference only.
+data/lxx/lxx_lemmas.tsv
