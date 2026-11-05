@@ -6,7 +6,7 @@ the passage it links to (Brenton's English of the Septuagint, or Tim's English f
 another verse of Matthew), with the matching
 words in bold and only those Greek words shown, inline, checked against the
 Greek (SBLGNT, Brenton's Septuagint). A short note at the bottom
-says what the match shows. Texts come from the repo; only what's below is
+says what the match shows; an optional "intro" goes above the passages. Texts come from the repo; only what's below is
 hand-edited. Re-run after changing XREFS or a unit.
 
 Usage: python3 tools/build_xrefs.py
@@ -75,12 +75,14 @@ XREFS = [
             {"ref": "Matthew 9:2", "bsb": True,
              "match": [("paralytic", "παραλυτικὸν", None), ("lying", "βεβλημένον", "thrown down")],
              "mark": ["their faith"]},
-            {"ref": "Matthew 9:6", "bsb": True,
-             "match": [("authority", "ἐξουσίαν", None), ("go home", "ὕπαγε εἰς τὸν οἶκόν σου", None)]},
         ],
-        "note": "The same two words for a man who can't move: paralyzed, and thrown down (the same perfect tense "
-                "of βάλλω). Both stories also turn on authority (8:9) and trust (8:10), and end with "
-                "“Go” (8:13).",
+        # "- " lines become a bulleted list.
+        "intro": "The same two words for a man who can't move: paralyzed, and thrown down (the same perfect tense "
+                 "of βάλλω):\n"
+                 "- has been thrown down (βέβληται): the centurion's boy / servant\n"
+                 "- lying (βεβλημένον, lit. thrown down): the paralyzed man on a mat",
+        "note": "Matthew is connecting these stories in your mind. Both turn on authority (8:9; 9:6) and "
+                "trust (8:10; 9:2), and end with “Go” (8:13; 9:6).",
     },
     {
         "id": "matthew-8-8-healed",
@@ -92,9 +94,28 @@ XREFS = [
              "match": [("was healed", "ἰάθη", None)],
              "mark": ["your faith is great", "from that very hour"]},
         ],
-        "note": "Matthew's stories use this healing word (ἰάομαι) for only two people: a Gentile centurion's boy / servant "
-                "and a Canaanite woman's daughter, both healed from a distance after Jesus praises a Gentile's "
-                "trust. (It appears once more, in a quote of Isaiah, 13:15.)",
+        "intro": "Matthew's stories use this healing word (ἰάομαι) for only two people: a Gentile centurion's "
+                 "boy / servant and a Canaanite woman's daughter.",
+        "note": "In both cases Jesus heals from a distance, after he praises these Gentiles' trust.",
+    },
+    {
+        "id": "matthew-8-7-question",
+        "title": "Question or statement?",
+        "matthew": {"ref": "8:7", "unit": "kata-matthew-8-5-13",
+                    "match": [("I, coming", "Ἐγὼ ἐλθὼν", None)]},
+        "passages": [
+            {"ref": "Matthew 3:14", "unit": "matthew-3-13-17",
+             "match": [("I need", "Ἐγὼ χρείαν ἔχω", None), ("you would come to me?!", "σὺ ἔρχῃ πρός με;", None)]},
+        ],
+        "intro": "Fun fact: the oldest Greek manuscripts have almost no punctuation and no question marks; "
+                 "scribes and editors added them later. The Greek question mark (;) came into use around the "
+                 "8th–9th centuries. It looks like our semicolon: σὺ ἔρχῃ πρός με; is “you would come to me?” So to this day we are not 100% sure whether Jesus asks this "
+                 "as a question or says it as a declarative statement. Our English Bibles are split, most print it "
+                 "as a statement, but others, like NIV, print it as a question. "
+                 "We print it as a ‘declarative question’. For example, “You want me to come to your house?” is a "
+                 "declaration but a question, so we call it a declarative question and punctuate with a ? symbol. "
+                 "Does it really matter?",
+        "note": "The “I” (Ἐγὼ) is emphatic, like John's surprised question when Jesus comes to him.",
     },
 ]
 
@@ -126,6 +147,22 @@ def unit_verse(unit, ref):
         if n == want:
             return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", text)).replace(" ,", ",").replace(" .", ".").replace("“ ", "“").replace(" ”", "”").replace("‘ ", "‘").replace(" ’", "’").replace(" !", "!").strip()
     raise SystemExit(f"{unit} has no verse {ref}")
+
+
+def comment(text):
+    """Commentary as HTML: plain paragraphs, with "- " lines as a bulleted list."""
+    out, items = [], []
+    for line in text.split("\n"):
+        if line.startswith("- "):
+            items.append(f"<li>{html.escape(line[2:])}</li>")
+            continue
+        if items:
+            out.append("<ul>" + "".join(items) + "</ul>")
+            items = []
+        out.append(f"<p>{html.escape(line)}</p>")
+    if items:
+        out.append("<ul>" + "".join(items) + "</ul>")
+    return "".join(out)
 
 
 def emphasize(text, greek, match=(), mark=()):
@@ -189,7 +226,13 @@ def main():
                 "en": emphasize(lxx_en[p["ref"]], lxx_gk[p["ref"]], p.get("match", ()), p.get("mark", ())),
                 "sources": "Brenton’s English (1851) · Greek: Brenton’s Septuagint",
             })
-        out.append({"id": x["id"], "title": x["title"], "passages": passages, "note": html.escape(x["note"])})
+        entry = {"id": x["id"], "title": x["title"]}
+        if x.get("intro"):
+            entry["intro"] = comment(x["intro"])  # commentary above the passages
+        entry["passages"] = passages
+        if x.get("note"):
+            entry["note"] = comment(x["note"])  # commentary below them
+        out.append(entry)
     path = os.path.join(ROOT, "public", "data", "xrefs.json")
     with open(path, "w", encoding="utf-8") as f:
         json.dump({"xrefs": out}, f, ensure_ascii=False, indent=1)

@@ -270,7 +270,7 @@ const LiteraryDesign = (() => {
   let dialog = null;
 
   async function showXref(id) {
-    xrefs = xrefs || fetch(XREFS).then((r) => r.json()).then((d) => new Map(d.xrefs.map((x) => [x.id, x])));
+    xrefs = xrefs || fetch(XREFS, { cache: "no-cache" }).then((r) => r.json()).then((d) => new Map(d.xrefs.map((x) => [x.id, x])));
     let xref;
     try {
       xref = (await xrefs).get(id);
@@ -291,7 +291,9 @@ const LiteraryDesign = (() => {
     }
     dialog.querySelector("h2").textContent = xref.title;
     // The texts are our own generated HTML (escaped, with <strong>/<mark> only).
+    // "intro" (optional) is commentary above the passages, "note" below them.
     dialog.querySelector(".body").innerHTML =
+      (xref.intro ? `<div class="note intro">${xref.intro}</div>` : "") +
       xref.passages
         .map(
           (p) =>
@@ -299,7 +301,8 @@ const LiteraryDesign = (() => {
             `<p class="en">${p.en}</p>` +
             `<div class="sources">${p.sources}</div></div>`
         )
-        .join("") + `<p class="note">${xref.note}</p>`;
+        .join("") +
+      (xref.note ? `<div class="note">${xref.note}</div>` : "");
     dialog.querySelector(".body").scrollTop = 0;
     if (!dialog.open) dialog.showModal();
   }

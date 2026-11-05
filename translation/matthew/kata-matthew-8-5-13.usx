@@ -29,14 +29,14 @@
         <verse number="7" /> And he said to him,
       </group>
       <group indent="1">
-        “I, <char mark-variant="highlight-light" mark-color="cyan" word-lang="greek" word-original="ἐλθὼν">coming</char>, will heal him?”
+        “<char style="bd" mark-variant="highlight-light" mark-color="cyan" word-lang="greek" word-original="Ἐγὼ ἐλθὼν">I, coming</char>, will heal him?”<note style="x" caller="+" xref="matthew-8-7-question"><char style="xt">Matthew 3:14</char></note>
       </group>
       <optbreak />
       <group>
         <verse number="8" /> And responding, the centurion said,
       </group>
       <group indent="1">
-        “<char mark-variant="highlight" mark-color="black">Master</char>, <char style="bd">I am not worthy</char><note style="x" caller="+" xref="matthew-8-8-worthy"><char style="xt">Matthew 3:11</char></note> that you <char mark-variant="highlight-light" mark-color="cyan">come in</char> <char mark-variant="highlight-light" mark-color="orange" word-lang="greek" word-original="ὑπὸ">under</char> my roof,
+        “<char mark-variant="highlight" mark-color="black">Master</char>, <char style="bd">I am not worthy</char><note style="x" caller="+" xref="matthew-8-8-worthy"><char style="xt">Matthew 3:11</char></note> that you <char mark-variant="highlight-light" mark-color="cyan" word-lang="greek" word-original="εἰσ-έλθῃς" word-gloss="into-come">come in</char> <char mark-variant="highlight-light" mark-color="orange" word-lang="greek" word-original="ὑπὸ">under</char> my roof,
       </group>
       <group indent="1">
         but only speak with a word,
@@ -55,7 +55,7 @@
         and I say to this one, ‘<char mark-variant="highlight" mark-color="purple">Go</char>!’ and he <char mark-variant="highlight" mark-color="purple">goes</char>,
       </group>
       <group indent="1">
-        and to another, ‘<char mark-variant="highlight-light" mark-color="cyan" word-lang="greek" word-original="Ἔρχου">Come</char>!’ and he <char mark-variant="highlight-light" mark-color="cyan" word-lang="greek" word-original="ἔρχεται">comes</char>,
+        and to another, ‘<char mark-variant="highlight-light" mark-color="cyan">Come</char>!’ and he <char mark-variant="highlight-light" mark-color="cyan">comes</char>,
       </group>
       <group indent="1">
         and to my slave, ‘<char mark-variant="highlight-light" mark-color="tan">Do this</char>!’ and he <char mark-variant="highlight-light" mark-color="tan">does</char>.”

@@ -15,7 +15,7 @@
      "sources": "Brenton’s English (1851) · Greek: Brenton’s Septuagint"
     }
    ],
-   "note": "The same four Greek words. In Exodus the outstretched hand strikes Egypt with wonders; here it touches an outcast and makes him clean, the first of the wonders in Matthew 8–9."
+   "note": "<p>The same four Greek words. In Exodus the outstretched hand strikes Egypt with wonders; here it touches an outcast and makes him clean, the first of the wonders in Matthew 8–9.</p>"
   },
   {
    "id": "matthew-8-2-master",
@@ -32,7 +32,7 @@
      "sources": "Tim Mackie’s translation (BibleProject) · Greek: SBLGNT"
     }
    ],
-   "note": "The Sermon ends by warning that saying “Master” is not enough; what counts is the Father&#x27;s desire. The first person down the mountain says “Master” and leaves it to Jesus&#x27; desire: “if you want” (θέλω, the root of θέλημα)."
+   "note": "<p>The Sermon ends by warning that saying “Master” is not enough; what counts is the Father&#x27;s desire. The first person down the mountain says “Master” and leaves it to Jesus&#x27; desire: “if you want” (θέλω, the root of θέλημα).</p>"
   },
   {
    "id": "matthew-8-8-worthy",
@@ -49,11 +49,12 @@
      "sources": "Tim Mackie’s translation (BibleProject) · Greek: SBLGNT"
     }
    ],
-   "note": "Only two people in Matthew say these words: John the Baptist, about the one coming after him, and a Gentile centurion, about Jesus coming under his roof."
+   "note": "<p>Only two people in Matthew say these words: John the Baptist, about the one coming after him, and a Gentile centurion, about Jesus coming under his roof.</p>"
   },
   {
    "id": "matthew-8-6-thrown",
    "title": "Paralyzed, thrown down",
+   "intro": "<p>The same two words for a man who can&#x27;t move: paralyzed, and thrown down (the same perfect tense of βάλλω):</p><ul><li>has been thrown down (βέβληται): the centurion&#x27;s boy / servant</li><li>lying (βεβλημένον, lit. thrown down): the paralyzed man on a mat</li></ul>",
    "passages": [
     {
      "ref": "Matthew 8:6",
@@ -64,18 +65,14 @@
      "ref": "Matthew 9:2",
      "en": "Just then some men brought to Him a <strong>paralytic</strong> (<strong lang=\"grc\">παραλυτικὸν</strong>) <strong>lying</strong> (<strong lang=\"grc\">βεβλημένον</strong> lit. thrown down) on a mat. When Jesus saw <mark>their faith</mark>, He said to the paralytic, “Take courage, son; your sins are forgiven.”",
      "sources": "Berean Standard Bible (public domain) · Greek: SBLGNT"
-    },
-    {
-     "ref": "Matthew 9:6",
-     "en": "But so that you may know that the Son of Man has <strong>authority</strong> (<strong lang=\"grc\">ἐξουσίαν</strong>) on earth to forgive sins...” Then He said to the paralytic, “Get up, pick up your mat, and <strong>go home</strong> (<strong lang=\"grc\">ὕπαγε εἰς τὸν οἶκόν σου</strong>).”",
-     "sources": "Berean Standard Bible (public domain) · Greek: SBLGNT"
     }
    ],
-   "note": "The same two words for a man who can&#x27;t move: paralyzed, and thrown down (the same perfect tense of βάλλω). Both stories also turn on authority (8:9) and trust (8:10), and end with “Go” (8:13)."
+   "note": "<p>Matthew is connecting these stories in your mind. Both turn on authority (8:9; 9:6) and trust (8:10; 9:2), and end with “Go” (8:13; 9:6).</p>"
   },
   {
    "id": "matthew-8-8-healed",
    "title": "Healed from a distance",
+   "intro": "<p>Matthew&#x27;s stories use this healing word (ἰάομαι) for only two people: a Gentile centurion&#x27;s boy / servant and a Canaanite woman&#x27;s daughter.</p>",
    "passages": [
     {
      "ref": "Matthew 8:8",
@@ -88,7 +85,25 @@
      "sources": "Berean Standard Bible (public domain) · Greek: SBLGNT"
     }
    ],
-   "note": "Matthew&#x27;s stories use this healing word (ἰάομαι) for only two people: a Gentile centurion&#x27;s boy / servant and a Canaanite woman&#x27;s daughter, both healed from a distance after Jesus praises a Gentile&#x27;s trust. (It appears once more, in a quote of Isaiah, 13:15.)"
+   "note": "<p>In both cases Jesus heals from a distance, after he praises these Gentiles&#x27; trust.</p>"
+  },
+  {
+   "id": "matthew-8-7-question",
+   "title": "Question or statement?",
+   "intro": "<p>Fun fact: the oldest Greek manuscripts have almost no punctuation and no question marks; scribes and editors added them later. The Greek question mark (;) came into use around the 8th–9th centuries. It looks like our semicolon: σὺ ἔρχῃ πρός με; is “you would come to me?” So to this day we are not 100% sure whether Jesus asks this as a question or says it as a declarative statement. Our English Bibles are split, most print it as a statement, but others, like NIV, print it as a question. We print it as a ‘declarative question’. For example, “You want me to come to your house?” is a declaration but a question, so we call it a declarative question and punctuate with a ? symbol. Does it really matter?</p>",
+   "passages": [
+    {
+     "ref": "Matthew 8:7",
+     "en": "And he said to him, “<strong>I, coming</strong> (<strong lang=\"grc\">Ἐγὼ ἐλθὼν</strong>), will heal him?”",
+     "sources": "kata Matthew · Greek: SBLGNT"
+    },
+    {
+     "ref": "Matthew 3:14",
+     "en": "but Ioannes prevented him, saying, “<strong>I need</strong> (<strong lang=\"grc\">Ἐγὼ χρείαν ἔχω</strong>) to immersed by you, and <strong>you would come to me?!</strong> (<strong lang=\"grc\">σὺ ἔρχῃ πρός με;</strong>)”",
+     "sources": "Tim Mackie’s translation (BibleProject) · Greek: SBLGNT"
+    }
+   ],
+   "note": "<p>The “I” (Ἐγὼ) is emphatic, like John&#x27;s surprised question when Jesus comes to him.</p>"
   }
  ]
 }
