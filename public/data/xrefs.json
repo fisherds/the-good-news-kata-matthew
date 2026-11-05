@@ -16,6 +16,79 @@
     }
    ],
    "note": "The same four Greek words. In Exodus the outstretched hand strikes Egypt with wonders; here it touches an outcast and makes him clean, the first of the wonders in Matthew 8–9."
+  },
+  {
+   "id": "matthew-8-2-master",
+   "title": "“Master”",
+   "passages": [
+    {
+     "ref": "Matthew 8:2",
+     "en": "And look, a skin-diseased man, approaching, was bowing down to him, saying, “<strong>Master</strong> (<strong lang=\"grc\">Κύριε</strong>), if you <strong>want</strong> (<strong lang=\"grc\">θέλῃς</strong>), you are able to make me clean.”",
+     "sources": "kata Matthew · Greek: SBLGNT"
+    },
+    {
+     "ref": "Matthew 7:21",
+     "en": "Not everyone who says to me, “<strong>Master, master!</strong> (<strong lang=\"grc\">Κύριε κύριε</strong>)” will enter into the kingdom of the skies, but rather the one who does the <strong>desire</strong> (<strong lang=\"grc\">θέλημα</strong>) of my Father in the skies.",
+     "sources": "Tim Mackie’s translation (BibleProject) · Greek: SBLGNT"
+    }
+   ],
+   "note": "The Sermon ends by warning that saying “Master” is not enough; what counts is the Father&#x27;s desire. The first person down the mountain says “Master” and leaves it to Jesus&#x27; desire: “if you want” (θέλω, the root of θέλημα)."
+  },
+  {
+   "id": "matthew-8-8-worthy",
+   "title": "“I am not worthy”",
+   "passages": [
+    {
+     "ref": "Matthew 8:8",
+     "en": "And responding, the centurion said, “Master, <strong>I am not worthy</strong> (<strong lang=\"grc\">οὐκ εἰμὶ ἱκανὸς</strong>) that you <mark>come in</mark> under my roof, but only speak with a word, and my boy will be healed.",
+     "sources": "kata Matthew · Greek: SBLGNT"
+    },
+    {
+     "ref": "Matthew 3:11",
+     "en": "For I immerse y’all in water for a change-of-direction, but <mark>the one coming after me</mark> is more strong than me, whose sandal <strong>I am not worthy</strong> (<strong lang=\"grc\">οὐκ εἰμὶ ἱκανὸς</strong>) to carry. He will immerse you with the holy spirit and fire,",
+     "sources": "Tim Mackie’s translation (BibleProject) · Greek: SBLGNT"
+    }
+   ],
+   "note": "Only two people in Matthew say these words: John the Baptist, about the one coming after him, and a Gentile centurion, about Jesus coming under his roof."
+  },
+  {
+   "id": "matthew-8-6-thrown",
+   "title": "Paralyzed, thrown down",
+   "passages": [
+    {
+     "ref": "Matthew 8:6",
+     "en": "and saying, “Master, my boy <strong>has been thrown down</strong> (<strong lang=\"grc\">βέβληται</strong>) in the house, <strong>paralyzed</strong> (<strong lang=\"grc\">παραλυτικός</strong>), terribly tormented.”",
+     "sources": "kata Matthew · Greek: SBLGNT"
+    },
+    {
+     "ref": "Matthew 9:2",
+     "en": "Just then some men brought to Him a <strong>paralytic</strong> (<strong lang=\"grc\">παραλυτικὸν</strong>) <strong>lying</strong> (<strong lang=\"grc\">βεβλημένον</strong> lit. thrown down) on a mat. When Jesus saw <mark>their faith</mark>, He said to the paralytic, “Take courage, son; your sins are forgiven.”",
+     "sources": "Berean Standard Bible (public domain) · Greek: SBLGNT"
+    },
+    {
+     "ref": "Matthew 9:6",
+     "en": "But so that you may know that the Son of Man has <strong>authority</strong> (<strong lang=\"grc\">ἐξουσίαν</strong>) on earth to forgive sins...” Then He said to the paralytic, “Get up, pick up your mat, and <strong>go home</strong> (<strong lang=\"grc\">ὕπαγε εἰς τὸν οἶκόν σου</strong>).”",
+     "sources": "Berean Standard Bible (public domain) · Greek: SBLGNT"
+    }
+   ],
+   "note": "The same two words for a man who can&#x27;t move: paralyzed, and thrown down (the same perfect tense of βάλλω). Both stories also turn on authority (8:9) and trust (8:10), and end with “Go” (8:13)."
+  },
+  {
+   "id": "matthew-8-8-healed",
+   "title": "Healed from a distance",
+   "passages": [
+    {
+     "ref": "Matthew 8:8",
+     "en": "And responding, the centurion said, “Master, I am not worthy that you come in under my roof, but only speak with a word, and my boy <strong>will be healed</strong> (<strong lang=\"grc\">ἰαθήσεται</strong>).",
+     "sources": "kata Matthew · Greek: SBLGNT"
+    },
+    {
+     "ref": "Matthew 15:28",
+     "en": "“O woman,” Jesus answered, “<mark>your faith is great</mark>! Let it be done for you as you desire.” And her daughter <strong>was healed</strong> (<strong lang=\"grc\">ἰάθη</strong>) <mark>from that very hour</mark>.",
+     "sources": "Berean Standard Bible (public domain) · Greek: SBLGNT"
+    }
+   ],
+   "note": "Matthew&#x27;s stories use this healing word (ἰάομαι) for only two people: a Gentile centurion&#x27;s boy / servant and a Canaanite woman&#x27;s daughter, both healed from a distance after Jesus praises a Gentile&#x27;s trust. (It appears once more, in a quote of Isaiah, 13:15.)"
   }
  ]
 }

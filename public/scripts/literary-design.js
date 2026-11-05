@@ -147,7 +147,9 @@ const LiteraryDesign = (() => {
         el = document.createElement(variant || color ? "mark" : plainTag);
         if (!variant && !color && attr("style") === "add") el.className = "ld-add";
         if (variant || color) {
-          el.className = ["ld-mark", color, variant].filter(Boolean).join(" ");
+          // style="bd" on a highlight: heavier weight (highlights are already semi-bold),
+          // for a highlighted word that carries a cross-reference.
+          el.className = ["ld-mark", color, variant, attr("style") === "bd" && "bd"].filter(Boolean).join(" ");
         }
         el.appendChild(children());
         if (attr("word-original")) {

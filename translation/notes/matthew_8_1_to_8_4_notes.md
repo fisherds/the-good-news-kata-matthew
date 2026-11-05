@@ -14,7 +14,7 @@ Our first translated unit. Unit file: `translation/matthew/kata-matthew-8-1-4.us
 | δὲ | deh | now | a light joining word; never first in its clause |
 | αὐτοῦ | ow-TOO | he / him | *auto-* as in "automatic" (self) |
 | ἀπὸ τοῦ ὄρους | a-PO too O-roos | from the mountain | the mountain of 5:1 |
-| ἠκολούθησαν | ay-ko-LOO-thay-san | they followed | *akoloutheō*, Matthew's discipleship word |
+| ἠκολούθησαν αὐτῷ | ay-ko-LOO-thay-san ow-TOH | they followed him | *akoloutheō*, Matthew's discipleship word |
 | ὄχλοι πολλοί | OKH-loy pol-LOY | many crowds | *polloi* as in "polygon" |
 
 **Grammar:** Greek can hang "him having come down" on the sentence as a phrase on its own. English says "when he came down".
@@ -37,7 +37,7 @@ The Sermon is framed by going up and coming down. "Followed" comes back in all f
 | καὶ ἰδοὺ | kai i-DOO | and look | "look" (never "behold") |
 | λεπρὸς | lep-ROS | a skin-diseased man | from *lepis*, "scale" |
 | προσελθὼν | pros-el-THOHN | approaching | "approaching" (4:3) |
-| προσεκύνει | pros-e-KOO-nay | he was bowing down | "bow down", the Magi's word (2:2, 2:11) |
+| προσεκύνει αὐτῷ | pros-e-KOO-nay ow-TOH | was bowing down to him (imperfect) | "bow down", the Magi's word (2:2, 2:11) |
 | λέγων | LEH-gohn | saying | |
 | Κύριε | KOO-ree-eh | Master | "Master, master!" (7:21) |
 | ἐὰν θέλῃς | eh-AN THEL-ace | if you want | *thelō* "want" (5:40) |
@@ -55,8 +55,8 @@ The Sermon is framed by going up and coming down. "Followed" comes back in all f
 
 | Greek | Sounds like | Meaning | Note |
 |---|---|---|---|
-| ἐκτείνας τὴν χεῖρα | ek-TAY-nas tayn KHAY-ra | stretching out **the** hand | Greek says "the hand" where English says "his hand" |
-| ἥψατο αὐτοῦ | HAYP-sa-to ow-TOO | he touched him | touching him should make Jesus unclean (Leviticus 13:45–46); here cleanness goes the other way |
+| καὶ ἐκτείνας τὴν χεῖρα | kai ek-TAY-nas tayn KHAY-ra | and stretching out **the** hand | Greek idiom: "the" with a body part means "his" (Matthew adds αὐτοῦ "his" in 12:49 with no change in meaning). We keep "the hand" because it's word for word and keeps the Exodus 3:20 match visible |
+| ἥψατο αὐτοῦ λέγων | HAYP-sa-to ow-TOO LEH-gohn | he touched him, saying | touching him should make Jesus unclean (Leviticus 13:45–46); here cleanness goes the other way |
 | Θέλω | THEL-oh | I want | his answer repeats the man's word |
 | καθαρίσθητι | ka-tha-RIS-thay-tee | be clean! | a command in the passive |
 | εὐθέως | yoo-THEH-ohs | immediately | Tim 4:20, 22 |
@@ -79,7 +79,7 @@ The Sermon is framed by going up and coming down. "Followed" comes back in all f
 
 | Greek | Sounds like | Meaning | Note |
 |---|---|---|---|
-| λέγει | LEH-gay | he *says* | present tense in a past story; Tim makes it "said" (4:19) |
+| καὶ λέγει αὐτῷ | kai LEH-gay ow-TOH | and he *says* to him | present tense in a past story; Tim makes it "said" (4:19) |
 | ὁ Ἰησοῦς | ho ee-ay-SOOS | Iesous | |
 | Ὅρα μηδενὶ εἴπῃς | HO-ra may-deh-NEE AY-pace | see that you tell no one | |
 | ἀλλὰ ὕπαγε | al-LA HOO-pa-geh | but go | Tim 5:24, same word |
@@ -97,7 +97,7 @@ The Sermon is framed by going up and coming down. "Followed" comes back in all f
 - **"Now"** for δέ (8:1), so it stays apart from καί "and". Every one of the other five "and"s is a καί in the Greek.
 - **"many crowds"** and **"followed him"**, matching Tim 4:25. "Follow after" is saved for ἀκολουθέω ὀπίσω (10:38). Not "walked" (that's περιπατέω, 9:5) or "apprenticed" (that's for μαθητής, disciple).
 - **"skin-diseased *man*" / "skin disease"**: the Levitical sense, not only Hansen's disease. The parts of speech match the Greek: λεπρὸς (8:2) is an **adjective** standing alone as a person ("a skin-diseased one", like "the poor"), and λέπρα (8:3) is the **noun**. Greek needs no word for "man"; the masculine ending -ος says it. English needs one, so *man* is supplied, in light italics. "A skin-diseased one" was the option if we wanted nothing supplied.
-- **"approaching, he bowed down to him"**: bowing down is the main verb; approaching is the participle. "He" is already inside the Greek verb, the same as "he touched him".
+- **"approaching, / was bowing down to him"**: bowing down is the main verb; approaching is the participle. προσεκύνει is **imperfect** (ongoing past), the only non-aorist verb in the healing, so "was bowing down": he stays on his face, bowing again and again. The touch (ἥψατο) is aorist, one act. No "he": the Greek states the subject once (λεπρὸς … προσεκύνει), so the English runs straight on from "a skin-diseased *man*". (First version: "he bowed down to him"; changed once we saw the imperfect.)
 - **"clean" three times**, each with "clean / pure" in its Greek bracket: "Be clean (καθαρίσθητι clean / pure)". No form means "pure" more than another, so all three get it.
 - **Supplied words in light italics** (like the NASB): *man* (8:2; λεπρὸς is "a skin-diseased one", male from the ending) and *that* (8:4; Ὅρα μηδενὶ εἴπῃς is literally "see, tell no one"). Not "he" (inside the verb) or "a" (Greek has no word for it).
 - **"Iesous", "Mouses"**: Greek name forms, like Tim's.
@@ -107,7 +107,7 @@ The Sermon is framed by going up and coming down. "Followed" comes back in all f
 
 ```
 approaching,                          And stretching out the hand,
-he bowed down to him, saying,         he touched him, saying,
+was bowing down to him, saying,       he touched him, saying,
    “Master, if you want,                 “I want.
    you are able to make me clean.”       Be clean.”
 ```
@@ -121,10 +121,10 @@ he bowed down to him, saying,         he touched him, saying,
 | Red, light | skin-diseased · skin disease | same root, λεπρός / λέπρα |
 | Blue | want · want | the ask, the answer |
 | Green, light | make me clean · be clean · was made clean | the ask, the command, the result |
-| Green, dark | bowed down to him · touched him | face down; answered with a touch |
+| Green, dark | was bowing down to him · touched him | face down; answered with a touch |
 | Orange, light | tell no one · witness | don't tell; be a witness |
 | Tan text | came down from the mountain | back to 5:1 |
-| **Bold** | the hand | see below |
+| **Bold** | stretching out the hand | the whole phrase matches Exodus 3:20; see below |
 
 ---
 
@@ -135,10 +135,11 @@ These started in 8:1–4 and are the rules for every later unit.
 | What | How it looks | Markup | Rule |
 |---|---|---|---|
 | Repeated-word highlight | colored, with the Greek in brackets | `<char mark-variant mark-color word-original="…">` | only words that repeat; the Greek at **every** occurrence, in the form used there |
+| Greek bracket | "approached (προσῆλθεν)" | `word-original` | **only when a matching Greek word is in sight** (or for the gloss trick). No nearby match → highlight without Greek; a far link → ⓘ (rule set in 8:5–9) |
 | Second meaning | "Be clean (καθαρίσθητι clean / pure)" | `word-gloss="clean / pure"` | when the English word hides half the Greek word; same gloss on every form |
-| Word to notice | **bold** | `<char style="bd">` | not a repeat, but it opens a connection ("the hand") |
+| Word to notice | **bold** | `<char style="bd">` | not a repeat, but it opens a connection ("stretching out the hand") |
 | Supplied word | light grey *italics*, like the NASB | `<char style="add">` | English needs it, Greek has no word for it (*man*, *that*). Not for "he" inside a verb, "a", or "when" for a participle |
-| Cross-reference | a small circled **i** after the word; click opens a pop-up | `<note style="x" xref="id">` + `tools/build_xrefs.py` | **evidence, not opinion**: English of both passages, the matching words bold with only those Greek words inline; "lit. …" if the English hides the match; the Old Testament side labeled "LXX, the Greek translation of the Hebrew Bible"; one short sentence of point at the bottom. Only links Matthew's Greek actually makes, checked with `tools/lxx.py` |
+| Cross-reference | a small circled **i** after the word; click opens a pop-up | `<note style="x" xref="id">` + `tools/build_xrefs.py` | **evidence, not opinion**: English of both passages, the matching words bold with only those Greek words inline; "lit. …" if the English hides the match; the Old Testament side labeled "LXX, the Greek translation of the Hebrew Bible"; one short sentence of point at the bottom. Only links Matthew's Greek actually makes, checked with `tools/lxx.py`; the words it hangs on are always **bold** (on a highlight, `style="bd"` on the same char; set in 8:5–9) |
 | Boxes | strong box for the core, light boxes for the frame, thin lines inside | `<group type>`, `<optbreak />` | use structure, not verse numbers; no sidebar letters |
 | Parallel lines | same indents | `indent` | ask and answer line up (8:2 / 8:3) |
 | Names | Iesous, Mouses | | Tim's Greek name forms |
@@ -168,7 +169,7 @@ The plural rules out the one priest. Most likely it means the people: the crowds
 
 ### Stretching out *the* hand (your insight)
 
-Greek says "the hand", not "his hand", and keeping it opens up a picture of a king.
+The weight is on the **whole phrase**, not on "the": in Greek, "the" with a body part is just the normal way to say "his" (12:49 says τὴν χεῖρα αὐτοῦ, "his hand", 14:31 just τὴν χεῖρα, same meaning). We keep "the hand" because it is word for word, and because the four words καὶ ἐκτείνας τὴν χεῖρα are identical to Exodus 3:20, so "the hand" lets an English reader see the match that "his hand" / "my hand" would hide. The phrase opens up a picture of a king.
 
 - **Esther 4:11, 5:2:** anyone who approaches the king uninvited dies, unless the king holds out the golden scepter in his hand. Here the outcast approaches and bows, and the king stretches out the hand.
 - **Exodus 3:20:** in the Greek Old Testament, God says "**stretching out the hand** (ἐκτείνας τὴν χεῖρα), I will strike the Egyptians". These are Matthew's exact words (checked against the Greek Old Testament). The verse before says Pharaoh won't let them go "except by a mighty hand" (3:19). There the hand strikes Pharaoh; here it heals. It became our first cross-reference (the ⓘ after "the hand"; see "Systems" below). See also 7:5 and the "mighty hand and outstretched arm" of Deuteronomy 4:34 and 5:15.
@@ -186,7 +187,7 @@ Greek says "the hand", not "his hand", and keeping it opens up a picture of a ki
 
 The Exodus hand strikes. Every time Jesus stretches out the hand, it rescues or welcomes. In Gethsemane a disciple reaches for the Exodus way, and Jesus refuses it. Matthew's only other use of θαυμάσια, "wonders", is in 21:15: the chief priests see "the wonders he did" in the Temple, healing the blind and the lame, and they are angry.
 
-This is why we bold **the hand**.
+This is why we bold **stretching out the hand**: the whole phrase is the match. (First we bolded only "the hand", thinking the Greek "the" was the point; it's the phrase.)
 
 ### "I want", not "I am willing"
 
@@ -199,3 +200,7 @@ The leper (8:2), the Gentile centurion (8:5) and a woman (8:14). None of them co
 ## For later
 
 - **Old Testament button:** "unclean" (Leviticus 13:45–46, 14:1–4) is on the 1.1 row.
+
+## Added later (during 8:5–9)
+
+- **Master is page-wide dark grey** (`black` highlight, Tim's color for "Master, master!" in 7:21–22). Tentative: an ⓘ on this first "Master" links to 7:21: saying "Master" isn't enough, but doing the Father's desire (θέλημα); the leper says "Master" and leaves it to Jesus' want (θέλῃς, the same root). Only the first "Master" gets the ⓘ; later ones would all show the same pop-up.

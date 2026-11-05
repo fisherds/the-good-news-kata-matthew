@@ -16,6 +16,15 @@
             "value": "public, max-age=86400"
           }
         ]
+      },
+      {
+        "source": "/visuals/{bundle-kata.json,kata-*.json}",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache"
+          }
+        ]
       }
     ]
   }

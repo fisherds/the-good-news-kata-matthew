@@ -19,17 +19,17 @@
         <char mark-variant="highlight-light" mark-color="turquoise" word-lang="greek" word-original="προσελθὼν">approaching</char>,
       </group>
       <group>
-        he <char mark-variant="highlight-dark" mark-color="green">bowed down to him</char>, saying,
+        <char mark-variant="highlight-dark" mark-color="green">was bowing down to him</char>, saying,
       </group>
       <group indent="1">
-        “Master, if you <char mark-variant="highlight" mark-color="blue" word-lang="greek" word-original="θέλῃς">want</char>,
+        “<char style="bd" mark-variant="highlight" mark-color="black">Master</char><note style="x" caller="+" xref="matthew-8-2-master"><char style="xt">Matthew 7:21</char></note>, if you <char mark-variant="highlight" mark-color="blue" word-lang="greek" word-original="θέλῃς">want</char>,
       </group>
       <group indent="1">
         you are able <char mark-variant="highlight-light" mark-color="green" word-lang="greek" word-original="καθαρίσαι" word-gloss="clean / pure">to make me clean</char>.”
       </group>
       <optbreak />
       <group>
-        <verse number="3" /> And stretching out <char style="bd">the hand</char><note style="x" caller="+" xref="matthew-8-3-hand"><char style="xt">Exodus 3:20</char></note>,
+        <verse number="3" /> And <char style="bd">stretching out the hand</char><note style="x" caller="+" xref="matthew-8-3-hand"><char style="xt">Exodus 3:20</char></note>,
       </group>
       <group>
         he <char mark-variant="highlight-dark" mark-color="green">touched him</char>, saying,

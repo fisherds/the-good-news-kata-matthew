@@ -2,7 +2,7 @@
   <para>
     <group type="secondary">
       <group>
-        <verse number="5" /> Now when he entered into Kapharnaoum,
+        <verse number="5" /> Now when he <char mark-variant="text" mark-color="tan">entered into Kapharnaoum</char>,
       </group>
     </group>
   </para>
@@ -16,49 +16,49 @@
         <char mark-variant="highlight-light" mark-color="turquoise" word-lang="greek" word-original="προσῆλθεν">approached</char> him,
       </group>
       <group>
-        <char mark-variant="highlight-light" mark-color="violet" word-lang="greek" word-original="παρακαλῶν">pleading with</char> him <verse number="6" /> and saying,
+        <char mark-variant="highlight-light" mark-color="violet">pleading with</char> him <verse number="6" /> and saying,
       </group>
       <group indent="1">
-        “Master, my <char mark-variant="highlight" mark-color="blue" word-lang="greek" word-original="παῖς" word-gloss="son / servant">boy</char> <char mark-variant="highlight-light" mark-color="red" word-lang="greek" word-original="βέβληται">has been thrown down</char> in the house,
+        “<char mark-variant="highlight" mark-color="black">Master</char>, my <char mark-variant="highlight" mark-color="blue" word-lang="greek" word-original="παῖς" word-gloss="son / servant">boy</char> <char style="bd" mark-variant="highlight-light" mark-color="red">has been thrown down</char><note style="x" caller="+" xref="matthew-8-6-thrown"><char style="xt">Matthew 9:2</char></note> in the house,
       </group>
       <group indent="1">
         paralyzed, terribly tormented.”
       </group>
       <optbreak />
       <group>
-        <verse number="7" /> καὶ λέγει αὐτῷ·
+        <verse number="7" /> And he said to him,
       </group>
       <group indent="1">
-        Ἐγὼ ἐλθὼν θεραπεύσω αὐτόν.
+        “I, <char mark-variant="highlight-light" mark-color="cyan" word-lang="greek" word-original="ἐλθὼν">coming</char>, will heal him?”
       </group>
       <optbreak />
       <group>
-        <verse number="8" /> καὶ ἀποκριθεὶς ὁ ἑκατόνταρχος ἔφη·
+        <verse number="8" /> And responding, the centurion said,
       </group>
       <group indent="1">
-        Κύριε, οὐκ εἰμὶ ἱκανὸς ἵνα μου ὑπὸ τὴν στέγην εἰσέλθῃς·
+        “<char mark-variant="highlight" mark-color="black">Master</char>, <char style="bd">I am not worthy</char><note style="x" caller="+" xref="matthew-8-8-worthy"><char style="xt">Matthew 3:11</char></note> that you <char mark-variant="highlight-light" mark-color="cyan">come in</char> <char mark-variant="highlight-light" mark-color="orange" word-lang="greek" word-original="ὑπὸ">under</char> my roof,
       </group>
       <group indent="1">
-        ἀλλὰ μόνον εἰπὲ λόγῳ,
+        but only speak with a word,
       </group>
       <group indent="1">
-        καὶ ἰαθήσεται ὁ <char mark-variant="highlight" mark-color="blue">παῖς</char> μου·
+        and my <char mark-variant="highlight" mark-color="blue" word-lang="greek" word-original="παῖς" word-gloss="son / servant">boy</char> <char style="bd" mark-variant="highlight-light" mark-color="green" word-lang="greek" word-original="ἰαθήσεται">will be healed</char><note style="x" caller="+" xref="matthew-8-8-healed"><char style="xt">Matthew 15:28</char></note>.
       </group>
       <optbreak />
-      <group indent="1">
-        <verse number="9" /> καὶ γὰρ ἐγὼ ἄνθρωπός εἰμι ὑπὸ ἐξουσίαν,
+      <group>
+        <verse number="9" /> For I too am a man <char mark-variant="highlight-light" mark-color="orange" word-lang="greek" word-original="ὑπὸ">under</char> <char mark-variant="text" mark-color="orange">authority</char>,
+      </group>
+      <group>
+        having soldiers <char mark-variant="highlight-light" mark-color="orange" word-lang="greek" word-original="ὑπʼ">under</char> me,
       </group>
       <group indent="1">
-        ἔχων ὑπʼ ἐμαυτὸν στρατιώτας,
+        and I say to this one, ‘<char mark-variant="highlight" mark-color="purple">Go</char>!’ and he <char mark-variant="highlight" mark-color="purple">goes</char>,
       </group>
-      <group indent="2">
-        καὶ λέγω τούτῳ· Πορεύθητι, καὶ πορεύεται,
+      <group indent="1">
+        and to another, ‘<char mark-variant="highlight-light" mark-color="cyan" word-lang="greek" word-original="Ἔρχου">Come</char>!’ and he <char mark-variant="highlight-light" mark-color="cyan" word-lang="greek" word-original="ἔρχεται">comes</char>,
       </group>
-      <group indent="2">
-        καὶ ἄλλῳ· Ἔρχου, καὶ ἔρχεται,
-      </group>
-      <group indent="2">
-        καὶ τῷ δούλῳ μου· Ποίησον τοῦτο, καὶ ποιεῖ.
+      <group indent="1">
+        and to my slave, ‘<char mark-variant="highlight-light" mark-color="tan">Do this</char>!’ and he <char mark-variant="highlight-light" mark-color="tan">does</char>.”
       </group>
     </group>
   </para>
@@ -107,7 +107,7 @@
       </group>
       <optbreak />
       <group>
-        καὶ ἰάθη ὁ <char mark-variant="highlight" mark-color="blue">παῖς</char> ἐν τῇ ὥρᾳ ἐκείνῃ.
+        καὶ <char mark-variant="highlight-light" mark-color="green">ἰάθη</char> ὁ <char mark-variant="highlight" mark-color="blue">παῖς</char> ἐν τῇ ὥρᾳ ἐκείνῃ.
       </group>
     </group>
   </para>
