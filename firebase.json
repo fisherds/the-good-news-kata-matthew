@@ -27,7 +27,7 @@
         ]
       },
       {
-        "source": "/visuals/{bundle-kata.json,kata-*.json}",
+        "source": "/visuals/{bundle-kata.json,kata-*.json,bundle-adapted.json,adapted-*.json}",
         "headers": [
           {
             "key": "Cache-Control",

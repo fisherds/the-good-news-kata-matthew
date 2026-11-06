@@ -1,0 +1,40 @@
+<usx version="2.6">
+  <para>
+    <group type="primary">
+      <group>
+        <verse number="31" /> It <char mark-variant="text" mark-color="black">has also been said</char>, 
+      </group>
+      <optbreak />
+      <group indent="1">
+        “Whoever <char mark-variant="text" mark-color="orange">sends away his wife</char>, 
+      </group>
+      <group indent="1">
+        he must give her a certificate of divorce.”
+      </group>
+    </group>
+  </para>
+  <para>
+    <group type="primary">
+      <group>
+        <verse number="32" /> <char mark-variant="text" mark-color="black">And I say to you that</char>
+      </group>
+      <optbreak />
+      <group>
+        everyone who <char mark-variant="text" mark-color="orange">sends away his wife</char>, 
+      </group>
+      <group indent="1">
+        —<char style="bd">except on the ground of sexual immorality</char>—<note style="x" caller="+" xref="matthew-5-32-divorce"><char style="xt">Matthew 19:3–12</char></note> 
+      </group>
+      <group>
+        he makes her a <char mark-variant="highlight-light" mark-color="red">victim of adultery</char>, 
+      </group>
+      <optbreak />
+      <group>
+        and whoever marries a <char mark-variant="text" mark-color="orange">sent-away-woman</char>
+      </group>
+      <group indent="1">
+        he <char mark-variant="highlight-light" mark-color="red">commits adultery</char>. 
+      </group>
+    </group>
+  </para>
+</usx>

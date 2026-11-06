@@ -145,9 +145,15 @@ button.ld-xref:hover, button.ld-xref:focus-visible { background: #657A55; color:
 .ld-xref-modal .passage p { margin: 0 0 6px; }
 .ld-xref-modal .passage strong { font-weight: 700; color: #000; }
 .ld-xref-modal .passage mark { background: #fae4c4; color: inherit; border-radius: 3px; padding: 0 2px; }
+.ld-xref-modal .passage .hl { border-radius: 3px; padding: 0 2px; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.ld-xref-modal .passage .hl-blue { background: #d4e4fb; }
+.ld-xref-modal .passage .hl-green { background: #d3f0dc; }
+.ld-xref-modal .passage .hl-purple { background: #e8dcf7; }
 .ld-xref-modal .passage .sources { font-size: .75rem; color: #6b6580; }
 .ld-xref-modal .note { margin: 12px 0 0; padding: 10px 14px; border-left: 4px solid #657A55; background: #eeebf5; border-radius: 0 8px 8px 0; }
 .ld-xref-modal .note.intro { margin: 0 0 12px; }
+.ld-xref-modal .note + .passage { margin-top: 12px; }
+.ld-xref-modal .note + .note { margin-top: 8px; }
 .ld-xref-modal .note p { margin: 0; }
 .ld-xref-modal .note p + p { margin-top: 6px; }
 .ld-xref-modal .note ul { margin: 4px 0 0; padding-left: 20px; }

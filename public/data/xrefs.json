@@ -104,6 +104,70 @@
     }
    ],
    "note": "<p>The “I” (Ἐγὼ) is emphatic, like John&#x27;s surprised question when Jesus comes to him.</p>"
+  },
+  {
+   "id": "matthew-5-32-divorce",
+   "title": "Divorce: Jesus comes back to it",
+   "intro": "<p>In the Sermon on the Mount Jesus gives a short summary of his teaching on divorce. He comes back to it in chapter 19 and says more. The Pharisees point to Moses (Deuteronomy 24:1); Jesus goes back to creation: Genesis 1:27 and 2:24 in the Septuagint, the Greek Bible of Matthew&#x27;s day.</p>",
+   "passages": [
+    {
+     "ref": "Matthew 5:32",
+     "en": "And I say to you that everyone who <strong>sends away his wife</strong> (<strong lang=\"grc\">ἀπολύων τὴν γυναῖκα αὐτοῦ</strong>), —<strong>except on the ground of sexual immorality</strong> (<strong lang=\"grc\">παρεκτὸς λόγου πορνείας</strong>)— he makes her a victim of adultery, and whoever marries a sent-away-woman he <strong>commits adultery</strong> (<strong lang=\"grc\">μοιχᾶται</strong>).",
+     "sources": "Tim Mackie’s translation (BibleProject) · Greek: SBLGNT"
+    },
+    {
+     "ref": "Matthew 19:3",
+     "en": "Then some Pharisees came and tested Him by asking, “Is it lawful for a man to <strong>divorce his wife</strong> (<strong lang=\"grc\">ἀπολῦσαι τὴν γυναῖκα αὐτοῦ</strong> lit. send away his wife) <mark>for any reason</mark>?”",
+     "sources": "Berean Standard Bible (public domain) · Greek: SBLGNT"
+    },
+    {
+     "note": "<p>The debate of the day was over Deuteronomy 24:1: a man may divorce his wife if “she does not find favor in his eyes, because he has found some indecency in her” (Hebrew ʿervat davar, lit. “nakedness of a matter”). The Mishnah (Gittin 9:10, written down around AD 200) records the readings:</p><ul><li>School of Shammai: only for “a matter of indecency”, sexual immorality.</li><li>School of Hillel: for any cause at all, “even if she spoiled his dish.”</li><li>Rabbi Akiva (early 2nd century): “even if he found another more beautiful than she”, from “she does not find favor in his eyes.”</li></ul><p>The Pharisees&#x27; “for any reason” is Hillel&#x27;s side, put to Jesus as a test.</p>"
+    },
+    {
+     "ref": "Matthew 19:4–6",
+     "en": "<sup>4</sup> Jesus answered, “Have you not read that <mark>from the beginning</mark> the Creator ‘<span class=\"hl hl-blue\"><strong>made them male and female</strong> (<strong lang=\"grc\">ἄρσεν καὶ θῆλυ ἐποίησεν αὐτοὺς</strong>)</span>,’ <sup>5</sup> and said, ‘For this reason <strong>a man will leave his father</strong> (<strong lang=\"grc\">καταλείψει ἄνθρωπος τὸν πατέρα</strong>) and mother and <span class=\"hl hl-green\"><strong>be united to his wife</strong> (<strong lang=\"grc\">κολληθήσεται τῇ γυναικὶ αὐτοῦ</strong> lit. cleave to his wife)</span>, and <strong>the two will become one flesh</strong> (<strong lang=\"grc\">ἔσονται οἱ δύο εἰς σάρκα μίαν</strong> lit. the two will be into one flesh)’? <sup>6</sup> So they are <mark>no longer two</mark>, but one flesh. Therefore <strong>what God has joined together</strong> (<strong lang=\"grc\">ὃ οὖν ὁ θεὸς συνέζευξεν</strong> lit. what God yoked together), let man not separate.”",
+     "sources": "Berean Standard Bible (public domain) · Greek: SBLGNT"
+    },
+    {
+     "ref": "Genesis 1:27 (LXX, the Greek translation of the Hebrew Bible)",
+     "en": "And God made man, according to the image of God he made him, <span class=\"hl hl-blue\"><strong>male and female he made them</strong> (<strong lang=\"grc\">ἄρσεν καὶ θῆλυ ἐποίησεν αὐτούς</strong>)</span>.",
+     "sources": "Brenton’s English (1851) · Greek: Brenton’s Septuagint"
+    },
+    {
+     "ref": "Genesis 2:24 (LXX, the Greek translation of the Hebrew Bible)",
+     "en": "Therefore <strong>shall a man leave his father</strong> (<strong lang=\"grc\">καταλείψει ἄνθρωπος τὸν πατέρα</strong>) and his mother and <span class=\"hl hl-green\"><strong>shall cleave to his wife</strong> (<strong lang=\"grc\">προσκολληθήσεται πρὸς τὴν γυναῖκα αὐτοῦ</strong>)</span>, and <strong>they two shall be one flesh</strong> (<strong lang=\"grc\">ἔσονται οἱ δύο εἰς σάρκα μίαν</strong> lit. the two shall be into one flesh).",
+     "sources": "Brenton’s English (1851) · Greek: Brenton’s Septuagint"
+    },
+    {
+     "ref": "Deuteronomy 10:20 (LXX, the Greek translation of the Hebrew Bible)",
+     "en": "Thou shalt <mark>fear the Lord thy God</mark>, and <mark>serve him</mark>, and <span class=\"hl hl-green\"><strong>shalt cleave to him</strong> (<strong lang=\"grc\">πρὸς αὐτὸν κολληθήσῃ</strong>)</span>, and shalt swear by his name.",
+     "sources": "Brenton’s English (1851) · Greek: Brenton’s Septuagint"
+    },
+    {
+     "note": "<p>“Male and female he made them” is Genesis 1:27 word for word. The Hebrew of Genesis 2:24 says only “they shall become one flesh”; “the two” (οἱ δύο) is in the Septuagint, and Jesus builds on it: the two become one, so they are “no longer two”. What God yoked together (ὃ, “what”, is the union itself) a man has no authority to pull apart.</p><p>“Cleave to his wife” (κολλάω, to glue, to cling) is the verb Moses uses for Israel&#x27;s loyalty to God: “to him you shall cleave” (κολληθήσῃ, Deuteronomy 10:20). A husband holds fast to his wife the way Israel is to hold fast to the LORD. (Genesis 2:24 and many manuscripts of Matthew have προσκολληθήσεται, the same verb with προς, “toward”, in front; the oldest have the plain κολληθήσεται, exactly Deuteronomy&#x27;s word.)</p>"
+    },
+    {
+     "ref": "Matthew 19:7–9",
+     "en": "<sup>7</sup> “Why then,” they asked, “did Moses order a man to give his wife a <span class=\"hl hl-purple\"><strong>certificate of divorce</strong> (<strong lang=\"grc\">βιβλίον ἀποστασίου</strong>)</span> and send her away?” <sup>8</sup> Jesus replied, “Moses permitted you to divorce your wives because of your <mark>hardness of heart</mark>; but it was <mark>not this way from the beginning</mark>. <sup>9</sup> Now I tell you that whoever divorces his wife, <strong>except for sexual immorality</strong> (<strong lang=\"grc\">μὴ ἐπὶ πορνείᾳ</strong>), and marries another woman, <strong>commits adultery</strong> (<strong lang=\"grc\">μοιχᾶται</strong>).”",
+     "sources": "Berean Standard Bible (public domain) · Greek: SBLGNT"
+    },
+    {
+     "ref": "Deuteronomy 24:1 (LXX, the Greek translation of the Hebrew Bible)",
+     "en": "And if any one should take a wife, and should dwell with her, then it shall come to pass if <mark>she should not have found favour before him</mark>, because he has found <mark>some unbecoming thing</mark> in her, that he shall write for her <span class=\"hl hl-purple\"><strong>a bill of divorcement</strong> (<strong lang=\"grc\">βιβλίον ἀποστασίου</strong>)</span>, and give it into her hands, and he shall send her away out of his house.",
+     "sources": "Brenton’s English (1851) · Greek: Brenton’s Septuagint"
+    },
+    {
+     "note": "<p>In 5:32 Jesus&#x27; “a matter (λόγου) of sexual immorality” sounds like Shammai&#x27;s wording. But here he doesn&#x27;t argue from Deuteronomy at all: Moses only permitted divorce, “because of your hardness of heart”; Jesus goes back to the beginning.</p><p>Who was listening: Jewish men, most in their 20s to 40s, in marriages their families had arranged, often to a wife about ten years younger who was married in her teens and had little say. Only the husband could write a certificate of divorce, and a sent-away wife could be left with nothing.</p><p>Into that world Jesus takes away the power these men thought the Law gave them. He shuts the easy exits and puts the weight on the man: he makes her a victim of adultery. He is calling them to go the extra mile toward unity, not division.</p><p>This is wisdom, not a rule to lift out of its setting. It is not telling a woman today that she may only consider divorce if there is adultery. Wisdom names the conditions and the response; without seeing both you can&#x27;t apply it to new situations. Paul does exactly that for cases Jesus didn&#x27;t address, in 1 Corinthians 7.</p>"
+    },
+    {
+     "note": "<p>Bonus: how the disciples heard it, and Jesus offers another way, staying unmarried, as an ideal for those who can accept it.</p>"
+    },
+    {
+     "ref": "Matthew 19:10–12",
+     "en": "<sup>10</sup> His disciples said to Him, “If this is the case between a man and his wife, <mark>it is better not to marry</mark>.” <sup>11</sup> “Not everyone can accept this word,” He replied, “but only those to whom it has been given. <sup>12</sup> For there are eunuchs who were born that way; others were made that way by men; and still others live like eunuchs <mark>for the sake of the kingdom of heaven</mark>. <mark>The one who can accept this should accept it</mark>.”",
+     "sources": "Berean Standard Bible (public domain) · Greek: SBLGNT"
+    }
+   ]
   }
  ]
 }

@@ -296,7 +296,7 @@ const LiteraryDesign = (() => {
       (xref.intro ? `<div class="note intro">${xref.intro}</div>` : "") +
       xref.passages
         .map(
-          (p) =>
+          (p) => p.note ? `<div class="note">${p.note}</div>` : // commentary between passages
             `<div class="passage"><div class="ref">${p.ref}</div>` +
             `<p class="en">${p.en}</p>` +
             `<div class="sources">${p.sources}</div></div>`

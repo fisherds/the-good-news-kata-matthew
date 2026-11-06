@@ -43,6 +43,13 @@ GREEK_CREDIT = (
     "and Logos Bible Software (CC BY 4.0). Translation and literary design in progress."
 )
 OUR_CREDIT = "Translation and Literary Design by The Good News kata Matthew (work in progress)."
+# Adapted copies of Tim's units (translation/adapted/adapted-<his id>.usx, his
+# original USX beside it in translation/adapted/original/<his id>.usx so the two
+# can be diffed; reasons in translation/adapted/NOTES.md). His caption, then this.
+ADAPTED_NOTE = (
+    ", adapted. The ⓘ notes and any wording changes are additions, not from "
+    "BibleProject; they are our opinions, not BibleProject's statements."
+)
 
 
 def greek_verses():
@@ -72,9 +79,31 @@ def seed():
             print("seeded", os.path.relpath(path, ROOT))
 
 
+def build_adapted(path, uid):
+    tim = uid.removeprefix("adapted-")
+    if not os.path.exists(os.path.join(SRC_DIR, "adapted", "original", tim + ".usx")):
+        sys.exit(f"{uid}: keep Tim's original USX in translation/adapted/original/{tim}.usx")
+    original = json.load(open(os.path.join(OUT_DIR, tim + ".json"), encoding="utf-8"))
+    usx = open(path, encoding="utf-8").read()
+    xml.dom.minidom.parseString(usx)  # fails loudly on bad XML
+    visual = {
+        "id": uid,
+        "reference": original["reference"],
+        "title": original["title"],
+        "caption": original["caption"].rstrip().rstrip(".") + ADAPTED_NOTE,
+        "usx": usx,
+    }
+    with open(os.path.join(OUT_DIR, f"{uid}.json"), "w", encoding="utf-8") as f:
+        json.dump(visual, f, ensure_ascii=False, indent=1)
+    print("built", uid, "(adapted)")
+
+
 def build():
     for path in sorted(glob.glob(os.path.join(SRC_DIR, "*", "*.usx"))):
         uid = os.path.basename(path)[:-4]
+        if uid.startswith("adapted-"):
+            build_adapted(path, uid)
+            continue
         m = re.match(r"kata-([a-z0-9]+)-(\d+)-(\d+)-(?:(\d+)-)?(\d+)$", uid)
         if not m:
             sys.exit(f"bad unit file name: {uid}")

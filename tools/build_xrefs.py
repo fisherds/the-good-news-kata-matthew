@@ -117,7 +117,93 @@ XREFS = [
                  "Does it really matter?",
         "note": "The “I” (Ἐγὼ) is emphatic, like John's surprised question when Jesus comes to him.",
     },
-]
+    {
+        "id": "matthew-5-32-divorce",
+        "title": "Divorce: Jesus comes back to it",
+        "matthew": {"ref": "5:32", "unit": "adapted-matthew-5-31-32",
+                    "match": [("sends away his wife", "ἀπολύων τὴν γυναῖκα αὐτοῦ", None),
+                              ("except on the ground of sexual immorality", "παρεκτὸς λόγου πορνείας", None),
+                              ("commits adultery", "μοιχᾶται", None)]},
+        "intro": "In the Sermon on the Mount Jesus gives a short summary of his teaching on divorce. "
+                 "He comes back to it in chapter 19 and says more. The Pharisees point to Moses (Deuteronomy 24:1); "
+                 "Jesus goes back to creation: Genesis 1:27 and 2:24 in the Septuagint, the Greek Bible of Matthew's day.",
+        # Passages and commentary in reading order: {"comment": "..."} is a commentary block between passages.
+        "passages": [
+            {"ref": "Matthew 19:3", "bsb": True,
+             "match": [("divorce his wife", "ἀπολῦσαι τὴν γυναῖκα αὐτοῦ", "send away his wife")],
+             "mark": ["for any reason"]},
+            {"comment": "The debate of the day was over Deuteronomy 24:1: a man may divorce his wife if “she does not find "
+                        "favor in his eyes, because he has found some indecency in her” (Hebrew ʿervat davar, "
+                        "lit. “nakedness of a matter”). The Mishnah (Gittin 9:10, written down around AD 200) "
+                        "records the readings:\n"
+                        "- School of Shammai: only for “a matter of indecency”, sexual immorality.\n"
+                        "- School of Hillel: for any cause at all, “even if she spoiled his dish.”\n"
+                        "- Rabbi Akiva (early 2nd century): “even if he found another more beautiful than she”, "
+                        "from “she does not find favor in his eyes.”\n"
+                        "The Pharisees' “for any reason” is Hillel's side, put to Jesus as a test."},
+            # A range of BSB verses: "verses" holds each verse's matches.
+            {"ref": "Matthew 19:4–6", "bsb": True, "verses": {
+                4: {"match": [("made them male and female", "ἄρσεν καὶ θῆλυ ἐποίησεν αὐτοὺς", None, "blue")],
+                    "mark": ["from the beginning"]},
+                5: {"match": [("a man will leave his father", "καταλείψει ἄνθρωπος τὸν πατέρα", None),
+                              ("be united to his wife", "κολληθήσεται τῇ γυναικὶ αὐτοῦ", "cleave to his wife", "green"),
+                              ("the two will become one flesh", "ἔσονται οἱ δύο εἰς σάρκα μίαν", "the two will be into one flesh")]},
+                6: {"match": [("what God has joined together", "ὃ οὖν ὁ θεὸς συνέζευξεν", "what God yoked together")],
+                    "mark": ["no longer two"]},
+            }},
+            {"ref": "Genesis 1:27",
+             "match": [("male and female he made them", "ἄρσεν καὶ θῆλυ ἐποίησεν αὐτούς", None, "blue")]},
+            {"ref": "Genesis 2:24",
+             "match": [("shall a man leave his father", "καταλείψει ἄνθρωπος τὸν πατέρα", None),
+                       ("shall cleave to his wife", "προσκολληθήσεται πρὸς τὴν γυναῖκα αὐτοῦ", None, "green"),
+                       ("they two shall be one flesh", "ἔσονται οἱ δύο εἰς σάρκα μίαν", "the two shall be into one flesh")]},
+            {"ref": "Deuteronomy 10:20",
+             "match": [("shalt cleave to him", "πρὸς αὐτὸν κολληθήσῃ", None, "green")],
+             "mark": ["fear the Lord thy God", "serve him"]},
+            {"comment": "“Male and female he made them” is Genesis 1:27 word for word. The Hebrew of Genesis 2:24 says only "
+                        "“they shall become one flesh”; “the two” (οἱ δύο) is in the Septuagint, and Jesus builds on it: "
+                        "the two become one, so they are “no longer two”. What God yoked together (ὃ, “what”, is the union "
+                        "itself) a man has no authority to pull apart.\n"
+                        "“Cleave to his wife” (κολλάω, to glue, to cling) is the verb Moses uses for Israel's loyalty to God: "
+                        "“to him you shall cleave” (κολληθήσῃ, Deuteronomy 10:20). A husband holds fast to his wife the way "
+                        "Israel is to hold fast to the LORD. (Genesis 2:24 and many manuscripts of Matthew have "
+                        "προσκολληθήσεται, the same verb with προς, “toward”, in front; the oldest have the plain "
+                        "κολληθήσεται, exactly Deuteronomy's word.)"},
+            {"ref": "Matthew 19:7–9", "bsb": True, "verses": {
+                7: {"match": [("certificate of divorce", "βιβλίον ἀποστασίου", None, "purple")]},
+                8: {"mark": ["hardness of heart", "not this way from the beginning"]},
+                9: {"match": [("except for sexual immorality", "μὴ ἐπὶ πορνείᾳ", None),
+                              ("commits adultery", "μοιχᾶται", None)]},
+            }},
+            # The Pharisees' text. Brenton's English numbers Deuteronomy 23-24 two verses off from
+            # the Greek, so its 24:1 is filed as 24:3: "en_ref" says where to find the English.
+            {"ref": "Deuteronomy 24:1", "en_ref": "Deuteronomy 24:3",
+             "match": [("a bill of divorcement", "βιβλίον ἀποστασίου", None, "purple")],
+             "mark": ["she should not have found favour before him", "some unbecoming thing"]},
+            {"comment": "In 5:32 Jesus' “a matter (λόγου) of sexual immorality” sounds like Shammai's wording. But here he "
+                        "doesn't argue from Deuteronomy at all: Moses only permitted divorce, “because of your hardness of "
+                        "heart”; Jesus goes back to the beginning.\n"
+                        "Who was listening: Jewish men, most in their 20s to 40s, in marriages their families had arranged, "
+                        "often to a wife about ten years younger who was married in her teens and had little say. Only the "
+                        "husband could write a certificate of divorce, and a sent-away wife could be left with nothing.\n"
+                        "Into that world Jesus takes away the power these men thought the Law gave them. He shuts the easy "
+                        "exits and puts the weight on the man: he makes her a victim of adultery. He is calling them to go the "
+                        "extra mile toward unity, not division.\n"
+                        "This is wisdom, not a rule to lift out of its setting. It is not telling a woman today that she may "
+                        "only consider divorce if there is adultery. Wisdom names the conditions and the response; without "
+                        "seeing both you can't apply it to new situations. Paul does exactly that for cases Jesus didn't "
+                        "address, in 1 Corinthians 7."},
+            {"comment": "Bonus: how the disciples heard it, and Jesus offers another way, staying unmarried, as an ideal "
+                        "for those who can accept it."},
+            {"ref": "Matthew 19:10–12", "bsb": True, "verses": {
+                10: {"mark": ["it is better not to marry"]},
+                12: {"mark": ["for the sake of the kingdom of heaven", "The one who can accept this should accept it"]},
+            }},
+        ],
+    },]
+
+
+TIM = "Tim Mackie’s translation (BibleProject)"
 
 
 def tsv(path):
@@ -145,6 +231,7 @@ def unit_verse(unit, ref):
     parts = re.split(r'<verse number="(?:\d+:)?(\d+)"\s*/>', usx)
     for n, text in zip(parts[1::2], parts[2::2]):
         if n == want:
+            text = re.sub(r"</?char\b[^>]*>", "", text)  # inline marks: no space
             return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", text)).replace(" ,", ",").replace(" .", ".").replace("“ ", "“").replace(" ”", "”").replace("‘ ", "‘").replace(" ’", "’").replace(" !", "!").strip()
     raise SystemExit(f"{unit} has no verse {ref}")
 
@@ -169,11 +256,14 @@ def emphasize(text, greek, match=(), mark=()):
     """HTML-escape the English, bolding each matching phrase with its Greek
     inline after it, and wrapping other phrases worth seeing in <mark>."""
     spans = []
-    for en, gk, lit in match:
+    for en, gk, lit, *color in match:
         if gk not in greek:
             raise SystemExit(f"{gk!r} not found in {greek!r}")
         extra = f" lit. {html.escape(lit)}" if lit else ""
-        spans.append((en, f'<strong>{html.escape(en)}</strong> (<strong lang="grc">{html.escape(gk)}</strong>{extra})'))
+        rendered = f'<strong>{html.escape(en)}</strong> (<strong lang="grc">{html.escape(gk)}</strong>{extra})'
+        if color:  # an optional 4th item colors a match repeated across passages ("blue", "green")
+            rendered = f'<span class="hl hl-{color[0]}">{rendered}</span>'
+        spans.append((en, rendered))
     spans += [(phrase, f"<mark>{html.escape(phrase)}</mark>") for phrase in mark]
     found = []
     for phrase, rendered in spans:
@@ -201,9 +291,26 @@ def main():
         passages = [{
             "ref": html.escape("Matthew " + m["ref"]),
             "en": emphasize(unit_verse(m["unit"], m["ref"]), mt_gk[m["ref"]], m.get("match", ()), m.get("mark", ())),
-            "sources": "kata Matthew · Greek: SBLGNT",
+            "sources": ("kata Matthew" if m["unit"].startswith("kata-") else TIM) + " · Greek: SBLGNT",
         }]
         for p in x["passages"]:
+            if "comment" in p:
+                passages.append({"note": comment(p["comment"])})
+                continue
+            if p.get("bsb") and "–" in p["ref"]:
+                c, _, span = p["ref"].removeprefix("Matthew ").partition(":")
+                a, b = (int(n) for n in span.split("–"))
+                lines = []
+                for v in range(a, b + 1):
+                    want = p.get("verses", {}).get(v, {})
+                    lines.append(f"<sup>{v}</sup> " + emphasize(bsb[int(c)][v], mt_gk[f"{c}:{v}"],
+                                                               want.get("match", ()), want.get("mark", ())))
+                passages.append({
+                    "ref": html.escape(p["ref"]),
+                    "en": " ".join(lines),
+                    "sources": "Berean Standard Bible (public domain) · Greek: SBLGNT",
+                })
+                continue
             if p.get("bsb"):
                 ref = p["ref"].removeprefix("Matthew ")
                 c, v = (int(n) for n in ref.split(":"))
@@ -218,12 +325,12 @@ def main():
                 passages.append({
                     "ref": html.escape(p["ref"]),
                     "en": emphasize(unit_verse(p["unit"], ref), mt_gk[ref], p.get("match", ()), p.get("mark", ())),
-                    "sources": "Tim Mackie’s translation (BibleProject) · Greek: SBLGNT",
+                    "sources": TIM + " · Greek: SBLGNT",
                 })
                 continue
             passages.append({
                 "ref": html.escape(p["ref"] + " (LXX, the Greek translation of the Hebrew Bible)"),
-                "en": emphasize(lxx_en[p["ref"]], lxx_gk[p["ref"]], p.get("match", ()), p.get("mark", ())),
+                "en": emphasize(lxx_en[p.get("en_ref", p["ref"])], lxx_gk[p["ref"]], p.get("match", ()), p.get("mark", ())),
                 "sources": "Brenton’s English (1851) · Greek: Brenton’s Septuagint",
             })
         entry = {"id": x["id"], "title": x["title"]}
