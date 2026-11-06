@@ -1,9 +1,10 @@
 // The title bar shared by every page. Each page loads this script in its <head>
 // and puts <site-header current="..."></site-header> first in its <body>
-// ("current" is the link to highlight: "home", "matthew" or "reader").
-// Section pages (/otconnections, /sotm, ...) aren't listed here; /matthew links to them.
+// ("current" is the link to highlight: "calendar", "matthew" or "reader").
+// Section pages (/otconnections, /sotm, ...) aren't listed here; the Matthew page (/) links to them.
 const SITE_LINKS = [
-  { id: "matthew", href: "/matthew", label: "Matthew" },
+  { id: "calendar", href: "/calendar", label: "Calendar" },
+  { id: "matthew", href: "/", label: "Matthew" },
   { id: "reader", href: "/reader", label: "Reader" },
 ];
 
@@ -27,7 +28,7 @@ class SiteHeader extends HTMLElement {
         @media (max-width:480px){.title{font-size:1rem}}
       </style>
       <nav>
-        <a class="title" href="/"${current === "home" ? ' aria-current="page"' : ""}>The Good News <i>kata</i> Matthew</a>
+        <a class="title" href="/">The Good News <i>kata</i> Matthew</a>
         <div class="links">${SITE_LINKS.map(
           (link) => `<a href="${link.href}"${link.id === current ? ' aria-current="page"' : ""}>${link.label}</a>`
         ).join("")}</div>
