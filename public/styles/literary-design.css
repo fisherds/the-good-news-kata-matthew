@@ -149,6 +149,7 @@ button.ld-xref:hover, button.ld-xref:focus-visible { background: #657A55; color:
 .ld-xref-modal .passage .hl-blue { background: #d4e4fb; }
 .ld-xref-modal .passage .hl-green { background: #d3f0dc; }
 .ld-xref-modal .passage .hl-purple { background: #e8dcf7; }
+.ld-xref-modal .passage .hl-red { background: #f9e3de; }
 .ld-xref-modal .passage .sources { font-size: .75rem; color: #6b6580; }
 .ld-xref-modal .note { margin: 12px 0 0; padding: 10px 14px; border-left: 4px solid #657A55; background: #eeebf5; border-radius: 0 8px 8px 0; }
 .ld-xref-modal .note.intro { margin: 0 0 12px; }

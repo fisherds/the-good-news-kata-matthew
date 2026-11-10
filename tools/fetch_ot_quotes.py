@@ -4,8 +4,9 @@ Berean Standard Bible (public domain), fetched from bolls.life:
 
 - otconnections: the ten quotations in Matthew 1:1-4:17 (seven "through the
   prophet" quotes plus Jesus' three "it has been written" answers).
-- ninemiraclestories: Matthew 8-9 (one filled-full quote, Jesus pointing to
-  Scripture twice, and one echo).
+
+(Matthew 8-9's four Old Testament links are ⓘ cross-references now, in
+tools/build_xrefs.py.)
 
 The quotes themselves (which OT passages, which verses to highlight, the short
 notes) are edited here; re-run after changing them.
@@ -79,34 +80,7 @@ QUOTES = [
 
 # Matthew 8-9. The Matthew text in the pop-up comes from our own units (kata-...).
 # "label" is the one word shown in the circle (the id stays the key).
-NM_QUOTES = [
-    {"id": "J1", "label": "unclean", "kind": "jesus", "title": "Show yourself to the priest", "matthew": "8:4", "unit": "kata-matthew-8-1-4",
-     "formula": "ὃ προσέταξεν Μωϋσῆς",
-     "passages": [("Leviticus", 13, 45, 46, [45, 46]), ("Leviticus", 14, 1, 4, [2, 3, 4])],
-     "note": "Leviticus 13 is why the touch was shocking: a man with a skin disease lived alone outside the camp, "
-             "calling out \"Unclean!\". Leviticus 14 is the way back: the priest goes out to him, sees that he is "
-             "healed, and the offerings bring him home. \"A witness to them\" (plural): the people who will now "
-             "see him restored."},
-    {"id": "1", "label": "weaknesses", "kind": "fill", "title": "He took our weaknesses", "matthew": "8:17", "unit": "kata-matthew-8-14-17",
-     "formula": "ὅπως πληρωθῇ τὸ ῥηθὲν διὰ Ἠσαΐου τοῦ προφήτου",
-     "passages": [("Isaiah", 53, 3, 5, [4])],
-     "note": "Matthew translates Isaiah's Hebrew himself, keeping its bodily words, weaknesses and diseases, where the "
-             "Greek Old Testament of his day read \"he bears our sins\". The servant who will carry our sins "
-             "first carries our sicknesses, one evening in Kapharnaoum."},
-    {"id": "J2", "label": "mercy", "kind": "jesus", "title": "Mercy, not sacrifice", "matthew": "9:13", "unit": "kata-matthew-9-9-13",
-     "formula": "πορευθέντες δὲ μάθετε τί ἐστιν",
-     "passages": [("Hosea", 6, 4, 6, [6])],
-     "note": "\"Go and learn what this means\" was a teacher's phrase, said here to Pharisees. Hosea's word is "
-             "hesed, faithful covenant love, which God wants more than offerings. Jesus quotes it again in 12:7."},
-    {"id": "E1", "label": "shepherd", "kind": "echo", "title": "Sheep without a shepherd", "matthew": "9:36", "unit": "kata-matthew-9-35-38",
-     "formula": "ὡσεὶ πρόβατα μὴ ἔχοντα ποιμένα",
-     "passages": [("Numbers", 27, 15, 17, [17]), ("Ezekiel", 34, 4, 6, [5])],
-     "note": "Moses asks God for a leader after him, so the people won't be sheep without a shepherd: the answer is "
-             "Joshua (Iesous in Greek). Ezekiel blames Israel's shepherds for the scattering, and goes on (34:11, 23): "
-             "God himself will shepherd them, through a new Dauid."},
-]
-
-PAGES = {"otconnections": QUOTES, "ninemiraclestories": NM_QUOTES}
+PAGES = {"otconnections": QUOTES}
 
 def fetch_chapter(book, chapter, cache={}):
     key = (book, chapter)

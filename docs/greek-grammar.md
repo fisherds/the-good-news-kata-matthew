@@ -32,7 +32,7 @@ This is the one that matters most, and the one English hides. Greek "tense" is m
 | **Imperfect** | ongoing *in the past* | προσεκύνει (8:2) | was bowing down (he stays down, bowing) |
 | **Aorist** | one whole event, a snapshot, no comment on duration | προσελθὼν (8:2), ἐκτείνας (8:3), ἐθαύμασεν (8:10) | approaching, stretching out, he was amazed |
 | **Perfect** | done, and the result still stands | βέβληται (8:6) | has been thrown down (and still lies there) |
-| **Future** | will happen | θεραπεύσω (8:7), ἰαθήσεται (8:8) | I will heal, will be cured |
+| **Future** | will happen | θεραπεύσω (8:7), ἰαθήσεται (8:8), ἥξουσιν (8:11) | I will heal, will be healed, they will come |
 
 **Remembering "aorist"** (AIR-ist): the spelling is like "**aristocrat**" missing a few letters. The meaning comes from ἀ-όριστος, "without a horizon" (ὅρος "boundary", as in *horizon*): an action with no boundaries drawn around it, seen whole.
 
@@ -41,13 +41,15 @@ This is the one that matters most, and the one English hides. Greek "tense" is m
 - **ἐ- at the front** (the *augment*) = past, but **only** on indicative verbs (statements). ἐ-θαύμασεν "he was amazed". Before a vowel it lengthens it instead: ἐ + ἐλθ- → **ἠ**λθ-, so προσ-ῆλθεν "he approached".
 - **-σ-** before the ending = aorist or future: θεραπεύ**σ**ω "I will heal", ἐπίστευ**σ**ας "you trusted".
 - **Doubling the first sound** (*reduplication*) = perfect: **βέ**βληται, from βάλλω "throw".
-- **-θη-** = passive aorist ("was …-ed"): ἐκαθαρίσ**θη**, ἰά**θη** "was cured". **-θησ-** = passive future: ἰα**θήσ**εται "will be cured", ἐκβλη**θήσ**ονται "will be thrown out".
+- **-θη-** = passive aorist ("was …-ed"): ἐκαθαρίσ**θη**, ἰά**θη** "was healed". **-θησ-** = passive future: ἰα**θήσ**εται "will be healed", ἐκβλη**θήσ**ονται "will be thrown out".
 
 **Historical present:** a storyteller sometimes uses the present inside a past story to bring the scene close: καὶ **λέγει** αὐτῷ "and he *says* to him" (8:7). Tim renders it "said" (4:6, 4:10, 4:19), and so do we.
 
 **Questions:** Greek can make a question with no change in the words, only tone. The oldest manuscripts have no punctuation, so editors decide. Ἐγὼ ἐλθὼν θεραπεύσω αὐτόν (8:7) is "I, coming, will heal him." or "…heal him?"; we chose the question.
 
 **Rule we follow:** show the imperfect as "was …-ing" when it's the main verb. In 8:2 it's the one ongoing verb among aorists: the man keeps bowing; Jesus touches once.
+
+**The imperfect can also mean "began to …"** (grammarians call it *inceptive*): διηκόνει (8:15), "she was ministering" or "she began to minister" (ESV, NET, NIV). We keep "was …-ing" unless the start is the point.
 
 ### 2. Voice: who does it
 
@@ -65,9 +67,14 @@ Some verbs only come in passive or middle *forms* but have active *meanings*: �
 |---|---|---|---|
 | **Indicative** | states a fact | Θέλω (8:3) | I want |
 | **Imperative** | gives a command | καθαρίσθητι (8:3), Ὕπαγε (8:4) | Be clean! Go! |
+| **Imperative, third person** | a command about someone or something else: "let it…", "may it…" | γενηθήτω (8:13; the Lord's Prayer 6:10) | may it be done |
 | **Subjunctive** | "maybe": after "if", "that", "so that" | ἐὰν θέλῃς (8:2) | if you want |
 | **Infinitive** | "to …" | καθαρίσαι (8:2) | to make clean |
 | **Participle** | an "-ing" word: a verb used like an adjective | προσελθὼν (8:2) | approaching |
+
+**Third-person imperative:** English has no such form, so it borrows "let" or "may". Tim uses "may" in the Lord's Prayer (6:10, "may your will be done"), and so do we in 8:13 ("may it be done for you"), so the two read alike. The ending **-τω** marks it: γενηθή**τω**.
+
+**Subjunctive for purpose:** after ἵνα or ὅπως, "so that": ὅπως πληρω**θῇ** (8:17) "so that it would be filled-full" (an aorist passive subjunctive: -θη- plus the long ῃ). Tim's formula in 1:22 and 4:14 has ἵνα with the same verb.
 
 **Subjunctive tip:** a long vowel in the ending (θέλ**ῃ**ς instead of θέλεις) often marks it.
 
@@ -83,6 +90,8 @@ Built into the ending, so Greek doesn't need "I", "you" or "he". When it *does* 
 
 This is why "he" in "he bowed down" isn't in italics: the Greek verb already says "he".
 
+**αὐτός for emphasis:** "he" written out is weight, like Ἐγώ "I" (8:7). **Αὐτὸς** τὰς ἀσθενείας ἡμῶν ἔλαβεν, "**He himself** took our weaknesses" (8:17); the angel's promise opens the same way, **αὐτὸς** γὰρ σώσει, "because he will save his people" (1:21).
+
 ### Participles: the "-ing" words
 
 Matthew's favorite way to tell a story: one or two participles, then one main verb.
@@ -91,7 +100,9 @@ Matthew's favorite way to tell a story: one or two participles, then one main ve
 > And **stretching out** the hand, he **touched** him, **saying**,
 
 - The **main verb** (ἥψατο) is the event. The **participles** describe what goes with it.
-- Participle endings look like adjective endings (they agree with their noun): -ων, -ας, -εις for a man; -ουσα for a woman (προσελθ**οῦσα**, 9:20, the woman who approaches).
+- Participle endings look like adjective endings (they agree with their noun): -ων, -ας, -εις for a man; -ουσα for a woman (πυρέσσ**ουσαν**, 8:14, "burning with fever"; προσελθ**οῦσα**, 9:20, the woman who approaches).
+- **-μεν-** in the middle of a word marks a middle or passive participle: βεβλη**μέν**ην "thrown down" (8:14), δαιμονιζο**μέν**ους "demonized" (8:16), γενο**μέν**ης "becoming" (8:16).
+- **A perfect participle** describes someone in a state that still stands: **βε**βλη**μέν**ην (8:14), Petros' mother-in-law "thrown down" (and still lying there). Doubling plus -μεν-: the same verb and tense as the boy's βέβληται (8:6).
 - An **aorist participle** isn't "past". The "-ing" form keeps it a whole event without adding "before". Our rule: **aorist participle → "-ing"**, not "having …" (see the 8:5–13 notes).
 - **Genitive absolute:** a participle and its subject both in the genitive, set at the front of a sentence → "when …". Καταβάντος δὲ αὐτοῦ "Now when he came down" (8:1); Εἰσελθόντος δὲ αὐτοῦ "Now when he entered" (8:5).
 
@@ -104,7 +115,7 @@ Matthew's favorite way to tell a story: one or two participles, then one main ve
 | Case | Job | English | Example |
 |---|---|---|---|
 | **Nominative** | the subject | — | **ὁ παῖς** μου βέβληται "**my boy** has been thrown down" |
-| **Genitive** | "of", whose; "from" | of, 's | **αὐτοῦ** ἡ λέπρα "**his** skin disease" (the skin disease *of him*) |
+| **Genitive** | "of", whose; "from"; also the object of a few verbs, such as "touch" | of, 's | **αὐτοῦ** ἡ λέπρα "**his** skin disease" (the skin disease *of him*); ἥψατο **τῆς χειρὸς αὐτῆς** "he touched **her hand**" (8:15) |
 | **Dative** | "to", "for", "with", "in" | to, for | προσῆλθεν **αὐτῷ** "approached **him**" (came *to him*) |
 | **Accusative** | the direct object; after some prepositions, "into" or "under" | — | ἐκτείνας **τὴν χεῖρα** "stretching out **the hand**" |
 | **Vocative** | calling someone | O … ! | **Κύριε** "Master!" |

@@ -1,0 +1,191 @@
+{
+ "stories": [
+  {
+   "id": "leper",
+   "title": "You can make me clean",
+   "books": [
+    "Matthew",
+    "Mark",
+    "Luke"
+   ],
+   "refs": {
+    "Matthew": "8:1–4",
+    "Mark": "1:40–45",
+    "Luke": "5:12–16"
+   },
+   "headnotes": {},
+   "sources": "Matthew: kata Matthew. Mark, Luke: Berean Standard Bible (public domain).",
+   "before": {
+    "Matthew": "The Sermon on the Mount (5–7)",
+    "Mark": "Preaching through Galilee (1:35–39)",
+    "Luke": "Calling Simon, James and John (5:1–11)"
+   },
+   "beats": [
+    {
+     "label": "Setting",
+     "cells": {
+      "Matthew": "<sup>1</sup>Now <mark>when he came down from the mountain</mark>, <mark>many crowds followed him</mark>.",
+      "Luke": "<sup>12</sup>While Jesus was in one of the towns,"
+     }
+    },
+    {
+     "label": "He comes",
+     "cells": {
+      "Matthew": "<sup>2</sup>And look, a skin-diseased man, approaching, was <mark>bowing down</mark> to him, saying,",
+      "Mark": "<sup>40</sup>Then a leper came to Jesus, begging <mark>on his knees</mark>:",
+      "Luke": "<sup>12</sup>a man came along who was <mark>covered with leprosy</mark>. When he saw Jesus, he <mark>fell facedown</mark> and begged Him,"
+     }
+    },
+    {
+     "label": "“If you want”",
+     "cells": {
+      "Matthew": "<sup>2</sup>“Master, if you want, you are able to make me clean.”",
+      "Mark": "<sup>40</sup>“If You are willing, You can make me clean.”",
+      "Luke": "<sup>12</sup>“Lord, if You are willing, You can make me clean.”"
+     }
+    },
+    {
+     "label": "The touch",
+     "cells": {
+      "Matthew": "<sup>3</sup>And stretching out the hand, he touched him, saying, “I want. Be clean.”",
+      "Mark": "<sup>41</sup><mark>Moved with compassion</mark>, Jesus reached out His hand and touched the man. “I am willing,” He said. “Be clean!”",
+      "Luke": "<sup>13</sup>Jesus reached out His hand and touched the man. “I am willing,” He said. “Be clean!”"
+     }
+    },
+    {
+     "label": "Clean",
+     "cells": {
+      "Matthew": "<sup>3</sup>And immediately his skin disease was made clean.",
+      "Mark": "<sup>42</sup>And immediately the leprosy left him, and the man was cleansed.",
+      "Luke": "<sup>13</sup>And immediately the leprosy left him."
+     }
+    },
+    {
+     "label": "Sent off",
+     "cells": {
+      "Mark": "<sup>43</sup>Jesus promptly sent him away <mark>with a stern warning</mark>:"
+     }
+    },
+    {
+     "label": "“Tell no one, go to the priest”",
+     "cells": {
+      "Matthew": "<sup>4</sup>And Iesous said to him, “See that you tell no one, but go, show yourself to the priest, and present the offering that Mouses commanded, as a witness to them.”",
+      "Mark": "<sup>44</sup>“See that you don’t tell anyone. But go, show yourself to the priest and present the offering Moses prescribed for your cleansing, as a testimony to them.”",
+      "Luke": "<sup>14</sup>“Do not tell anyone,” Jesus instructed him. “But go, show yourself to the priest and present the offering Moses prescribed for your cleansing, as a testimony to them.”"
+     }
+    },
+    {
+     "label": "Afterward",
+     "cells": {
+      "Mark": "<sup>45</sup>But the man went out and <mark>openly began to proclaim and spread the news</mark>. Consequently, <mark>Jesus could no longer enter a town in plain view</mark>, but He stayed out in solitary places. Yet people came to Him from every quarter.",
+      "Luke": "<sup>15</sup>But the news about Jesus spread all the more, and great crowds came to hear Him and to be healed of their sicknesses. <sup>16</sup>Yet He frequently withdrew to the wilderness <mark>to pray</mark>."
+     }
+    }
+   ],
+   "after": {
+    "Matthew": "A centurion’s boy (8:5–13)",
+    "Mark": "The paralyzed man (2:1–12)",
+    "Luke": "The paralyzed man (5:17–26)"
+   },
+   "alike": "<p>The heart of the story is nearly word for word in all three: “if you want, you are able to make me clean”, the hand stretched out, the touch, “I want. Be clean”, and the command to show himself to the priest with the offering Moses commanded, “as a witness to them”. What Jesus says is the same every time.</p>",
+   "point": "<p>The Sermon has just said: “Don’t suppose that I have come to do away with the Torah or the Prophets. I have not come to do away with, but to fill them full” (5:17). Now, coming down the mountain like Moses, the first thing Jesus does looks like doing away with the Torah: he touches an unclean man. Then he sends him to the priest with the offering Moses commanded. Matthew cuts everything else so the story ends there. The Torah could only declare a man clean; Jesus makes him clean, and then honors the Torah.</p><p>Near its end the Sermon warned: “Not everyone who says to me, ‘Master, master!’ will enter into the kingdom of the skies, but rather the one who does the desire of my Father in the skies” (7:21). The first person down the mountain calls Jesus “Master”, and then leaves it to what Jesus wants: “if you want”.</p>"
+  },
+  {
+   "id": "centurion",
+   "title": "The centurion’s boy",
+   "books": [
+    "Matthew",
+    "Luke"
+   ],
+   "refs": {
+    "Matthew": "8:5–13",
+    "Luke": "7:1–10"
+   },
+   "headnotes": {},
+   "sources": "Matthew: kata Matthew. Luke: Berean Standard Bible (public domain).",
+   "before": {
+    "Matthew": "A man with a skin disease (8:1–4)",
+    "Luke": "The Sermon on the Plain (6:20–49)"
+   },
+   "beats": [
+    {
+     "label": "Capernaum",
+     "cells": {
+      "Matthew": "<sup>5</sup>Now when he entered into Kapharnaoum,",
+      "Luke": "<sup>1</sup>When Jesus had concluded His discourse in the hearing of the people, He went to Capernaum."
+     }
+    },
+    {
+     "label": "Asking for the boy",
+     "cells": {
+      "Matthew": "<sup>5</sup>a centurion <mark>approached him</mark>, pleading with him <sup>6</sup>and saying, “Master, <span class=\"hl hl-blue\"><strong>my boy</strong> (<span lang=\"grc\">παῖς</span>)</span> has been thrown down in the house, <mark>paralyzed, terribly tormented</mark>.”",
+      "Luke": "<sup>2</sup>There a <mark>highly valued</mark> <span class=\"hl hl-purple\"><strong>servant</strong> (<span lang=\"grc\">δοῦλος</span>)</span> of a centurion was sick and about to die. <sup>3</sup>When the centurion heard about Jesus, <mark>he sent some Jewish elders</mark> to ask Him to come and heal his <span class=\"hl hl-purple\"><strong>servant</strong> (<span lang=\"grc\">δοῦλον</span>)</span>. <sup>4</sup>They came to Jesus and pleaded with Him earnestly, “<mark>This man is worthy</mark> to have You grant this, <sup>5</sup>for <mark>he loves our nation and has built our synagogue</mark>.”"
+     }
+    },
+    {
+     "label": "Will he come?",
+     "cells": {
+      "Matthew": "<sup>7</sup>And he said to him, “I, coming, will heal him?”",
+      "Luke": "<sup>6</sup>So Jesus went with them."
+     }
+    },
+    {
+     "label": "“I am not worthy”",
+     "cells": {
+      "Matthew": "<sup>8</sup>And responding, the centurion said, “Master, I am not worthy that you come in under my roof,",
+      "Luke": "<sup>6</sup>But when He was not far from the house, the centurion <mark>sent friends</mark> with the message: “Lord, do not trouble Yourself, for I am not worthy to have You come under my roof. <sup>7</sup>That is why <mark>I did not consider myself worthy to come to You</mark>."
+     }
+    },
+    {
+     "label": "“Only say a word”",
+     "cells": {
+      "Matthew": "<sup>8</sup>but only speak with a word, and <span class=\"hl hl-blue\"><strong>my boy</strong> (<span lang=\"grc\">παῖς</span>)</span> will be healed.",
+      "Luke": "<sup>7</sup>But just say the word, and <span class=\"hl hl-blue\"><strong>my servant</strong> (<span lang=\"grc\">παῖς</span>)</span> will be healed."
+     }
+    },
+    {
+     "label": "“I too am a man under authority”",
+     "cells": {
+      "Matthew": "<sup>9</sup>For I too am a man under authority, having soldiers under me, and I say to this one, ‘Go!’ and he goes, and to another, ‘Come!’ and he comes, and to <span class=\"hl hl-purple\"><strong>my slave</strong> (<span lang=\"grc\">δούλῳ</span>)</span>, ‘Do this!’ and he does.”",
+      "Luke": "<sup>8</sup>For I myself am a man under authority, with soldiers under me. I tell one to go, and he goes; and another to come, and he comes. I tell <span class=\"hl hl-purple\"><strong>my servant</strong> (<span lang=\"grc\">δούλῳ</span>)</span> to do something, and he does it.”"
+     }
+    },
+    {
+     "label": "Jesus is amazed",
+     "cells": {
+      "Matthew": "<sup>10</sup>Now hearing, Iesous was amazed and said to the ones following, “Truly I say to you, with no one in Israel have I found such trust.",
+      "Luke": "<sup>9</sup>When Jesus heard this, He marveled at the centurion. Turning to the crowd following Him, He said, “I tell you, not even in Israel have I found such great faith.”"
+     }
+    },
+    {
+     "label": "From east and west",
+     "cells": {
+      "Matthew": "<sup>11</sup>Now I say to you that many from the east and west will come and recline at table with Abra’am and Isaak and Iakob in the kingdom of the skies; <sup>12</sup>but <mark>the sons of the kingdom</mark> will be thrown out into the outer darkness; there will be crying and grinding of teeth.”",
+      "Luke": "<span class=\"aside\">Luke has this saying later, on the way to Jerusalem:</span> <sup>13:28</sup>There will be weeping and gnashing of teeth when you see Abraham, Isaac, Jacob, and all the prophets in the kingdom of God, but you yourselves are thrown out. <sup>13:29</sup>People will come from east and west <mark>and north and south</mark>, and will recline at the table in the kingdom of God."
+     }
+    },
+    {
+     "label": "“Go!”",
+     "cells": {
+      "Matthew": "<sup>13</sup>And Iesous said to the centurion, “Go! As you trusted, may it be done for you.”"
+     }
+    },
+    {
+     "label": "Healed",
+     "cells": {
+      "Matthew": "<sup>13</sup>And <span class=\"hl hl-blue\"><strong>the boy</strong> (<span lang=\"grc\">παῖς</span>)</span> was healed in that hour.",
+      "Luke": "<sup>10</sup>And when the messengers returned to the house, they found the <span class=\"hl hl-purple\"><strong>servant</strong> (<span lang=\"grc\">δοῦλον</span>)</span> in good health."
+     }
+    }
+   ],
+   "after": {
+    "Matthew": "Peter’s mother-in-law (8:14–17)",
+    "Luke": "A widow’s son at Nain (7:11–17)"
+   },
+   "alike": "<p>Matthew and Luke tell the centurion’s words almost exactly alike: “I am not worthy that you come under my roof”, “only say a word”. “I too am a man under authority…” is the same thirty Greek words in both (Luke adds one). And in both, Jesus is amazed: not even in Israel has he found such trust.</p>",
+   "different": "<ul><li>Son or servant? Follow the colors. Matthew says boy (παῖς, pais) every time, a word that can mean a son or a servant (or slave). Matthew even uses it of Jesus: 12:18 quotes Isaiah 42:1, “Look, my παῖς, whom I chose.” Luke’s narrator, however, says a highly valued slave (δοῦλος, doulos), but in the centurion’s own words he is still “my boy” (7:7). Perhaps παῖς was handed down as the centurion’s own word, and Luke, knowing it meant a highly valued slave, made that plain for his readers when speaking as narrator but left the quote unchanged. Either way the two don’t clash: in Greek παῖς is the ordinary word for a boy and for a household servant, and a <strong>highly valued</strong> δοῦλος is a παῖς.</li><li>John 4:46–54 also has a similar story: a royal official’s son, in Capernaum, healed from a distance.</li></ul>",
+   "point": "<p>The first two people down the mountain: a man of Israel, then a man from outside it. The man with the skin disease is sent to Israel’s priest with the offering Moses commanded, “as a witness to them”. The centurion is a Gentile: “with no one in Israel have I found such trust.”</p><p>Matthew tells the story more briefly than Luke: no elders, no friends, one word for the boy. Yet he makes room for two verses Luke keeps for later (Luke 13:28–29), and here they turn the story into a warning: outsiders like this centurion will recline at table with Abraham, Isaac and Jacob, while “the sons of the kingdom”, the ones who assumed they had a place, are thrown out.</p><p>Warnings are important to Matthew’s audience. For example, Matthew says the phrase “crying and grinding of teeth” six times, but Luke uses it only once, and it never appears in Mark or John.</p>",
+   "key": "<span class=\"hl hl-blue\">boy (παῖς)</span> · <span class=\"hl hl-purple\">slave, servant (δοῦλος)</span>"
+  }
+ ]
+}

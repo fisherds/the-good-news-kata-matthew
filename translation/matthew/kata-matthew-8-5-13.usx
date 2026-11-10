@@ -1,4 +1,4 @@
-<usx version="2.6">
+<usx version="2.6" status="translated">
   <para>
     <group type="secondary">
       <group>
@@ -41,73 +41,81 @@
       <group indent="1">
         but only speak with a word,
       </group>
-      <group indent="1">
-        and my <char mark-variant="highlight" mark-color="blue" word-lang="greek" word-original="παῖς" word-gloss="son / servant">boy</char> <char style="bd" mark-variant="highlight-light" mark-color="green" word-lang="greek" word-original="ἰαθήσεται">will be healed</char><note style="x" caller="+" xref="matthew-8-8-healed"><char style="xt">Matthew 15:28</char></note>.
-      </group>
       <optbreak />
       <group>
-        <verse number="9" /> For I too am a man <char mark-variant="highlight-light" mark-color="orange" word-lang="greek" word-original="ὑπὸ">under</char> <char mark-variant="text" mark-color="orange">authority</char>,
-      </group>
-      <group>
-        having soldiers <char mark-variant="highlight-light" mark-color="orange" word-lang="greek" word-original="ὑπʼ">under</char> me,
-      </group>
-      <group indent="1">
-        and I say to this one, ‘<char mark-variant="highlight" mark-color="purple">Go</char>!’ and he <char mark-variant="highlight" mark-color="purple">goes</char>,
-      </group>
-      <group indent="1">
-        and to another, ‘<char mark-variant="highlight-light" mark-color="cyan">Come</char>!’ and he <char mark-variant="highlight-light" mark-color="cyan">comes</char>,
-      </group>
-      <group indent="1">
-        and to my slave, ‘<char mark-variant="highlight-light" mark-color="tan">Do this</char>!’ and he <char mark-variant="highlight-light" mark-color="tan">does</char>.”
+        and my <char mark-variant="highlight" mark-color="blue" word-lang="greek" word-original="παῖς" word-gloss="son / servant">boy</char> <char style="bd" mark-variant="highlight-light" mark-color="green" word-lang="greek" word-original="ἰαθήσεται">will be healed</char><note style="x" caller="+" xref="matthew-8-8-healed"><char style="xt">Matthew 15:28</char></note>.
       </group>
     </group>
   </para>
   <para>
-    <group type="secondary">
-      <group>
-        <verse number="10" /> ἀκούσας δὲ ὁ Ἰησοῦς ἐθαύμασεν
-      </group>
-      <group>
-        καὶ εἶπεν τοῖς <char mark-variant="highlight" mark-color="purple">ἀκολουθοῦσιν</char>·
-      </group>
-      <group indent="1">
-        Ἀμὴν λέγω ὑμῖν,
-      </group>
-      <group indent="1">
-        παρʼ οὐδενὶ τοσαύτην πίστιν ἐν τῷ Ἰσραὴλ εὗρον.
-      </group>
-      <optbreak />
-      <group indent="1">
-        <verse number="11" /> λέγω δὲ ὑμῖν ὅτι
-      </group>
-      <group indent="2">
-        πολλοὶ ἀπὸ ἀνατολῶν καὶ δυσμῶν ἥξουσιν
-      </group>
-      <group indent="2">
-        καὶ ἀνακλιθήσονται μετὰ Ἀβραὰμ καὶ Ἰσαὰκ καὶ Ἰακὼβ ἐν τῇ βασιλείᾳ τῶν οὐρανῶν·
-      </group>
-      <group indent="2">
-        <verse number="12" /> οἱ δὲ υἱοὶ τῆς βασιλείας <char mark-variant="highlight-light" mark-color="red">ἐκβληθήσονται</char> εἰς τὸ σκότος τὸ ἐξώτερον·
-      </group>
-      <group indent="2">
-        ἐκεῖ ἔσται ὁ κλαυθμὸς καὶ ὁ βρυγμὸς τῶν ὀδόντων.
-      </group>
+    <group type="secondary" indent="1">
+        <group>
+          <verse number="9" /> For I too am a man <char mark-variant="highlight-light" mark-color="orange" word-lang="greek" word-original="ὑπὸ">under</char> <char mark-variant="text" mark-color="orange">authority</char>,
+        </group>
+        <group>
+          having soldiers <char mark-variant="highlight-light" mark-color="orange" word-lang="greek" word-original="ὑπʼ">under</char> me,
+        </group>
+        <group indent="1">
+          and I say to this one, ‘<char mark-variant="highlight" mark-color="purple">Go</char>!’ and he <char mark-variant="highlight" mark-color="purple">goes</char>,
+        </group>
+        <group indent="1">
+          and to another, ‘<char mark-variant="highlight-light" mark-color="cyan">Come</char>!’ and he <char mark-variant="highlight-light" mark-color="cyan">comes</char>,
+        </group>
+        <group indent="1">
+          and to my slave, ‘<char mark-variant="highlight-light" mark-color="tan">Do this</char>!’ and he <char mark-variant="highlight-light" mark-color="tan">does</char>.”
+        </group>
+    </group>
+  </para>
+  <para>
+    <group type="secondary" indent="1">
+        <group>
+          <verse number="10" /> Now hearing, Iesous was amazed
+        </group>
+        <group>
+          and said to the ones <char mark-variant="highlight" mark-color="purple">following</char>,
+        </group>
+        <group indent="1">
+          “<char style="bd">Truly I say to you</char><note style="x" caller="+" xref="matthew-8-10-truly"><char style="xt">Matthew 11:11</char></note>,
+        </group>
+        <group indent="1">
+          with no one in Israel have I found such <char mark-variant="highlight" mark-color="red">trust</char>.
+        </group>
+        <optbreak />
+        <group indent="1">
+          <verse number="11" /> Now I say to you that many from the east and west will come
+        </group>
+        <group indent="2">
+          and recline <char style="add">at table</char> with Abra’am and Isaak and Iakob
+        </group>
+        <group indent="2">
+          in the kingdom of the skies;
+        </group>
+        <optbreak />
+        <group indent="1">
+          <verse number="12" /> but the sons of the kingdom <char mark-variant="highlight-light" mark-color="red">will be thrown out</char>
+        </group>
+        <group indent="2">
+          into the outer darkness;
+        </group>
+        <group indent="2">
+          there will be <char style="bd">crying and grinding of teeth</char>.”<note style="x" caller="+" xref="matthew-8-12-teeth"><char style="xt">Matthew 13:42</char></note>
+        </group>
     </group>
   </para>
   <para>
     <group type="primary">
       <group>
-        <verse number="13" /> καὶ εἶπεν ὁ Ἰησοῦς τῷ ἑκατοντάρχῃ·
+        <verse number="13" /> And Iesous said to the centurion,
       </group>
       <group indent="1">
-        <char mark-variant="highlight" mark-color="purple">Ὕπαγε</char>,
+        “<char mark-variant="highlight" mark-color="purple">Go</char>!
       </group>
       <group indent="1">
-        ὡς ἐπίστευσας γενηθήτω σοι·
+        As you <char mark-variant="highlight" mark-color="red">trusted</char>, may it be done for you.”
       </group>
       <optbreak />
       <group>
-        καὶ <char mark-variant="highlight-light" mark-color="green">ἰάθη</char> ὁ <char mark-variant="highlight" mark-color="blue">παῖς</char> ἐν τῇ ὥρᾳ ἐκείνῃ.
+        And the <char mark-variant="highlight" mark-color="blue" word-lang="greek" word-original="παῖς" word-gloss="son / servant">boy</char> <char mark-variant="highlight-light" mark-color="green" word-lang="greek" word-original="ἰάθη">was healed</char> in that hour.
       </group>
     </group>
   </para>

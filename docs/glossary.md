@@ -4,7 +4,7 @@ One Greek word, one English word. Every choice we make goes here, with where we 
 
 | Greek | Sounds like | Ours | First used | Why / notes |
 |---|---|---|---|---|
-| δέ | deh | now | 8:1 | Kept apart from καί "and", so the two Greek words stay visible (Tim varies δέ: and / now / but) |
+| δέ | deh | now; but | 8:1, 8:12 | Kept apart from καί "and", so the two Greek words stay visible (Tim varies δέ: and / now / but). "Now" when it moves on; "but" when it sets two things against each other (8:12 "but the sons of the kingdom", like Tim 6:29) |
 | ἀκολουθέω | ah-ko-loo-THEH-oh | follow | 8:1 | Tim 4:20, 22, 25. "follow **after**" only for ἀκολουθέω ὀπίσω (10:38). Not "walked" (περιπατέω) or "apprenticed" (that belongs with μαθητής, disciple). Highlighted purple across `/ninemiraclestories` |
 | ὄχλοι πολλοί | OKH-loy pol-LOY | many crowds | 8:1 | Tim 4:25, same phrase; keeps the bookend around the Sermon visible |
 | καταβαίνω | ka-ta-BAI-noh | come down | 8:1 | Tim 7:25, 27 |
@@ -44,3 +44,18 @@ One Greek word, one English word. Every choice we make goes here, with where we 
 | ποιέω | poy-EH-oh | do | 8:9 | "Do this!" and he does (no supplied "it") |
 | δοῦλος | DOO-los | slave | 8:9 | "my slave", not παῖς "boy" |
 | κύριος | KOO-ree-os | Master | 8:2, 6, 8 | Κύριε "Master". Page-wide dark grey (`black` highlight), Tim's color for "Master, master!" (7:21–22) and "the Lord your God" (4:7, 10). Every κύριος in 8–9: the leper, the centurion ×2, a disciple (8:21), the disciples in the storm (8:25), the blind men (9:28), "the Master of the harvest" (9:38) |
+| ἀκούω | a-KOO-oh | hear | 8:10 | ἀκούσας "Now hearing" (aorist participle → "-ing") |
+| θαυμάζω | thow-MA-zoh | be amazed | 8:10 | The only time Jesus is amazed; the disciples 8:27, the crowds 9:33 |
+| ἀμήν | a-MAYN | truly | 8:10 | Ἀμὴν λέγω ὑμῖν "Truly I say to you", Tim 5:26. Not the case-study formula (Ἐγὼ δὲ λέγω ὑμῖν, 5:22–44) |
+| λέγω δὲ ὑμῖν ὅτι | LEH-goh deh hoo-MIN HO-tee | Now I say to you that | 8:11 | Tim 6:29 (same words); ὅτι "that", as Tim does |
+| πίστις / πιστεύω | PIS-tis / pis-TYOO-oh | trust / trust | 8:10, 13 | Tim "so little trust" (6:30), not "faith". Page-wide solid red on /ninemiraclestories (8:10, 13, 26; 9:2, 22, 28, 29) |
+| εὑρίσκω | hyoo-RIS-koh | find | 8:10 | εὗρον "have I found" (aorist summing up to now) |
+| ἀπὸ ἀνατολῶν καὶ δυσμῶν | a-PO a-na-to-LOHN kai doos-MOHN | from the east and west | 8:11 | Psalm 106:3 LXX, the same words (Brenton "from the east, and west"). Tim’s 2:1 has "from the eastern regions" for ἀπὸ ἀνατολῶν alone; we follow the psalm |
+| ἥκω | HAY-koh | come | 8:11 | Not "arrive" (Tim's παραγίνομαι, 2:1); never highlighted with ἔρχομαι |
+| ἀνακλίνω | a-na-KLEE-noh | recline *at table* | 8:11 | "at table" supplied, in light italics |
+| υἱοὶ τῆς βασιλείας | hwee-OY tays ba-si-LAY-as | sons of the kingdom | 8:11 | also 13:38 |
+| ἐκβάλλω | ek-BAL-loh | throw out | 8:12 | Same root as βάλλω "thrown down" (8:6), light red. Demons "thrown out" (8:16, 31; 9:33), workers (9:38) |
+| σκότος τὸ ἐξώτερον | SKO-tos to ex-OH-teh-ron | the outer darkness | 8:12 | Tim "darkness" (4:16). Also 22:13, 25:30 |
+| ὁ κλαυθμὸς καὶ ὁ βρυγμὸς τῶν ὀδόντων | klowth-MOS … broog-MOS … o-DON-tohn | crying and grinding of teeth | 8:12 | **Changed 2026-11-07:** the two Greek articles (ὁ … ὁ) are no longer translated: “the crying and the grinding of the teeth” was too heavy (the user). The six repeats already show it is a fixed phrase. Source: Psalm 112:10 (LXX 111:10), the sinner sees and grinds his teeth. Tim "crying" (2:18) |
+| γενηθήτω | geh-nay-THAY-toh | may it be done | 8:13 | Tim "may your will be done" (6:10); also 9:29, 15:28, 26:42 |
+| ὥρα | HOH-ra | hour | 8:13 | "in that hour" |

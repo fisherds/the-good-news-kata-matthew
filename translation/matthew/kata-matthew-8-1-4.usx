@@ -2,7 +2,7 @@
   <para>
     <group type="secondary">
       <group>
-        <verse number="1" /> Now when he <char mark-variant="text" mark-color="tan">came down from the mountain</char>,
+        <verse number="1" /> Now when he <char style="bd" mark-variant="text" mark-color="tan">came down from the mountain</char><note style="x" caller="+" xref="matthew-8-1-mountain"><char style="xt">Exodus 34:29</char></note>,
       </group>
       <group indent="1">
         <char mark-variant="highlight-light" mark-color="cyan">many crowds</char> <char mark-variant="highlight" mark-color="purple">followed</char> him.
@@ -61,7 +61,7 @@
         show yourself to the priest,
       </group>
       <group indent="2">
-        and present the offering that Mouses commanded,
+        and present the offering that <char style="bd">Mouses commanded</char><note style="x" caller="+" xref="matthew-8-4-moses"><char style="xt">Leviticus 13–14</char></note>,
       </group>
       <group indent="1">
         as a <char mark-variant="highlight-light" mark-color="orange">witness</char> to <char mark-variant="highlight-light" mark-color="cyan">them</char>.”

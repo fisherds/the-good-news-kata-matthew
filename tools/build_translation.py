@@ -42,7 +42,11 @@ GREEK_CREDIT = (
     "Greek text: SBL Greek New Testament, © 2010 Society of Biblical Literature "
     "and Logos Bible Software (CC BY 4.0). Translation and literary design in progress."
 )
-OUR_CREDIT = "Translation and Literary Design by The Good News kata Matthew (work in progress)."
+OUR_CREDIT = (
+    "Note: this is not a BibleProject translation. It is a very literal translation of the "
+    "SBL Greek New Testament, © 2010 Society of Biblical Literature and Logos Bible Software "
+    "(CC BY 4.0), with added highlights and structure. Beta: it may still change."
+)
 # Adapted copies of Tim's units (translation/adapted/adapted-<his id>.usx, his
 # original USX beside it in translation/adapted/original/<his id>.usx so the two
 # can be diffed; reasons in translation/adapted/NOTES.md). His caption, then this.

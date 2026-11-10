@@ -18,7 +18,7 @@
         ]
       },
       {
-        "source": "/data/xrefs.json",
+        "source": "/data/{xrefs.json,ninemiraclestories_gospels.json}",
         "headers": [
           {
             "key": "Cache-Control",

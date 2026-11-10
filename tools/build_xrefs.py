@@ -81,8 +81,25 @@ XREFS = [
                  "of βάλλω):\n"
                  "- has been thrown down (βέβληται): the centurion's boy / servant\n"
                  "- lying (βεβλημένον, lit. thrown down): the paralyzed man on a mat",
-        "note": "Matthew is connecting these stories in your mind. Both turn on authority (8:9; 9:6) and "
+        "note": "Matthew is connecting these stories in your mind. Both pivot based on authority (8:9; 9:6) and "
                 "trust (8:10; 9:2), and end with “Go” (8:13; 9:6).",
+    },
+    {
+        "id": "matthew-8-10-truly",
+        "title": "Truly I say to you",
+        "matthew": {"ref": "8:10", "unit": "kata-matthew-8-5-13",
+                    "match": [("Truly I say to you", "Ἀμὴν λέγω ὑμῖν", None)],
+                    "mark": ["such trust"]},
+        "passages": [
+            {"ref": "Matthew 11:11", "bsb": True,
+             "match": [("Truly I tell you", "ἀμὴν λέγω ὑμῖν", "Truly I say to you")],
+             "mark": ["no one greater than John the Baptist"]},
+        ],
+        "intro": "Jesus says “Truly I say to you” 30 times in Matthew (or 31 with a text variation in 18:19). "
+                 "This is the 6th. The first five are in the Sermon on the Mount "
+                 "(5:18, 26; 6:2, 5, 16), so this is the first one after it, and the first that praises someone.",
+        "note": "The 10th “Truly” (11:11) is the next to praise a particular person: John the Baptist. Both men said “I am not "
+                "worthy” about Jesus (3:11; 8:8), and Jesus honors both with a “Truly”.",
     },
     {
         "id": "matthew-8-8-healed",
@@ -116,6 +133,61 @@ XREFS = [
                  "declaration but a question, so we call it a declarative question and punctuate with a ? symbol. "
                  "Does it really matter?",
         "note": "The “I” (Ἐγὼ) is emphatic, like John's surprised question when Jesus comes to him.",
+    },
+    {
+        "id": "matthew-8-12-teeth",
+        "title": "Crying and grinding of teeth",
+        "matthew": {"ref": "8:12", "unit": "kata-matthew-8-5-13",
+                    "match": [("will be thrown out", "ἐκβληθήσονται", None, "red"),
+                              ("the outer darkness", "τὸ σκότος τὸ ἐξώτερον", None, "blue"),
+                              ("crying and grinding of teeth", "ὁ κλαυθμὸς καὶ ὁ βρυγμὸς τῶν ὀδόντων", None)],
+                    "mark": ["the sons of the kingdom"]},
+        "intro": "Jesus says this line six times in Matthew, in the same nine Greek words every time "
+                 "(ἐκεῖ ἔσται ὁ κλαυθμὸς καὶ ὁ βρυγμὸς τῶν ὀδόντων). This is the first. Three times it follows "
+                 "“the outer darkness”, twice “the furnace of the fire”, once “the hypocrites”; "
+                 "five times someone is thrown there.",
+        "passages": [
+            {"ref": "Matthew 13:41–42", "bsb": True, "verses": {
+                41: {"mark": ["out of His kingdom"]},
+                42: {"match": [("throw them", "βαλοῦσιν αὐτοὺς", None, "red"),
+                               ("fiery furnace", "τὴν κάμινον τοῦ πυρός", "the furnace of the fire", "purple"),
+                               ("weeping and gnashing of teeth", "ὁ κλαυθμὸς καὶ ὁ βρυγμὸς τῶν ὀδόντων",
+                                "crying and grinding of teeth")]},
+            }},
+            {"ref": "Matthew 13:50", "bsb": True,
+             "match": [("throw them", "βαλοῦσιν αὐτοὺς", None, "red"),
+                       ("fiery furnace", "τὴν κάμινον τοῦ πυρός", "the furnace of the fire", "purple"),
+                       ("weeping and gnashing of teeth", "ὁ κλαυθμὸς καὶ ὁ βρυγμὸς τῶν ὀδόντων",
+                        "crying and grinding of teeth")]},
+            {"ref": "Matthew 22:13", "bsb": True,
+             "match": [("throw him", "ἐκβάλετε αὐτὸν", "throw him out", "red"),
+                       ("the outer darkness", "τὸ σκότος τὸ ἐξώτερον", None, "blue"),
+                       ("weeping and gnashing of teeth", "ὁ κλαυθμὸς καὶ ὁ βρυγμὸς τῶν ὀδόντων",
+                        "crying and grinding of teeth")],
+             "mark": ["the king"]},
+            {"ref": "Matthew 24:51", "bsb": True,
+             "match": [("weeping and gnashing of teeth", "ὁ κλαυθμὸς καὶ ὁ βρυγμὸς τῶν ὀδόντων",
+                        "crying and grinding of teeth")],
+             "mark": ["with the hypocrites"]},
+            {"ref": "Matthew 25:30", "bsb": True,
+             "match": [("throw", "ἐκβάλετε", "throw out", "red"),
+                       ("the outer darkness", "τὸ σκότος τὸ ἐξώτερον", None, "blue"),
+                       ("weeping and gnashing of teeth", "ὁ κλαυθμὸς καὶ ὁ βρυγμὸς τῶν ὀδόντων",
+                        "crying and grinding of teeth")],
+             "mark": ["worthless servant"]},
+            # Where the words come from (Psalm 112:10; 111:10 in the Septuagint's numbering).
+            {"ref": "Psalms 111:10",
+             "match": [("gnash his teeth", "τοὺς ὀδόντας αὐτοῦ βρύξει", "his teeth he will grind")],
+             "mark": ["The sinner shall see"]},
+        ],
+        "note": "Interestingly, it is never the obvious outsiders that are thrown there; instead it is (8:12) the "
+                "sons of the kingdom, (13:41) people gathered out of his kingdom or (13:47–50) caught in the same net, "
+                "(22:11–13) a guest at the king's wedding feast, (24:45–51; 25:14–30) servants of the master's own "
+                "house. Here it comes right after "
+                "a Gentile centurion is praised for his trust and outsiders from east and west recline at the "
+                "feast (8:10–11).\n"
+                "The picture comes from the Psalms: in Psalm 112:10 (111:10 in the Greek numbering) the wicked man "
+                "sees the righteous blessed and grinds his teeth. Here too the ones thrown out see others at the feast.",
     },
     {
         "id": "matthew-5-32-divorce",
@@ -200,7 +272,103 @@ XREFS = [
                 12: {"mark": ["for the sake of the kingdom of heaven", "The one who can accept this should accept it"]},
             }},
         ],
-    },]
+    },
+    {
+        "id": "matthew-8-1-mountain",
+        "title": "Coming down the mountain",
+        "matthew": {"ref": "8:1", "unit": "kata-matthew-8-1-4",
+                    "match": [("came down from the mountain", "Καταβάντος δὲ αὐτοῦ ἀπὸ τοῦ ὄρους", None, "blue")]},
+        "passages": [
+            {"ref": "Exodus 34:29",
+             "match": [("as then he went down from the mountain", "καταβαίνοντος δὲ αὐτοῦ ἐκ τοῦ ὄρους", None, "blue")],
+             "mark": ["the two tables", "his face was glorified"]},
+        ],
+        "note": "Matthew tells Jesus coming down the way the Greek Bible tells Moses coming down Sinai with the "
+                "two tablets of the Torah. It started the same way: “he went up the mountain” (5:1) is word for word "
+                "“Moses went up” in Exodus 19:3 (ἀνέβη εἰς τὸ ὄρος).",
+    },
+    # The four Old Testament links of Matthew 8-9 (they were the "OT" column of
+    # /ninemiraclestories). "bsb": True on "matthew" = the unit is still Greek only.
+    {
+        "id": "matthew-8-4-moses",
+        "title": "“What Mouses commanded”",
+        "matthew": {"ref": "8:4", "unit": "kata-matthew-8-1-4",
+                    "match": [("show yourself to the priest", "σεαυτὸν δεῖξον τῷ ἱερεῖ", None),
+                              ("commanded", "προσέταξεν", None)],
+                    "mark": ["witness"]},
+        "intro": "Leviticus 13–14, the law for a skin disease: first why the man lived alone, then the way home.",
+        "passages": [
+            {"ref": "Leviticus 13:45", "mark": ["he shall be called unclean"]},
+            {"ref": "Leviticus 13:46", "mark": ["he shall dwell apart", "without the camp"]},
+            {"ref": "Leviticus 14:2",
+             "match": [("brought to the priest", "πρὸς τὸν ἱερέα", None)],
+             "mark": ["cleansed"]},
+            {"ref": "Leviticus 14:3", "mark": ["the priest shall come forth out of the camp"]},
+            {"ref": "Leviticus 14:4",
+             "match": [("give directions", "προστάξει", "command")]},
+        ],
+        "note": "Leviticus 13 is why the touch was shocking: a man with this disease lived alone outside the camp, "
+                "calling out “Unclean!”. Leviticus 14 is the way back, and Jesus sends him down it: the priest sees "
+                "that he is clean, the offerings Moses commanded (the same verb, προστάσσω) bring him home, "
+                "and his restored body is the witness.",
+    },
+    {
+        "id": "matthew-8-17-weaknesses",
+        "title": "“He took our weaknesses”",
+        "matthew": {"ref": "8:17", "unit": "kata-matthew-8-14-17", "bsb": True,
+                    "match": [("He took on our infirmities", "Αὐτὸς τὰς ἀσθενείας ἡμῶν ἔλαβεν", "he took our weaknesses"),
+                              ("carried our diseases", "τὰς νόσους ἐβάστασεν", None)],
+                    "mark": ["to fulfill what was spoken through the prophet Isaiah"]},
+        "passages": [
+            {"ref": "Isaiah 53:4", "mark": ["He bears our sins"]},
+        ],
+        "note": "Here the Greek Bible of Matthew's day reads “he bears our sins”. Matthew doesn't follow it: "
+                "he translates Isaiah's Hebrew himself (“our sicknesses he carried, our pains he bore”), keeping "
+                "its bodily words, weaknesses and diseases. The servant who will carry our sins first carries our "
+                "sicknesses, one evening in Kapharnaoum.",
+    },
+    {
+        "id": "matthew-9-13-mercy",
+        "title": "“Mercy I want”",
+        "matthew": {"ref": "9:13", "unit": "kata-matthew-9-9-13", "bsb": True,
+                    "match": [("I desire mercy, not sacrifice", "Ἔλεος θέλω καὶ οὐ θυσίαν", "mercy I want, and not sacrifice")],
+                    "mark": ["go and learn what this means"]},
+        "passages": [
+            # Brenton's English numbers Hosea 6 one verse ahead of the Greek.
+            {"ref": "Hosea 6:4", "en_ref": "Hosea 6:5",
+             "match": [("your mercy", "τὸ δὲ ἔλεος ὑμῶν", None)],
+             "mark": ["as a morning cloud"]},
+            {"ref": "Hosea 6:6", "en_ref": "Hosea 6:7",
+             "match": [("I will have mercy rather than sacrifice", "ἔλεος θέλω ἢ θυσίαν", "mercy I want rather than sacrifice")]},
+            {"ref": "Matthew 8:3", "unit": "kata-matthew-8-1-4",
+             "match": [("want", "Θέλω", None)],
+             "mark": ["stretching out the hand", "touched him"]},
+        ],
+        "note": "“Go and learn what this means” is a teacher's phrase, said here to Pharisees. Israel's mercy "
+                "(ἔλεος, Hebrew hesed, faithful covenant love) vanished like morning mist; it is what God wants more "
+                "than offerings. Jesus quotes it again in 12:7.\n"
+                "And Jesus has already shown what God wants: the first word he says in these chapters, to a man "
+                "no one would touch, is the same verb, “I want” (θέλω).",
+    },
+    {
+        "id": "matthew-9-36-shepherd",
+        "title": "Sheep without a shepherd",
+        "matthew": {"ref": "9:36", "unit": "kata-matthew-9-35-38", "bsb": True,
+                    "match": [("like sheep without a shepherd", "ὡσεὶ πρόβατα μὴ ἔχοντα ποιμένα", "like sheep not having a shepherd")],
+                    "mark": ["moved with compassion"]},
+        "passages": [
+            {"ref": "Numbers 27:17",
+             "match": [("as sheep without a shepherd", "ὡσεὶ πρόβατα οἷς οὐκ ἔστι ποιμήν", "like sheep for whom there is no shepherd")]},
+            {"ref": "Ezekiel 34:5",
+             "match": [("my sheep", "τὰ πρόβατά μου", None),
+                       ("because there were no shepherds", "διὰ τὸ μὴ εἶναι ποιμένας", None)],
+             "mark": ["scattered"]},
+        ],
+        "note": "Moses asks God for a leader after him, so the people won't be sheep without a shepherd; the answer "
+                "is Joshua, in Greek Iesous (Numbers 27:18). Ezekiel blames Israel's shepherds for the scattering, "
+                "and goes on (34:11, 23): God himself will shepherd them, through a new Dauid.",
+    },
+]
 
 
 TIM = "Tim Mackie’s translation (BibleProject)"
@@ -288,10 +456,16 @@ def main():
     out = []
     for x in XREFS:
         m = x["matthew"]
+        if m.get("bsb"):  # the unit is still Greek only: show the BSB until we translate it
+            c, v = (int(n) for n in m["ref"].split(":"))
+            text, source = bsb[c][v], "Berean Standard Bible (public domain)"
+        else:
+            text = unit_verse(m["unit"], m["ref"])
+            source = "kata Matthew" if m["unit"].startswith("kata-") else TIM
         passages = [{
             "ref": html.escape("Matthew " + m["ref"]),
-            "en": emphasize(unit_verse(m["unit"], m["ref"]), mt_gk[m["ref"]], m.get("match", ()), m.get("mark", ())),
-            "sources": ("kata Matthew" if m["unit"].startswith("kata-") else TIM) + " · Greek: SBLGNT",
+            "en": emphasize(text, mt_gk[m["ref"]], m.get("match", ()), m.get("mark", ())),
+            "sources": source + " · Greek: SBLGNT",
         }]
         for p in x["passages"]:
             if "comment" in p:
@@ -325,7 +499,7 @@ def main():
                 passages.append({
                     "ref": html.escape(p["ref"]),
                     "en": emphasize(unit_verse(p["unit"], ref), mt_gk[ref], p.get("match", ()), p.get("mark", ())),
-                    "sources": TIM + " · Greek: SBLGNT",
+                    "sources": ("kata Matthew" if p["unit"].startswith("kata-") else TIM) + " · Greek: SBLGNT",
                 })
                 continue
             passages.append({
